@@ -82,7 +82,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className="mt-2 rounded-full bg-white px-5 py-3 text-center text-sm font-semibold text-black"
             >
-              Get Started
+             <span className="text-black">Get Started</span>
             </Link>
           </div>
         </div>
