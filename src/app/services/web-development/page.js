@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 const features = [
@@ -108,44 +109,51 @@ export const metadata = {
 
 export default function WebDevelopmentPage() {
   return (
-    <main className="min-h-screen pt-20">
+    <main className="min-h-screen overflow-hidden bg-black pt-20 text-white">
       {/* Hero */}
-      <section className="relative overflow-hidden px-6 py-24 sm:py-32 lg:px-8">
+      <section className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8">
+        {/* Ambient glow */}
         <div
           aria-hidden="true"
-          className="absolute left-1/2 top-20 -z-10 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-violet-600/15 blur-[130px]"
+          className="absolute left-1/2 top-0 -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-violet-600/15 blur-[150px] animate-pulse"
+        />
+
+        <div
+          aria-hidden="true"
+          className="absolute left-[15%] top-32 -z-10 h-32 w-32 rounded-full bg-fuchsia-500/10 blur-[80px] motion-safe:animate-pulse"
         />
 
         <div className="mx-auto max-w-7xl">
           <div className="max-w-4xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
+            <p className="animate-[fadeInUp_0.7s_ease-out_both] text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
               Website Development Services
             </p>
 
-            <h1 className="mt-5 text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
+            <h1 className="mt-5 animate-[fadeInUp_0.8s_ease-out_0.1s_both] text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
               Websites built to
-              <span className="block text-violet-500">
+              <span className="block bg-gradient-to-r from-violet-400 via-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
                 perform and convert.
               </span>
             </h1>
 
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-zinc-400 sm:text-xl">
+            <p className="mt-7 max-w-2xl animate-[fadeInUp_0.8s_ease-out_0.2s_both] text-lg leading-8 text-zinc-400 sm:text-xl">
               SKSyntax builds fast, responsive, modern websites that give your
               business a professional digital presence and create a better
               experience for your customers.
             </p>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-10 flex animate-[fadeInUp_0.8s_ease-out_0.3s_both] flex-col gap-4 sm:flex-row">
               <Link
                 href="/contact"
-                className="rounded-full bg-white px-7 py-3.5 text-center text-sm font-semibold text-black transition-transform hover:scale-105"
+                className="group relative overflow-hidden rounded-full bg-white px-7 py-3.5 text-center text-sm font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(139,92,246,0.25)]"
               >
-                Start Your Website
+                <span className="relative z-10">Start Your Website</span>
+                <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-violet-400 to-fuchsia-400 transition-transform duration-500 group-hover:translate-x-0" />
               </Link>
 
               <Link
                 href="/projects"
-                className="rounded-full border border-white/15 px-7 py-3.5 text-center text-sm font-semibold text-white transition-colors hover:bg-white/5"
+                className="rounded-full border border-white/15 bg-white/[0.02] px-7 py-3.5 text-center text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-violet-500/50 hover:bg-violet-500/10 hover:text-violet-200"
               >
                 View Our Work
               </Link>
@@ -155,7 +163,12 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* What We Build */}
-      <section className="border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+      <section className="relative border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+        <div
+          aria-hidden="true"
+          className="absolute right-0 top-1/3 -z-10 h-72 w-72 rounded-full bg-violet-600/5 blur-[120px]"
+        />
+
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
@@ -164,7 +177,10 @@ export default function WebDevelopmentPage() {
 
             <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
               Website development for
-              <span className="text-violet-500"> different business needs.</span>
+              <span className="bg-gradient-to-r from-violet-400 to-fuchsia-500 bg-clip-text text-transparent">
+                {" "}
+                different business needs.
+              </span>
             </h2>
 
             <p className="mt-6 leading-7 text-zinc-400">
@@ -175,12 +191,25 @@ export default function WebDevelopmentPage() {
           </div>
 
           <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {websiteTypes.map((type) => (
+            {websiteTypes.map((type, index) => (
               <div
                 key={type}
-                className="rounded-xl border border-white/10 bg-[#0d0d0d] px-6 py-5"
+                className="group relative overflow-hidden rounded-xl border border-white/10 bg-[#0b0b0b] px-6 py-5 transition-all duration-500 hover:-translate-y-1 hover:border-violet-500/40 hover:bg-[#101010] hover:shadow-[0_15px_50px_rgba(139,92,246,0.08)]"
+                style={{
+                  animation: `fadeInUp 0.6s ease-out ${index * 0.08}s both`,
+                }}
               >
-                <span className="text-base font-medium">{type}</span>
+                <div className="absolute inset-y-0 left-0 w-0.5 bg-gradient-to-b from-violet-400 to-fuchsia-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+                <div className="flex items-center justify-between">
+                  <span className="text-base font-medium transition-colors duration-300 group-hover:text-violet-200">
+                    {type}
+                  </span>
+
+                  <span className="translate-x-1 text-violet-500 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                    ↗
+                  </span>
+                </div>
               </div>
             ))}
           </div>
@@ -188,7 +217,12 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* Features */}
-      <section className="border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+      <section className="relative border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+        <div
+          aria-hidden="true"
+          className="absolute left-1/2 top-1/2 -z-10 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/5 blur-[130px]"
+        />
+
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
@@ -197,27 +231,35 @@ export default function WebDevelopmentPage() {
 
             <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
               Built with the
-              <span className="text-violet-500"> right foundations.</span>
+              <span className="bg-gradient-to-r from-violet-400 to-fuchsia-500 bg-clip-text text-transparent">
+                {" "}
+                right foundations.
+              </span>
             </h2>
           </div>
 
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {features.map((feature) => (
+            {features.map((feature, index) => (
               <div
                 key={feature.number}
-                className="border-t border-white/10 pt-6"
+                className="group relative border-t border-white/10 pt-6 transition-all duration-500 hover:-translate-y-1"
+                style={{
+                  animation: `fadeInUp 0.7s ease-out ${index * 0.1}s both`,
+                }}
               >
-                <span className="text-sm font-medium text-violet-400">
+                <span className="text-sm font-medium text-violet-400 transition-colors duration-300 group-hover:text-fuchsia-400">
                   {feature.number}
                 </span>
 
-                <h3 className="mt-5 text-xl font-semibold">
+                <h3 className="mt-5 text-xl font-semibold transition-colors duration-300 group-hover:text-violet-200">
                   {feature.title}
                 </h3>
 
                 <p className="mt-3 leading-7 text-zinc-400">
                   {feature.description}
                 </p>
+
+                <div className="mt-5 h-px w-0 bg-gradient-to-r from-violet-500 to-fuchsia-500 transition-all duration-500 group-hover:w-16" />
               </div>
             ))}
           </div>
@@ -225,7 +267,7 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* Process */}
-      <section className="border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+      <section className="relative border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
@@ -234,21 +276,34 @@ export default function WebDevelopmentPage() {
 
             <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
               From concept to
-              <span className="text-violet-500"> launch.</span>
+              <span className="bg-gradient-to-r from-violet-400 to-fuchsia-500 bg-clip-text text-transparent">
+                {" "}
+                launch.
+              </span>
             </h2>
           </div>
 
-          <div className="mt-16 grid gap-8 md:grid-cols-4">
-            {process.map((step) => (
+          <div className="relative mt-16 grid gap-8 md:grid-cols-4">
+            <div
+              aria-hidden="true"
+              className="absolute left-0 right-0 top-0 hidden h-px bg-gradient-to-r from-transparent via-violet-500/30 to-transparent md:block"
+            />
+
+            {process.map((step, index) => (
               <div
                 key={step.number}
-                className="border-t border-white/10 pt-6"
+                className="group relative border-t border-white/10 pt-6 transition-all duration-500 hover:-translate-y-1 md:border-t-0"
+                style={{
+                  animation: `fadeInUp 0.7s ease-out ${index * 0.1}s both`,
+                }}
               >
+                <div className="mb-5 hidden h-2 w-2 rounded-full bg-violet-500 shadow-[0_0_15px_rgba(139,92,246,0.7)] transition-all duration-300 group-hover:scale-150 group-hover:bg-fuchsia-400 md:block" />
+
                 <span className="text-sm text-violet-400">
                   {step.number}
                 </span>
 
-                <h3 className="mt-5 text-xl font-semibold">
+                <h3 className="mt-5 text-xl font-semibold transition-colors duration-300 group-hover:text-violet-200">
                   {step.title}
                 </h3>
 
@@ -262,7 +317,7 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* FAQ */}
-      <section className="border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+      <section className="relative border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
@@ -277,18 +332,18 @@ export default function WebDevelopmentPage() {
           <div className="mt-14 divide-y divide-white/10 border-y border-white/10">
             {faqs.map((faq) => (
               <details key={faq.question} className="group">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-6 text-left text-base font-medium sm:text-lg">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-6 text-left text-base font-medium transition-colors duration-300 hover:text-violet-300 sm:text-lg">
                   {faq.question}
 
                   <span
                     aria-hidden="true"
-                    className="text-2xl text-zinc-500 transition-transform group-open:rotate-45"
+                    className="text-2xl text-zinc-500 transition-all duration-300 group-open:rotate-45 group-open:text-violet-400"
                   >
                     +
                   </span>
                 </summary>
 
-                <p className="pb-6 pr-10 leading-7 text-zinc-400">
+                <p className="pb-6 pr-10 leading-7 text-zinc-400 animate-[fadeInUp_0.35s_ease-out_both]">
                   {faq.answer}
                 </p>
               </details>
@@ -298,11 +353,24 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-4xl rounded-3xl border border-white/10 bg-[#0d0d0d] px-6 py-16 text-center sm:px-12">
-          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
+      <section className="relative overflow-hidden border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+        <div
+          aria-hidden="true"
+          className="absolute left-1/2 top-1/2 -z-10 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/10 blur-[130px] animate-pulse"
+        />
+
+        <div className="group relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-white/10 bg-[#0b0b0b] px-6 py-16 text-center shadow-[0_0_80px_rgba(139,92,246,0.05)] transition-all duration-500 hover:border-violet-500/30 hover:shadow-[0_0_100px_rgba(139,92,246,0.10)] sm:px-12">
+          <div
+            aria-hidden="true"
+            className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-500/70 to-transparent opacity-70"
+          />
+
+          <h2 className="relative text-4xl font-bold tracking-tight sm:text-5xl">
             Ready to build your
-            <span className="text-violet-500"> website?</span>
+            <span className="bg-gradient-to-r from-violet-400 to-fuchsia-500 bg-clip-text text-transparent">
+              {" "}
+              website?
+            </span>
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
@@ -312,12 +380,38 @@ export default function WebDevelopmentPage() {
 
           <Link
             href="/contact"
-            className="mt-10 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-black transition-transform hover:scale-105"
+            className="group/button relative mt-10 inline-flex overflow-hidden rounded-full bg-white px-8 py-4 text-sm font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(139,92,246,0.25)]"
           >
-            Start a Project
+            <span className="relative z-10">Start a Project</span>
+            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-violet-400 to-fuchsia-400 transition-transform duration-500 group-hover/button:translate-x-0" />
           </Link>
         </div>
       </section>
+
+      <style jsx global>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(18px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          *,
+          *::before,
+          *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+          }
+        }
+      `}</style>
     </main>
   );
 }
+
