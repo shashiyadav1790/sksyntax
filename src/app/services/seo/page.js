@@ -1,8 +1,4 @@
-
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 const seoAreas = [
   {
@@ -87,349 +83,359 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "SEO Services",
+  title: "SEO Services | Technical SEO & Organic Growth | SKSyntax",
   description:
     "SKSyntax provides SEO services focused on technical SEO, on-page optimization, content strategy, website performance, and sustainable organic growth.",
   alternates: {
     canonical: "/services/seo",
   },
   openGraph: {
-    title: "SEO Services | SKSyntax",
+    title: "SEO Services | Technical SEO & Organic Growth | SKSyntax",
     description:
       "Build stronger search visibility with technical SEO, on-page optimization, content strategy, and performance-focused improvements.",
     url: "https://sksyntax.com/services/seo",
   },
 };
 
-const reveal = {
-  hidden: {
-    opacity: 0,
-    y: 35,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.7,
-      ease: [0.22, 1, 0.36, 1],
-    },
-  },
-};
-
-const stagger = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.12,
-    },
-  },
-};
-
 export default function SEOPage() {
   return (
-    <main className="min-h-screen overflow-hidden bg-black pt-20 text-white">
-      {/* HERO */}
-      <section className="relative overflow-hidden px-6 py-24 sm:py-32 lg:px-8">
-        {/* Ambient glows */}
+    <main className="min-h-screen bg-[#05070a] pt-20 text-white">
+
+      {/* ==================== HERO ==================== */}
+      <section className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8">
+
+        {/* Background Glow */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-violet-600/20 blur-[150px]"
+          className="absolute left-1/2 top-20 -z-10 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-blue-600/[0.10] blur-[140px]"
         />
 
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -left-40 top-1/3 -z-10 h-[350px] w-[350px] rounded-full bg-purple-700/10 blur-[130px]"
+          className="absolute right-[5%] top-[35%] -z-10 h-[220px] w-[220px] rounded-full bg-cyan-400/[0.045] blur-[120px]"
         />
 
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={stagger}
-          className="mx-auto max-w-7xl"
-        >
-          <motion.div variants={reveal} className="max-w-4xl">
-            <motion.p
-              variants={reveal}
-              className="inline-flex rounded-full border border-violet-500/20 bg-violet-500/5 px-4 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-violet-400 backdrop-blur-sm"
-            >
-              SEO Services
-            </motion.p>
+        <div className="mx-auto max-w-7xl">
+          <div className="max-w-4xl">
 
-            <motion.h1
-              variants={reveal}
-              className="mt-7 text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
-            >
+            {/* Eyebrow */}
+            <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.035] px-4 py-2 backdrop-blur-xl">
+              <span
+                aria-hidden="true"
+                className="h-1.5 w-1.5 rounded-full bg-cyan-400 shadow-[0_0_12px_rgba(34,211,238,0.8)]"
+              />
+
+              <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/55 sm:text-sm">
+                SEO Services
+              </p>
+            </div>
+
+            {/* Heading */}
+            <h1 className="max-w-4xl text-5xl font-bold leading-[1.02] tracking-[-0.045em] sm:text-6xl lg:text-7xl">
               Get found by the people
-              <span className="block bg-gradient-to-r from-violet-400 via-violet-500 to-purple-400 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
                 looking for you.
               </span>
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              variants={reveal}
-              className="mt-7 max-w-2xl text-lg leading-8 text-zinc-400 sm:text-xl"
-            >
-              Build a stronger organic presence with a practical SEO strategy
-              focused on technical foundations, relevant content, search
-              visibility, and sustainable growth.
-            </motion.p>
+            {/* Description */}
+            <p className="mt-7 max-w-2xl text-base leading-7 text-white/45 sm:text-lg">
+              Build stronger search visibility with a practical SEO strategy
+              focused on technical foundations, relevant content, user
+              experience, and sustainable organic growth.
+            </p>
 
-            <motion.div
-              variants={reveal}
-              className="mt-10 flex flex-col gap-4 sm:flex-row"
-            >
+            {/* CTA */}
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+
               <Link
                 href="/contact"
-                className="group relative overflow-hidden rounded-full bg-white px-7 py-3.5 text-center text-sm font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(139,92,246,0.35)]"
+                className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full border border-white/10 bg-white/[0.06] px-7 py-3.5 text-sm font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_8px_30px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan-400/30 hover:bg-white/[0.10] sm:w-auto"
               >
-                <span className="relative z-10">Discuss Your SEO</span>
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/[0.14] to-transparent transition-transform duration-700 group-hover:translate-x-full"
+                />
 
-                <span className="absolute inset-0 -translate-x-full bg-violet-200 transition-transform duration-500 group-hover:translate-x-0" />
+                <span className="relative z-10">
+                  Discuss SEO
+                </span>
+
+                <span className="relative z-10 flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 text-xs text-white transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
               </Link>
 
               <Link
                 href="/services"
-                className="rounded-full border border-white/15 bg-white/[0.02] px-7 py-3.5 text-center text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-violet-500/50 hover:bg-violet-500/10 hover:text-violet-300"
+                className="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full border border-white/[0.10] bg-white/[0.025] px-7 py-3.5 text-sm font-semibold text-white/65 backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan-400/25 hover:bg-white/[0.06] hover:text-white sm:w-auto"
               >
-                Explore Services
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-cyan-300/[0.08] to-transparent transition-transform duration-700 group-hover:translate-x-full"
+                />
+
+                <span className="relative z-10">
+                  Explore Services
+                </span>
               </Link>
-            </motion.div>
-          </motion.div>
-        </motion.div>
+
+            </div>
+
+            {/* Trust Points */}
+            <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-xs text-white/30 sm:text-sm">
+              <span>✓ Technical SEO</span>
+              <span>✓ Search Focused</span>
+              <span>✓ Sustainable Growth</span>
+            </div>
+
+          </div>
+        </div>
       </section>
 
-      {/* SEO AREAS */}
-      <section className="relative border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute right-0 top-1/3 h-[300px] w-[300px] rounded-full bg-violet-600/10 blur-[120px]"
-        />
+      {/* ==================== SEO AREAS ==================== */}
+      <section className="border-t border-white/[0.08] px-6 py-24 sm:py-32 lg:px-8">
+        <div className="mx-auto max-w-7xl">
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
-          variants={stagger}
-          className="relative mx-auto max-w-7xl"
-        >
-          <motion.div variants={reveal} className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
-              What We Focus On
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/80 sm:text-sm">
+              What We Do
             </p>
 
-            <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-              SEO built on
-              <span className="text-violet-500"> strong foundations.</span>
+            <h2 className="mt-4 text-4xl font-bold tracking-[-0.035em] sm:text-5xl">
+              SEO built
+              <span className="text-cyan-400"> with purpose.</span>
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-zinc-400">
-              SEO is more than adding keywords to a page. A healthy search
-              strategy combines technical quality, useful content, relevant
-              search intent, and a good experience for users.
+            <p className="mt-6 text-base leading-7 text-white/45 sm:text-lg">
+              Effective SEO requires more than adding keywords to a page.
+              Technical quality, content, search intent, performance, and user
+              experience all work together to create a stronger organic
+              presence.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={stagger}
-            className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"
-          >
+          <div className="mt-14 grid gap-px overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.08] sm:grid-cols-2 lg:grid-cols-4">
             {seoAreas.map((area) => (
-              <motion.div
+              <div
                 key={area.number}
-                variants={reveal}
-                whileHover={{
-                  y: -8,
-                  transition: { duration: 0.25 },
-                }}
-                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0b0b0b] p-7 transition-all duration-300 hover:border-violet-500/40 hover:bg-[#101010] hover:shadow-[0_20px_60px_rgba(139,92,246,0.08)]"
+                className="group relative bg-[#090b0f] p-7 transition-all duration-300 hover:bg-[#0d1117] sm:p-8"
               >
-                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-500/70 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-medium tracking-wider text-white/25">
+                    {area.number}
+                  </span>
 
-                <span className="text-sm font-medium text-violet-400">
-                  {area.number}
-                </span>
+                  <span className="h-1.5 w-1.5 rounded-full bg-cyan-400/70 transition-all duration-300 group-hover:scale-150 group-hover:bg-cyan-300" />
+                </div>
 
-                <h3 className="mt-6 text-xl font-semibold tracking-tight">
+                <h3 className="mt-10 text-xl font-semibold tracking-tight">
                   {area.title}
                 </h3>
 
-                <p className="mt-3 leading-7 text-zinc-400">
+                <p className="mt-4 text-sm leading-7 text-white/40">
                   {area.description}
                 </p>
 
-                <div className="mt-7 h-px w-0 bg-violet-500 transition-all duration-500 group-hover:w-12" />
-              </motion.div>
+                <div className="mt-7 h-px w-0 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-500 group-hover:w-full" />
+              </div>
             ))}
-          </motion.div>
-        </motion.div>
+          </div>
+
+        </div>
       </section>
 
-      {/* SEO PROCESS */}
-      <section className="relative border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+      {/* ==================== WHY SEO ==================== */}
+      <section className="relative overflow-hidden border-t border-white/[0.08] px-6 py-24 sm:py-32 lg:px-8">
+
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute left-1/2 top-1/2 h-[450px] w-[450px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/10 blur-[150px]"
+          className="absolute right-[-100px] top-1/2 -z-10 h-[300px] w-[300px] -translate-y-1/2 rounded-full bg-blue-600/[0.06] blur-[130px]"
         />
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
-          variants={stagger}
-          className="relative mx-auto max-w-7xl"
-        >
-          <motion.div variants={reveal} className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
-              Our SEO Process
+        <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24">
+
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/80 sm:text-sm">
+              Why SEO
             </p>
 
-            <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-              Strategy first.
-              <span className="text-violet-500"> Then execution.</span>
+            <h2 className="mt-4 text-4xl font-bold tracking-[-0.035em] sm:text-5xl">
+              Turn search visibility into
+              <span className="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                meaningful growth.
+              </span>
             </h2>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={stagger}
-            className="relative mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"
-          >
+          <div className="space-y-6 text-base leading-8 text-white/45 sm:text-lg">
+            <p>
+              Search engines help people discover businesses, products,
+              services, and information when they are actively looking for
+              something.
+            </p>
+
+            <p>
+              This makes technical quality, relevant content, search intent,
+              website performance, and user experience important parts of a
+              successful SEO strategy.
+            </p>
+
+            <p>
+              Our approach focuses on building a stronger organic foundation
+              rather than chasing short-term ranking tricks.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ==================== PROCESS ==================== */}
+      <section className="border-t border-white/[0.08] px-6 py-24 sm:py-32 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/80 sm:text-sm">
+              Our Process
+            </p>
+
+            <h2 className="mt-4 text-4xl font-bold tracking-[-0.035em] sm:text-5xl">
+              From SEO audit to
+              <span className="text-cyan-400"> continuous improvement.</span>
+            </h2>
+          </div>
+
+          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {process.map((step) => (
-              <motion.div
+              <div
                 key={step.number}
-                variants={reveal}
-                whileHover={{
-                  y: -8,
-                  scale: 1.015,
-                  transition: { duration: 0.25 },
-                }}
-                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0b0b0b] p-7 transition-all duration-300 hover:border-violet-500/40 hover:shadow-[0_20px_70px_rgba(139,92,246,0.10)]"
+                className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] p-7 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.04] sm:p-8"
               >
-                <div className="absolute right-0 top-0 h-24 w-24 translate-x-8 -translate-y-8 rounded-full bg-violet-600/10 blur-2xl transition-all duration-500 group-hover:bg-violet-500/20" />
+                <div
+                  aria-hidden="true"
+                  className="absolute right-0 top-0 h-24 w-24 rounded-full bg-cyan-400/[0.04] blur-3xl transition-all duration-500 group-hover:bg-cyan-400/[0.08]"
+                />
 
-                <span className="relative text-sm font-medium text-violet-400">
+                <span className="relative text-xs font-medium tracking-wider text-cyan-400/70">
                   {step.number}
                 </span>
 
-                <h3 className="relative mt-6 text-xl font-semibold">
+                <h3 className="relative mt-7 text-xl font-semibold">
                   {step.title}
                 </h3>
 
-                <p className="relative mt-3 leading-7 text-zinc-400">
+                <p className="relative mt-3 text-sm leading-7 text-white/40">
                   {step.description}
                 </p>
 
-                <div className="relative mt-7 flex items-center gap-2 text-sm text-zinc-600 transition-colors duration-300 group-hover:text-violet-400">
-                  <span className="h-px w-6 bg-current transition-all duration-300 group-hover:w-10" />
-                  SEO Process
-                </div>
-              </motion.div>
+                <div className="relative mt-7 h-px w-0 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-500 group-hover:w-10" />
+              </div>
             ))}
-          </motion.div>
-        </motion.div>
+          </div>
+
+        </div>
       </section>
 
-      {/* FAQ */}
-      <section className="border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
-          variants={stagger}
-          className="mx-auto max-w-4xl"
-        >
-          <motion.div variants={reveal} className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
+      {/* ==================== FAQ ==================== */}
+      <section className="border-t border-white/[0.08] px-6 py-24 sm:py-32 lg:px-8">
+        <div className="mx-auto max-w-4xl">
+
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/80 sm:text-sm">
               SEO FAQ
             </p>
 
-            <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-bold tracking-[-0.035em] sm:text-5xl">
               Common SEO questions.
             </h2>
 
-            <p className="mx-auto mt-5 max-w-2xl text-zinc-400">
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/40">
               Clear answers to common questions about search optimization,
               rankings, timelines, and sustainable organic growth.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={reveal}
-            className="mt-14 overflow-hidden rounded-2xl border border-white/10 bg-[#0b0b0b]"
-          >
-            {faqs.map((faq, index) => (
+          <div className="mt-14 divide-y divide-white/[0.08] overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.02]">
+            {faqs.map((faq) => (
               <details
                 key={faq.question}
-                className={`group ${
-                  index !== faqs.length - 1 ? "border-b border-white/10" : ""
-                }`}
+                className="group"
               >
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-6 text-left text-base font-medium transition-colors duration-300 hover:text-violet-300 sm:px-8 sm:text-lg">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-6 text-left text-base font-medium transition-colors hover:text-cyan-300 sm:px-7 sm:text-lg">
                   <span>{faq.question}</span>
 
                   <span
                     aria-hidden="true"
-                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/10 text-xl font-light text-zinc-500 transition-all duration-300 group-hover:border-violet-500/30 group-hover:text-violet-400 group-open:rotate-45 group-open:border-violet-500/40 group-open:bg-violet-500/10"
+                    className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/[0.08] text-lg font-light text-white/40 transition-all duration-300 group-open:rotate-45 group-open:border-cyan-400/30 group-open:text-cyan-300"
                   >
                     +
                   </span>
                 </summary>
 
-                <div className="px-6 pb-7 sm:px-8">
-                  <p className="max-w-3xl leading-7 text-zinc-400">
-                    {faq.answer}
-                  </p>
-                </div>
+                <p className="max-w-3xl px-6 pb-6 pr-12 text-sm leading-7 text-white/40 sm:px-7 sm:pb-7 sm:text-base">
+                  {faq.answer}
+                </p>
               </details>
             ))}
-          </motion.div>
-        </motion.div>
+          </div>
+
+        </div>
       </section>
 
-      {/* CTA */}
-      <section className="relative border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+      {/* ==================== CTA ==================== */}
+      <section className="relative overflow-hidden border-t border-white/[0.08] px-6 py-24 sm:py-32 lg:px-8">
+
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/15 blur-[130px]"
+          className="absolute left-1/2 top-0 -z-10 h-[300px] w-[500px] -translate-x-1/2 rounded-full bg-blue-600/[0.08] blur-[130px]"
         />
 
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{
-            duration: 0.8,
-            ease: [0.22, 1, 0.36, 1],
-          }}
-          className="relative mx-auto max-w-4xl"
-        >
-          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-[#0b0b0b] px-6 py-16 text-center shadow-[0_0_80px_rgba(139,92,246,0.08)] sm:px-12">
-            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-500/60 to-transparent" />
+        <div className="mx-auto max-w-4xl">
 
-            <div className="absolute left-1/2 top-0 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/15 blur-3xl transition-all duration-700 group-hover:bg-violet-500/25" />
+          <div className="relative overflow-hidden rounded-3xl border border-white/[0.09] bg-gradient-to-b from-white/[0.055] to-white/[0.02] px-6 py-16 text-center shadow-[0_25px_80px_rgba(0,0,0,0.25)] sm:px-12 sm:py-20">
 
-            <h2 className="relative text-4xl font-bold tracking-tight sm:text-5xl">
+            <div
+              aria-hidden="true"
+              className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent"
+            />
+
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/80 sm:text-sm">
+              Ready to Grow?
+            </p>
+
+            <h2 className="mx-auto mt-5 max-w-3xl text-4xl font-bold tracking-[-0.04em] sm:text-5xl lg:text-6xl">
               Ready to grow your
-              <span className="block text-violet-500">
+              <span className="block bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500 bg-clip-text text-transparent">
                 organic presence?
               </span>
             </h2>
 
-            <p className="relative mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/40 sm:text-lg">
               Lets understand your website, goals, and search opportunities.
             </p>
 
             <Link
               href="/contact"
-              className="group/button relative mt-10 inline-flex overflow-hidden rounded-full bg-white px-8 py-4 text-sm font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(139,92,246,0.3)]"
+              className="group relative mt-10 inline-flex items-center gap-2 overflow-hidden rounded-full border border-white/10 bg-white/[0.06] px-8 py-4 text-sm font-semibold text-white shadow-[0_10px_40px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.10]"
             >
-              <span className="relative z-10">Start a Conversation</span>
+              <span
+                aria-hidden="true"
+                className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/[0.14] to-transparent transition-transform duration-700 group-hover:translate-x-full"
+              />
 
-              <span className="absolute inset-0 -translate-x-full bg-violet-200 transition-transform duration-500 group-hover/button:translate-x-0" />
+              <span className="relative z-10">
+                Start a Conversation
+              </span>
+
+              <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-1">
+                →
+              </span>
             </Link>
+
           </div>
-        </motion.div>
+        </div>
       </section>
+
     </main>
   );
 }
-

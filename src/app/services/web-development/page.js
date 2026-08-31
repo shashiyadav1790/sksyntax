@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 
 const features = [
@@ -93,7 +92,7 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Website Development Services",
+  title: "Website Development Services | SKSyntax",
   description:
     "SKSyntax builds fast, responsive, SEO-ready websites for businesses, agencies, portfolios, landing pages, and custom digital experiences.",
   alternates: {
@@ -109,309 +108,377 @@ export const metadata = {
 
 export default function WebDevelopmentPage() {
   return (
-    <main className="min-h-screen overflow-hidden bg-black pt-20 text-white">
-      {/* Hero */}
+    <main className="min-h-screen overflow-hidden bg-[#05070a] pt-20 text-white">
+
+      {/* ==================== HERO ==================== */}
       <section className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8">
-        {/* Ambient glow */}
+
+        {/* Ambient Glow */}
         <div
           aria-hidden="true"
-          className="absolute left-1/2 top-0 -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-violet-600/15 blur-[150px] animate-pulse"
+          className="absolute left-1/2 top-0 -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-blue-600/[0.10] blur-[150px]"
         />
 
         <div
           aria-hidden="true"
-          className="absolute left-[15%] top-32 -z-10 h-32 w-32 rounded-full bg-fuchsia-500/10 blur-[80px] motion-safe:animate-pulse"
+          className="absolute left-[15%] top-32 -z-10 h-32 w-32 rounded-full bg-cyan-400/[0.06] blur-[80px]"
         />
 
         <div className="mx-auto max-w-7xl">
           <div className="max-w-4xl">
-            <p className="animate-[fadeInUp_0.7s_ease-out_both] text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
-              Website Development Services
-            </p>
 
-            <h1 className="mt-5 animate-[fadeInUp_0.8s_ease-out_0.1s_both] text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
+            <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.035] px-4 py-2 backdrop-blur-xl">
+              <span
+                aria-hidden="true"
+                className="h-1.5 w-1.5 rounded-full bg-cyan-400 shadow-[0_0_12px_rgba(34,211,238,0.8)]"
+              />
+
+              <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/55 sm:text-sm">
+                Website Development Services
+              </p>
+            </div>
+
+            <h1 className="max-w-4xl text-5xl font-bold leading-[1.02] tracking-[-0.045em] sm:text-6xl lg:text-7xl">
               Websites built to
-              <span className="block bg-gradient-to-r from-violet-400 via-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
                 perform and convert.
               </span>
             </h1>
 
-            <p className="mt-7 max-w-2xl animate-[fadeInUp_0.8s_ease-out_0.2s_both] text-lg leading-8 text-zinc-400 sm:text-xl">
+            <p className="mt-7 max-w-2xl text-base leading-7 text-white/45 sm:text-lg">
               SKSyntax builds fast, responsive, modern websites that give your
               business a professional digital presence and create a better
               experience for your customers.
             </p>
 
-            <div className="mt-10 flex animate-[fadeInUp_0.8s_ease-out_0.3s_both] flex-col gap-4 sm:flex-row">
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+
               <Link
                 href="/contact"
-                className="group relative overflow-hidden rounded-full bg-white px-7 py-3.5 text-center text-sm font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(139,92,246,0.25)]"
+                className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full border border-white/10 bg-white/[0.06] px-7 py-3.5 text-sm font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_8px_30px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan-400/30 hover:bg-white/[0.10] sm:w-auto"
               >
-                <span className="relative z-10">Start Your Website</span>
-                <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-violet-400 to-fuchsia-400 transition-transform duration-500 group-hover:translate-x-0" />
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/[0.14] to-transparent transition-transform duration-700 group-hover:translate-x-full"
+                />
+
+                <span className="relative z-10">
+                  Start Your Website
+                </span>
+
+                <span className="relative z-10 flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 text-xs text-white transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
               </Link>
 
               <Link
                 href="/projects"
-                className="rounded-full border border-white/15 bg-white/[0.02] px-7 py-3.5 text-center text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-violet-500/50 hover:bg-violet-500/10 hover:text-violet-200"
+                className="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full border border-white/[0.10] bg-white/[0.025] px-7 py-3.5 text-sm font-semibold text-white/65 backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan-400/25 hover:bg-white/[0.06] hover:text-white sm:w-auto"
               >
-                View Our Work
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-cyan-300/[0.08] to-transparent transition-transform duration-700 group-hover:translate-x-full"
+                />
+
+                <span className="relative z-10">
+                  View Our Work
+                </span>
               </Link>
+
             </div>
+
+            <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-xs text-white/30 sm:text-sm">
+              <span>✓ Responsive</span>
+              <span>✓ Performance Focused</span>
+              <span>✓ SEO Ready</span>
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* What We Build */}
-      <section className="relative border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+      {/* ==================== WHAT WE BUILD ==================== */}
+      <section className="relative border-t border-white/[0.08] px-6 py-24 sm:py-32 lg:px-8">
+
         <div
           aria-hidden="true"
-          className="absolute right-0 top-1/3 -z-10 h-72 w-72 rounded-full bg-violet-600/5 blur-[120px]"
+          className="absolute right-0 top-1/3 -z-10 h-72 w-72 rounded-full bg-blue-600/[0.06] blur-[120px]"
         />
 
         <div className="mx-auto max-w-7xl">
+
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
+
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/80 sm:text-sm">
               What We Build
             </p>
 
-            <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-bold tracking-[-0.035em] sm:text-5xl">
               Website development for
-              <span className="bg-gradient-to-r from-violet-400 to-fuchsia-500 bg-clip-text text-transparent">
-                {" "}
-                different business needs.
+              <span className="bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
+                {" "}different business needs.
               </span>
             </h2>
 
-            <p className="mt-6 leading-7 text-zinc-400">
+            <p className="mt-6 text-base leading-7 text-white/45 sm:text-lg">
               Whether you need a simple business website or a more customized
               digital experience, the website is planned around your goals,
               audience, content, and functionality requirements.
             </p>
+
           </div>
 
-          <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {websiteTypes.map((type, index) => (
+          <div className="mt-14 grid gap-px overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.08] sm:grid-cols-2 lg:grid-cols-3">
+
+            {websiteTypes.map((type) => (
               <div
                 key={type}
-                className="group relative overflow-hidden rounded-xl border border-white/10 bg-[#0b0b0b] px-6 py-5 transition-all duration-500 hover:-translate-y-1 hover:border-violet-500/40 hover:bg-[#101010] hover:shadow-[0_15px_50px_rgba(139,92,246,0.08)]"
-                style={{
-                  animation: `fadeInUp 0.6s ease-out ${index * 0.08}s both`,
-                }}
+                className="group relative bg-[#090b0f] px-7 py-6 transition-all duration-300 hover:bg-[#0d1117] sm:px-8"
               >
-                <div className="absolute inset-y-0 left-0 w-0.5 bg-gradient-to-b from-violet-400 to-fuchsia-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-
                 <div className="flex items-center justify-between">
-                  <span className="text-base font-medium transition-colors duration-300 group-hover:text-violet-200">
+
+                  <span className="text-base font-medium text-white/80 transition-colors duration-300 group-hover:text-white">
                     {type}
                   </span>
 
-                  <span className="translate-x-1 text-violet-500 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                  <span className="translate-x-1 text-cyan-400 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
                     ↗
                   </span>
+
                 </div>
+
+                <div className="mt-5 h-px w-0 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-500 group-hover:w-full" />
               </div>
             ))}
+
           </div>
         </div>
       </section>
 
-      {/* Features */}
-      <section className="relative border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+      {/* ==================== FEATURES ==================== */}
+      <section className="relative border-t border-white/[0.08] px-6 py-24 sm:py-32 lg:px-8">
+
         <div
           aria-hidden="true"
-          className="absolute left-1/2 top-1/2 -z-10 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/5 blur-[130px]"
+          className="absolute left-1/2 top-1/2 -z-10 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/[0.05] blur-[130px]"
         />
 
         <div className="mx-auto max-w-7xl">
+
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
+
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/80 sm:text-sm">
               Website Development Approach
             </p>
 
-            <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-bold tracking-[-0.035em] sm:text-5xl">
               Built with the
-              <span className="bg-gradient-to-r from-violet-400 to-fuchsia-500 bg-clip-text text-transparent">
-                {" "}
+              <span className="block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
                 right foundations.
               </span>
             </h2>
+
           </div>
 
-          <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {features.map((feature, index) => (
+          <div className="mt-14 grid gap-px overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.08] sm:grid-cols-2 lg:grid-cols-4">
+
+            {features.map((feature) => (
               <div
                 key={feature.number}
-                className="group relative border-t border-white/10 pt-6 transition-all duration-500 hover:-translate-y-1"
-                style={{
-                  animation: `fadeInUp 0.7s ease-out ${index * 0.1}s both`,
-                }}
+                className="group relative bg-[#090b0f] p-7 transition-all duration-300 hover:bg-[#0d1117] sm:p-8"
               >
-                <span className="text-sm font-medium text-violet-400 transition-colors duration-300 group-hover:text-fuchsia-400">
+
+                <span className="text-xs font-medium tracking-wider text-cyan-400/70">
                   {feature.number}
                 </span>
 
-                <h3 className="mt-5 text-xl font-semibold transition-colors duration-300 group-hover:text-violet-200">
+                <h3 className="mt-8 text-xl font-semibold tracking-tight">
                   {feature.title}
                 </h3>
 
-                <p className="mt-3 leading-7 text-zinc-400">
+                <p className="mt-4 text-sm leading-7 text-white/40">
                   {feature.description}
                 </p>
 
-                <div className="mt-5 h-px w-0 bg-gradient-to-r from-violet-500 to-fuchsia-500 transition-all duration-500 group-hover:w-16" />
+                <div className="mt-7 h-px w-0 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-500 group-hover:w-full" />
+
               </div>
             ))}
+
           </div>
         </div>
       </section>
 
-      {/* Process */}
-      <section className="relative border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+      {/* ==================== PROCESS ==================== */}
+      <section className="relative border-t border-white/[0.08] px-6 py-24 sm:py-32 lg:px-8">
+
+        <div
+          aria-hidden="true"
+          className="absolute right-[-100px] top-1/2 -z-10 h-[300px] w-[300px] -translate-y-1/2 rounded-full bg-blue-600/[0.06] blur-[130px]"
+        />
+
         <div className="mx-auto max-w-7xl">
+
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
+
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/80 sm:text-sm">
               Development Process
             </p>
 
-            <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-bold tracking-[-0.035em] sm:text-5xl">
               From concept to
-              <span className="bg-gradient-to-r from-violet-400 to-fuchsia-500 bg-clip-text text-transparent">
-                {" "}
-                launch.
+              <span className="text-cyan-400">
+                {" "}launch.
               </span>
             </h2>
+
           </div>
 
-          <div className="relative mt-16 grid gap-8 md:grid-cols-4">
-            <div
-              aria-hidden="true"
-              className="absolute left-0 right-0 top-0 hidden h-px bg-gradient-to-r from-transparent via-violet-500/30 to-transparent md:block"
-            />
+          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
 
-            {process.map((step, index) => (
+            {process.map((step) => (
               <div
                 key={step.number}
-                className="group relative border-t border-white/10 pt-6 transition-all duration-500 hover:-translate-y-1 md:border-t-0"
-                style={{
-                  animation: `fadeInUp 0.7s ease-out ${index * 0.1}s both`,
-                }}
+                className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] p-7 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.04] sm:p-8"
               >
-                <div className="mb-5 hidden h-2 w-2 rounded-full bg-violet-500 shadow-[0_0_15px_rgba(139,92,246,0.7)] transition-all duration-300 group-hover:scale-150 group-hover:bg-fuchsia-400 md:block" />
 
-                <span className="text-sm text-violet-400">
+                <div
+                  aria-hidden="true"
+                  className="absolute right-0 top-0 h-24 w-24 rounded-full bg-cyan-400/[0.04] blur-3xl transition-all duration-500 group-hover:bg-cyan-400/[0.08]"
+                />
+
+                <span className="relative text-xs font-medium tracking-wider text-cyan-400/70">
                   {step.number}
                 </span>
 
-                <h3 className="mt-5 text-xl font-semibold transition-colors duration-300 group-hover:text-violet-200">
+                <h3 className="relative mt-7 text-xl font-semibold">
                   {step.title}
                 </h3>
 
-                <p className="mt-3 leading-7 text-zinc-400">
+                <p className="relative mt-3 text-sm leading-7 text-white/40">
                   {step.description}
                 </p>
+
               </div>
             ))}
+
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="relative border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+      {/* ==================== FAQ ==================== */}
+      <section className="border-t border-white/[0.08] px-6 py-24 sm:py-32 lg:px-8">
+
         <div className="mx-auto max-w-4xl">
+
           <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
+
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/80 sm:text-sm">
               Website Development FAQ
             </p>
 
-            <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-bold tracking-[-0.035em] sm:text-5xl">
               Common questions.
             </h2>
+
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/40">
+              Answers to common questions about website development,
+              performance, SEO, responsive design, and custom websites.
+            </p>
+
           </div>
 
-          <div className="mt-14 divide-y divide-white/10 border-y border-white/10">
+          <div className="mt-14 divide-y divide-white/[0.08] overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.02]">
+
             {faqs.map((faq) => (
-              <details key={faq.question} className="group">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-6 text-left text-base font-medium transition-colors duration-300 hover:text-violet-300 sm:text-lg">
-                  {faq.question}
+              <details
+                key={faq.question}
+                className="group"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-6 text-left text-base font-medium transition-colors duration-300 hover:text-cyan-300 sm:px-7 sm:text-lg">
+
+                  <span>
+                    {faq.question}
+                  </span>
 
                   <span
                     aria-hidden="true"
-                    className="text-2xl text-zinc-500 transition-all duration-300 group-open:rotate-45 group-open:text-violet-400"
+                    className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/[0.08] text-lg font-light text-white/40 transition-all duration-300 group-open:rotate-45 group-open:border-cyan-400/30 group-open:text-cyan-300"
                   >
                     +
                   </span>
+
                 </summary>
 
-                <p className="pb-6 pr-10 leading-7 text-zinc-400 animate-[fadeInUp_0.35s_ease-out_both]">
+                <p className="max-w-3xl px-6 pb-6 pr-12 text-sm leading-7 text-white/40 sm:px-7 sm:pb-7 sm:text-base">
                   {faq.answer}
                 </p>
+
               </details>
             ))}
+
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="relative overflow-hidden border-t border-white/10 px-6 py-24 sm:py-32 lg:px-8">
+      {/* ==================== CTA ==================== */}
+      <section className="relative overflow-hidden border-t border-white/[0.08] px-6 py-24 sm:py-32 lg:px-8">
+
         <div
           aria-hidden="true"
-          className="absolute left-1/2 top-1/2 -z-10 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/10 blur-[130px] animate-pulse"
+          className="absolute left-1/2 top-0 -z-10 h-[300px] w-[500px] -translate-x-1/2 rounded-full bg-blue-600/[0.08] blur-[130px]"
         />
 
-        <div className="group relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-white/10 bg-[#0b0b0b] px-6 py-16 text-center shadow-[0_0_80px_rgba(139,92,246,0.05)] transition-all duration-500 hover:border-violet-500/30 hover:shadow-[0_0_100px_rgba(139,92,246,0.10)] sm:px-12">
-          <div
-            aria-hidden="true"
-            className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-500/70 to-transparent opacity-70"
-          />
+        <div className="mx-auto max-w-4xl">
 
-          <h2 className="relative text-4xl font-bold tracking-tight sm:text-5xl">
-            Ready to build your
-            <span className="bg-gradient-to-r from-violet-400 to-fuchsia-500 bg-clip-text text-transparent">
-              {" "}
-              website?
-            </span>
-          </h2>
+          <div className="relative overflow-hidden rounded-3xl border border-white/[0.09] bg-gradient-to-b from-white/[0.055] to-white/[0.02] px-6 py-16 text-center shadow-[0_25px_80px_rgba(0,0,0,0.25)] sm:px-12 sm:py-20">
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
-            Tell us about your business, requirements, and what you want to
-            build.
-          </p>
+            <div
+              aria-hidden="true"
+              className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent"
+            />
 
-          <Link
-            href="/contact"
-            className="group/button relative mt-10 inline-flex overflow-hidden rounded-full bg-white px-8 py-4 text-sm font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(139,92,246,0.25)]"
-          >
-            <span className="relative z-10">Start a Project</span>
-            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-violet-400 to-fuchsia-400 transition-transform duration-500 group-hover/button:translate-x-0" />
-          </Link>
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/80 sm:text-sm">
+              Ready to Build?
+            </p>
+
+            <h2 className="mx-auto mt-5 max-w-3xl text-4xl font-bold tracking-[-0.04em] sm:text-5xl lg:text-6xl">
+              Ready to build your
+              <span className="block bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500 bg-clip-text text-transparent">
+                website?
+              </span>
+            </h2>
+
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/40 sm:text-lg">
+              Tell us about your business, requirements, and what you want to
+              build.
+            </p>
+
+            <Link
+              href="/contact"
+              className="group relative mt-10 inline-flex items-center gap-2 overflow-hidden rounded-full border border-white/10 bg-white/[0.06] px-8 py-4 text-sm font-semibold text-white shadow-[0_10px_40px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.10]"
+            >
+              <span
+                aria-hidden="true"
+                className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/[0.14] to-transparent transition-transform duration-700 group-hover:translate-x-full"
+              />
+
+              <span className="relative z-10">
+                Start a Project
+              </span>
+
+              <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-1">
+                →
+              </span>
+            </Link>
+
+
+            
+
+          </div>
         </div>
       </section>
 
-      <style jsx global>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(18px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-          *,
-          *::before,
-          *::after {
-            animation-duration: 0.01ms !important;
-            animation-iteration-count: 1 !important;
-            transition-duration: 0.01ms !important;
-            scroll-behavior: auto !important;
-          }
-        }
-      `}</style>
     </main>
   );
 }
-
