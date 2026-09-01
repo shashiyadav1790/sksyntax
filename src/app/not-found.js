@@ -29,7 +29,7 @@ export default function NotFound() {
         />
 
         <div className="relative">
-          <p className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-violet-500 bg-clip-text text-7xl font-bold tracking-tight text-transparent transition-all duration-500 group-hover:scale-105 sm:text-9xl">
+          <p className="bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-7xl font-bold tracking-tight text-transparent transition-all duration-500 group-hover:scale-105 sm:text-9xl">
             404
           </p>
 
@@ -49,7 +49,7 @@ export default function NotFound() {
               href="/"
               className="rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-black transition-all duration-300 hover:scale-105 hover:bg-violet-100 hover:shadow-[0_10px_35px_rgba(139,92,246,0.25)]"
             >
-              Back to Home
+              <spam className="text-black">Back to Home</spam>
             </Link>
 
             <Link

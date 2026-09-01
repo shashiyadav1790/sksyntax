@@ -1,4 +1,3 @@
-
 const processSteps = [
   {
     number: "01",
@@ -28,90 +27,314 @@ const processSteps = [
 
 export default function Process() {
   return (
-    <section className="relative overflow-hidden border-t border-white/[0.06] bg-[#05070a] py-24 sm:py-32">
-      {/* Background Glow */}
+    <section className="relative overflow-hidden border-t border-white/[0.06] bg-[#05070a] py-20 sm:py-28 lg:py-32">
+
+      {/* ==================== AMBIENT BACKGROUND ==================== */}
+
       <div
         aria-hidden="true"
-        className="absolute left-1/3 top-[15%] -z-0 h-[380px] w-[380px] rounded-full bg-blue-600/[0.05] blur-[150px]"
+        className="pointer-events-none absolute left-[18%] top-[10%] h-[320px] w-[320px] rounded-full bg-cyan-400/[0.045] blur-[140px] sm:h-[420px] sm:w-[420px]"
       />
 
       <div
         aria-hidden="true"
-        className="absolute bottom-[-100px] right-[5%] -z-0 h-[300px] w-[300px] rounded-full bg-cyan-400/[0.035] blur-[140px]"
+        className="pointer-events-none absolute bottom-[-120px] right-[5%] h-[360px] w-[360px] rounded-full bg-blue-600/[0.05] blur-[150px]"
+      />
+
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[260px] w-[260px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-500/[0.025] blur-[120px]"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        {/* Section Header */}
+        {/* ==================== HEADER ==================== */}
+
         <div className="max-w-2xl">
 
           {/* Eyebrow */}
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/90 transition-colors duration-500 hover:text-cyan-300 sm:text-sm">
-            Our Process
-          </p>
+          <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/[0.12] bg-cyan-400/[0.035] px-3.5 py-2 backdrop-blur-xl">
+            <span
+              aria-hidden="true"
+              className="h-1.5 w-1.5 rounded-full bg-cyan-400 shadow-[0_0_12px_rgba(34,211,238,0.75)]"
+            />
+
+            <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-cyan-300/80 sm:text-xs">
+              Our Process
+            </p>
+          </div>
 
           {/* Heading */}
-          <h2 className="mt-4 text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-white sm:text-5xl">
+          <h2 className="mt-5 text-4xl font-bold leading-[1.05] tracking-[-0.045em] text-white sm:text-5xl lg:text-6xl">
             From idea to
-            <span className="bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
-              {" "}growth.
+            <span className="block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
+              growth.
             </span>
           </h2>
 
           {/* Description */}
-          <p className="mt-6 max-w-xl text-base leading-7 text-white/45 sm:text-lg sm:leading-8">
+          <p className="mt-6 max-w-xl text-[15px] leading-7 text-white/45 sm:text-base sm:leading-8 lg:text-lg">
             A clear and straightforward process designed to keep your project
             focused, efficient, and moving forward.
           </p>
         </div>
 
-        {/* Process Steps */}
-        <div className="mt-12 grid overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.02] shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_20px_70px_rgba(0,0,0,0.25)] backdrop-blur-xl sm:mt-16 lg:grid-cols-4">
+        {/* ==================== PROCESS ==================== */}
 
-          {processSteps.map((step, index) => (
-            <div
-              key={step.number}
-              className="group relative border-b border-white/[0.06] p-6 transition-all duration-500 hover:bg-white/[0.035] sm:p-8 lg:border-b-0 lg:border-r lg:p-8 lg:last:border-r-0"
-            >
-              {/* Hover Glow */}
+        <div className="relative mt-12 sm:mt-16">
+
+          {/* Desktop Connecting Line */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute left-[7%] right-[7%] top-[52px] hidden h-px bg-gradient-to-r from-cyan-400/20 via-blue-500/30 to-indigo-500/20 lg:block"
+          />
+
+          {/* Cards */}
+          <div className="grid gap-4 sm:gap-5 lg:grid-cols-4">
+
+            {processSteps.map((step, index) => (
               <div
-                aria-hidden="true"
-                className="pointer-events-none absolute left-0 top-0 h-24 w-24 rounded-full bg-cyan-400/[0.045] opacity-0 blur-[45px] transition-opacity duration-500 group-hover:opacity-100"
-              />
+                key={step.number}
+                className="
+                  group
+                  relative
+                  overflow-hidden
+                  rounded-2xl
+                  border
+                  border-white/[0.08]
+                  bg-gradient-to-br
+                  from-white/[0.045]
+                  via-white/[0.018]
+                  to-white/[0.01]
+                  p-6
+                  shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_18px_55px_rgba(0,0,0,0.22)]
+                  backdrop-blur-xl
+                  transition-all
+                  duration-500
+                  hover:-translate-y-1
+                  hover:border-cyan-400/20
+                  hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.07),0_22px_65px_rgba(0,0,0,0.30)]
+                  sm:p-7
+                  lg:p-8
+                "
+              >
 
-              {/* Step Number */}
-              <div className="relative flex items-center gap-3">
-                <span className="text-xs font-semibold tracking-[0.18em] text-cyan-400/80 transition-colors duration-300 group-hover:text-cyan-300 sm:text-sm">
-                  {step.number}
-                </span>
+                {/* ==================== CARD GLOW ==================== */}
 
-                {/* Progress Line */}
-                {index < processSteps.length - 1 && (
-                  <span className="hidden h-px flex-1 bg-gradient-to-r from-cyan-400/20 to-transparent lg:block" />
-                )}
+                <div
+                  aria-hidden="true"
+                  className="
+                    pointer-events-none
+                    absolute
+                    -right-16
+                    -top-16
+                    h-40
+                    w-40
+                    rounded-full
+                    bg-cyan-400/[0.055]
+                    blur-[70px]
+                    transition-all
+                    duration-700
+                    group-hover:bg-cyan-400/[0.10]
+                  "
+                />
+
+                <div
+                  aria-hidden="true"
+                  className="
+                    pointer-events-none
+                    absolute
+                    -bottom-20
+                    -left-20
+                    h-36
+                    w-36
+                    rounded-full
+                    bg-blue-500/[0.035]
+                    blur-[65px]
+                    transition-all
+                    duration-700
+                    group-hover:bg-blue-500/[0.08]
+                  "
+                />
+
+                {/* ==================== NUMBER ==================== */}
+
+                <div className="relative flex items-center justify-between">
+
+                  <div className="flex items-center gap-3">
+
+                    <span
+                      className="
+                        flex
+                        h-10
+                        w-10
+                        items-center
+                        justify-center
+                        rounded-xl
+                        border
+                        border-cyan-400/[0.14]
+                        bg-gradient-to-br
+                        from-cyan-400/[0.10]
+                        to-blue-500/[0.05]
+                        text-[11px]
+                        font-bold
+                        tracking-[0.12em]
+                        text-cyan-300/90
+                        shadow-[0_0_25px_rgba(34,211,238,0.06)]
+                        transition-all
+                        duration-500
+                        group-hover:border-cyan-400/30
+                        group-hover:shadow-[0_0_30px_rgba(34,211,238,0.12)]
+                      "
+                    >
+                      {step.number}
+                    </span>
+
+                    {/* Desktop connector dot */}
+                    <span
+                      aria-hidden="true"
+                      className="
+                        hidden
+                        h-1.5
+                        w-1.5
+                        rounded-full
+                        bg-cyan-400/50
+                        shadow-[0_0_10px_rgba(34,211,238,0.5)]
+                        lg:block
+                      "
+                    />
+                  </div>
+
+                  {/* Step indicator */}
+                  <span
+                    aria-hidden="true"
+                    className="
+                      h-1.5
+                      w-1.5
+                      rounded-full
+                      bg-gradient-to-r
+                      from-cyan-400
+                      to-blue-500
+                      opacity-60
+                      shadow-[0_0_10px_rgba(34,211,238,0.35)]
+                      transition-all
+                      duration-500
+                      group-hover:scale-150
+                      group-hover:opacity-100
+                    "
+                  />
+                </div>
+
+                {/* ==================== TITLE ==================== */}
+
+                <h3
+                  className="
+                    relative
+                    mt-7
+                    text-[22px]
+                    font-semibold
+                    tracking-[-0.025em]
+                    text-white
+                    transition-all
+                    duration-300
+                    group-hover:translate-x-1
+                    group-hover:text-cyan-50
+                  "
+                >
+                  {step.title}
+                </h3>
+
+                {/* ==================== DESCRIPTION ==================== */}
+
+                <p
+                  className="
+                    relative
+                    mt-3
+                    text-[14px]
+                    leading-7
+                    text-white/40
+                    transition-colors
+                    duration-300
+                    group-hover:text-white/55
+                    sm:text-[15px]
+                  "
+                >
+                  {step.description}
+                </p>
+
+                {/* ==================== STEP PROGRESS ==================== */}
+
+                <div className="relative mt-7 h-px w-full overflow-hidden bg-white/[0.06]">
+
+                  <span
+                    aria-hidden="true"
+                    className="
+                      absolute
+                      left-0
+                      top-0
+                      h-full
+                      w-1/3
+                      bg-gradient-to-r
+                      from-cyan-400
+                      to-blue-500
+                      opacity-70
+                      transition-all
+                      duration-700
+                      group-hover:w-full
+                    "
+                  />
+                </div>
+
+                {/* ==================== BOTTOM LABEL ==================== */}
+
+                <div className="relative mt-4 flex items-center justify-between">
+
+                  <span className="text-[9px] font-medium uppercase tracking-[0.18em] text-white/20">
+                    Step {step.number}
+                  </span>
+
+                  <span
+                    className="
+                      text-xs
+                      text-white/20
+                      transition-all
+                      duration-300
+                      group-hover:translate-x-1
+                      group-hover:text-cyan-300/80
+                    "
+                  >
+                    →
+                  </span>
+                </div>
+
+                {/* Bottom Accent */}
+                <span
+                  aria-hidden="true"
+                  className="
+                    absolute
+                    bottom-0
+                    left-6
+                    h-px
+                    w-20
+                    bg-gradient-to-r
+                    from-cyan-400
+                    via-blue-500
+                    to-transparent
+                    opacity-40
+                    transition-all
+                    duration-500
+                    group-hover:w-[70%]
+                    group-hover:opacity-100
+                    sm:left-7
+                    lg:left-8
+                  "
+                />
               </div>
+            ))}
 
-              {/* Title */}
-              <h3 className="relative mt-6 text-2xl font-semibold tracking-[-0.02em] text-white transition-transform duration-300 group-hover:translate-x-1">
-                {step.title}
-              </h3>
-
-              {/* Description */}
-              <p className="relative mt-4 text-sm leading-7 text-white/40 transition-colors duration-300 group-hover:text-white/50 sm:text-base">
-                {step.description}
-              </p>
-
-              {/* Bottom Accent */}
-              <span
-                aria-hidden="true"
-                className="absolute bottom-0 left-6 h-px w-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-transparent transition-all duration-500 group-hover:w-24 sm:left-8"
-              />
-            </div>
-          ))}
-
+          </div>
         </div>
       </div>
     </section>
   );
 }
-
