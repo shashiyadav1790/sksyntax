@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 
 const values = [
@@ -32,16 +31,25 @@ const services = [
 export const metadata = {
   title: "About SKSyntax | Web Development, SEO & Digital Growth",
   description:
-    "Learn more about SKSyntax, our approach to website development, SEO, and paid advertising.",
+    "Learn more about SKSyntax and our approach to website development, SEO, Meta Ads, and Google Ads for businesses that want to grow online.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About SKSyntax | Web Development, SEO & Digital Growth",
+    description:
+      "Learn more about SKSyntax and our approach to website development, SEO, Meta Ads, and Google Ads.",
+    url: "https://www.sksyntax.com/about",
+    siteName: "SKSyntax",
+    type: "website",
+  },
 };
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#05070a] pt-20 text-white">
-
       {/* ================= HERO ================= */}
       <section className="relative overflow-hidden px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-
         {/* Background Glows */}
         <div
           aria-hidden="true"
@@ -55,7 +63,6 @@ export default function AboutPage() {
 
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="max-w-4xl">
-
             {/* Eyebrow */}
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/90 sm:text-sm">
               About SKSyntax
@@ -81,14 +88,12 @@ export default function AboutPage() {
 
       {/* ================= ABOUT ================= */}
       <section className="relative overflow-hidden border-t border-white/[0.06] px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-
         <div
           aria-hidden="true"
           className="absolute bottom-[-100px] left-[-100px] -z-0 h-[320px] w-[320px] rounded-full bg-indigo-500/[0.035] blur-[140px]"
         />
 
         <div className="relative z-10 mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
-
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/90 sm:text-sm">
               Who We Are
@@ -97,7 +102,8 @@ export default function AboutPage() {
             <h2 className="mt-4 text-4xl font-bold leading-[1.08] tracking-[-0.04em] sm:text-5xl">
               More than just
               <span className="bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
-                {" "}a website.
+                {" "}
+                a website.
               </span>
             </h2>
           </div>
@@ -115,7 +121,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              Thats why our approach combines development, search visibility,
+              That's why our approach combines development, search visibility,
               and digital advertising instead of treating them as completely
               separate pieces.
             </p>
@@ -125,14 +131,12 @@ export default function AboutPage() {
 
       {/* ================= VALUES ================= */}
       <section className="relative overflow-hidden border-t border-white/[0.06] px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-
         <div
           aria-hidden="true"
           className="absolute right-[-100px] top-[20%] -z-0 h-[350px] w-[350px] rounded-full bg-cyan-400/[0.03] blur-[150px]"
         />
 
         <div className="relative z-10 mx-auto max-w-7xl">
-
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/90 sm:text-sm">
               Our Principles
@@ -141,19 +145,18 @@ export default function AboutPage() {
             <h2 className="mt-4 text-4xl font-bold leading-[1.08] tracking-[-0.04em] sm:text-5xl">
               How we approach
               <span className="bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
-                {" "}our work.
+                {" "}
+                our work.
               </span>
             </h2>
           </div>
 
           <div className="mt-12 grid gap-5 md:mt-16 md:grid-cols-3">
-
             {values.map((value) => (
               <div
                 key={value.number}
                 className="group relative overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6 transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.035] hover:shadow-[0_18px_45px_rgba(0,0,0,0.28)] sm:p-8"
               >
-
                 {/* Card Glow */}
                 <div
                   aria-hidden="true"
@@ -179,21 +182,18 @@ export default function AboutPage() {
                 />
               </div>
             ))}
-
           </div>
         </div>
       </section>
 
       {/* ================= SERVICES ================= */}
       <section className="relative overflow-hidden border-t border-white/[0.06] px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-
         <div
           aria-hidden="true"
           className="absolute left-[10%] top-[10%] -z-0 h-[300px] w-[300px] rounded-full bg-blue-500/[0.035] blur-[140px]"
         />
 
         <div className="relative z-10 mx-auto max-w-7xl">
-
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/90 sm:text-sm">
               What We Do
@@ -208,13 +208,11 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-12 grid gap-4 sm:grid-cols-2">
-
             {services.map((service) => (
               <div
                 key={service}
                 className="group relative overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.02] px-6 py-6 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.035] hover:shadow-[0_15px_40px_rgba(0,0,0,0.25)] sm:px-8"
               >
-
                 {/* Moving Light */}
                 <span
                   aria-hidden="true"
@@ -232,7 +230,6 @@ export default function AboutPage() {
                 />
               </div>
             ))}
-
           </div>
 
           <div className="mt-10">
@@ -252,14 +249,12 @@ export default function AboutPage() {
 
       {/* ================= CTA ================= */}
       <section className="relative overflow-hidden border-t border-white/[0.06] px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-
         <div
           aria-hidden="true"
           className="absolute left-1/2 top-0 -z-0 h-[280px] w-[280px] -translate-x-1/2 rounded-full bg-cyan-400/[0.04] blur-[130px]"
         />
 
         <div className="relative z-10 mx-auto max-w-4xl overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.025] px-6 py-16 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_20px_80px_rgba(0,0,0,0.30)] backdrop-blur-xl sm:px-12 sm:py-20">
-
           {/* CTA Glow */}
           <div
             aria-hidden="true"
@@ -267,11 +262,11 @@ export default function AboutPage() {
           />
 
           <div className="relative z-10">
-
             <h2 className="text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-white sm:text-5xl">
-              Lets build something
+              Let's build something
               <span className="bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
-                {" "}meaningful.
+                {" "}
+                meaningful.
               </span>
             </h2>
 
@@ -284,16 +279,13 @@ export default function AboutPage() {
               href="/contact"
               className="group relative mt-10 inline-flex items-center gap-2 overflow-hidden rounded-full border border-white/10 bg-white/[0.06] px-6 py-3.5 text-sm font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_8px_30px_rgba(0,0,0,0.25)] transition-all duration-400 hover:-translate-y-[2px] hover:border-cyan-400/30 hover:bg-white/[0.10] hover:shadow-[0_12px_40px_rgba(22,130,255,0.18)]"
             >
-
               {/* Moving Light */}
               <span
                 aria-hidden="true"
                 className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/[0.14] to-transparent transition-transform duration-700 group-hover:translate-x-full"
               />
 
-              <span className="relative z-10">
-                Get in Touch
-              </span>
+              <span className="relative z-10">Get in Touch</span>
 
               <span className="relative z-10 flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 text-[11px] text-white transition-transform duration-300 group-hover:translate-x-1">
                 →
@@ -308,8 +300,6 @@ export default function AboutPage() {
           />
         </div>
       </section>
-
     </main>
   );
 }
-

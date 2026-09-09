@@ -3,25 +3,25 @@ const processSteps = [
     number: "01",
     title: "Discover",
     description:
-      "We understand your business, audience, goals, and requirements before starting the work.",
+      "We understand your business, target audience, goals, and requirements to create the right website development and digital growth strategy.",
   },
   {
     number: "02",
     title: "Build",
     description:
-      "We turn the strategy into a fast, responsive, and professional digital experience.",
+      "We turn the strategy into a fast, responsive, and professional website designed around your brand, users, and business goals.",
   },
   {
     number: "03",
     title: "Optimize",
     description:
-      "We refine performance, SEO, user experience, and conversion points to make everything work better.",
+      "We refine website performance, technical SEO, user experience, and conversion points to improve search visibility and results.",
   },
   {
     number: "04",
     title: "Grow",
     description:
-      "Once everything is live, we focus on improving visibility, generating leads, and supporting long-term growth.",
+      "Once everything is live, we focus on improving online visibility, generating leads, and supporting long-term digital growth.",
   },
 ];
 
@@ -60,22 +60,23 @@ export default function Process() {
             />
 
             <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-cyan-300/80 sm:text-xs">
-              Our Process
+              Our Digital Growth Process
             </p>
           </div>
 
           {/* Heading */}
           <h2 className="mt-5 text-4xl font-bold leading-[1.05] tracking-[-0.045em] text-white sm:text-5xl lg:text-6xl">
-            From idea to
+            From strategy to
             <span className="block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
-              growth.
+              digital growth.
             </span>
           </h2>
 
           {/* Description */}
           <p className="mt-6 max-w-xl text-[15px] leading-7 text-white/45 sm:text-base sm:leading-8 lg:text-lg">
-            A clear and straightforward process designed to keep your project
-            focused, efficient, and moving forward.
+            A clear and straightforward process for website development, SEO,
+            and digital marketing projects — keeping every stage focused,
+            efficient, and aligned with your business goals.
           </p>
         </div>
 

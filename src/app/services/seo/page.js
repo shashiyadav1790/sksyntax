@@ -84,16 +84,21 @@ const faqs = [
 
 export const metadata = {
   title: "SEO Services | Technical SEO & Organic Growth | SKSyntax",
+
   description:
     "SKSyntax provides SEO services focused on technical SEO, on-page optimization, content strategy, website performance, and sustainable organic growth.",
+
   alternates: {
     canonical: "/services/seo",
   },
+
   openGraph: {
     title: "SEO Services | Technical SEO & Organic Growth | SKSyntax",
     description:
       "Build stronger search visibility with technical SEO, on-page optimization, content strategy, and performance-focused improvements.",
-    url: "https://sksyntax.com/services/seo",
+    url: "https://www.sksyntax.com/services/seo",
+    siteName: "SKSyntax",
+    type: "website",
   },
 };
 
@@ -411,7 +416,7 @@ export default function SEOPage() {
             </h2>
 
             <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/40 sm:text-lg">
-              Lets understand your website, goals, and search opportunities.
+           Let's understand your website, goals, and search opportunities.
             </p>
 
             <Link

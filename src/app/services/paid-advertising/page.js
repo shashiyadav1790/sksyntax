@@ -114,16 +114,21 @@ const faqs = [
 
 export const metadata = {
   title: "Paid Advertising Services | Meta Ads & Google Ads | SKSyntax",
+
   description:
     "SKSyntax provides paid advertising services across Meta Ads and Google Ads, focused on campaign strategy, audience targeting, conversion tracking, and optimization.",
+
   alternates: {
     canonical: "/services/paid-advertising",
   },
+
   openGraph: {
     title: "Paid Advertising Services | Meta Ads & Google Ads | SKSyntax",
     description:
       "Reach the right audience with strategy-focused Meta Ads and Google Ads campaigns built around your business goals.",
-    url: "https://sksyntax.com/services/paid-advertising",
+    url: "https://www.sksyntax.com/services/paid-advertising",
+    siteName: "SKSyntax",
+    type: "website",
   },
 };
 
@@ -467,7 +472,7 @@ export default function PaidAdvertisingPage() {
             </h2>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
-              Lets discuss your goals, audience, offer, and advertising
+              Let's discuss your goals, audience, offer, and advertising
               opportunities.
             </p>
 

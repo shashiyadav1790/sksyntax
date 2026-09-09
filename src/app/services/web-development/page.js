@@ -93,8 +93,8 @@ const faqs = [
 
 export const metadata = {
   title: "Website Development Services | SKSyntax",
-  description:
-    "SKSyntax builds fast, responsive, SEO-ready websites for businesses, agencies, portfolios, landing pages, and custom digital experiences.",
+description:
+  "SKSyntax provides fast, responsive, SEO-ready website development services for businesses, agencies, portfolios, landing pages, and custom digital experiences.",
   alternates: {
     canonical: "/services/web-development",
   },
@@ -102,7 +102,9 @@ export const metadata = {
     title: "Website Development Services | SKSyntax",
     description:
       "Fast, responsive, SEO-ready websites built around your business goals and user experience.",
-    url: "https://sksyntax.com/services/web-development",
+  url: "https://www.sksyntax.com/services/web-development",
+   siteName: "SKSyntax",
+    type: "website",
   },
 };
 

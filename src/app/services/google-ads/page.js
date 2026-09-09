@@ -93,7 +93,9 @@ export const metadata = {
     title: "Google Ads Services | Search Advertising | SKSyntax",
     description:
       "Reach high-intent customers with strategy-focused Google Ads campaigns built around relevant search intent.",
-    url: "https://sksyntax.com/services/google-ads",
+    url: "https://www.sksyntax.com/services/google-ads",
+    siteName: "SKSyntax",
+    type: "website",
   },
 };
 
@@ -398,7 +400,7 @@ export default function GoogleAdsPage() {
             </h2>
 
             <p className="relative mx-auto mt-6 max-w-2xl text-base leading-7 text-white/45 sm:text-lg">
-              Lets discuss your business, search opportunities, goals, and
+              Let's discuss your business, search opportunities, goals, and
               Google Ads strategy.
             </p>
 

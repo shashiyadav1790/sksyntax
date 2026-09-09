@@ -3,25 +3,25 @@ const benefits = [
     number: "01",
     title: "Performance First",
     description:
-      "We build fast, lightweight websites designed to deliver a smooth experience across devices.",
+      "We build fast, lightweight, and responsive websites designed for a smooth user experience across devices.",
   },
   {
     number: "02",
     title: "SEO Ready",
     description:
-      "Our websites are built with a strong technical SEO foundation from the beginning.",
+      "Our websites are built with a strong technical SEO foundation to support search visibility, discoverability, and long-term growth.",
   },
   {
     number: "03",
     title: "Business Focused",
     description:
-      "Every section has a purpose — building trust, communicating value, or turning visitors into leads.",
+      "Every section is designed with a clear purpose — building trust, communicating value, and turning website visitors into leads.",
   },
   {
     number: "04",
     title: "Built to Grow",
     description:
-      "Clean and scalable architecture makes it easier to expand your website and digital presence over time.",
+      "Clean and scalable website architecture makes it easier to expand your digital presence as your business grows.",
   },
 ];
 
@@ -44,20 +44,20 @@ export default function WhyChooseUs() {
           {/* ================= LEFT CONTENT ================= */}
           <div className="max-w-xl">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300 sm:text-sm">
-              Why SKSyntax
+              Why Choose SKSyntax
             </p>
 
             <h2 className="mt-4 text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-white sm:text-5xl">
-              More than a website.
+              Website Development,
               <span className="mt-1 block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
-                Built for growth.
+                SEO & Digital Growth.
               </span>
             </h2>
 
             <p className="mt-6 max-w-lg text-base leading-7 text-white/50 sm:text-lg sm:leading-8">
-              We combine development, SEO, and digital advertising to create
-              digital experiences that dont just look good — they work for
-              your business.
+              SKSyntax combines website development, SEO, and digital
+              advertising to create high-performance digital experiences that
+              don&apos;t just look good — they work for your business.
             </p>
 
             {/* Small visual indicator */}
@@ -163,8 +163,7 @@ export default function WhyChooseUs() {
 
                       <span
                         className="
-                          relative inline-flex
-                          h-2.5 w-2.5
+                          relative inline-flex h-2.5 w-2.5
                           rounded-full
                           bg-gradient-to-br
                           from-cyan-300

@@ -241,35 +241,33 @@ export default function Hero() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="mt-15 mx-auto w-full text-[clamp(27px,8.2vw,42px)] font-bold leading-[1.05] tracking-[-0.045em] sm:max-w-3xl sm:text-6xl sm:leading-[1.02] lg:max-w-5xl lg:text-7xl">
+       <h1 className="mt-15 mx-auto w-full text-[clamp(27px,8.2vw,42px)] font-bold leading-[1.05] tracking-[-0.045em] sm:max-w-3xl sm:text-6xl sm:leading-[1.02] lg:max-w-5xl lg:text-7xl">
+  <span className="block">
+    Website Development
+  </span>
 
-            <span className="block whitespace-nowrap">
-              Everything Your Business
-            </span>
-
-            <span className="mt-3 block whitespace-nowrap bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent sm:mt-4">
-              Needs to Grow Online.
-            </span>
-
-          </h1>
+  <span className="mt-3 block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent sm:mt-4">
+  SEO & Digital Growth
+  </span>
+</h1>
 
           {/* Description */}
 <p className="mx-auto mt-30 max-w-[320px] text-center text-[11px] font-medium leading-[1.8] tracking-[0.014em] text-white/55 sm:mt-7 sm:max-w-2xl sm:text-[16px] sm:leading-[1.8] lg:mt-8 lg:max-w-3xl lg:text-[18px] lg:leading-[1.75]">
-  We build{" "}
+  SKSyntax builds{" "}
   <span className="font-semibold text-white/85">
     high-performance websites
   </span>
-  , boost{" "}
+  , improves{" "}
   <span className="font-semibold text-cyan-300/80">
     SEO visibility
   </span>
-  , and run targeted{" "}
+  , and runs targeted{" "}
   <span className="font-semibold text-blue-300/80">
-    Google & Meta campaigns
+    Meta Ads and Google Ads
   </span>{" "}
-  that drive{" "}
+  campaigns to help businesses{" "}
   <span className="font-semibold text-white/85">
-    measurable growth.
+    grow online.
   </span>
 </p>
           {/* CTA Buttons */}

@@ -5,28 +5,28 @@ const services = [
     number: "01",
     title: "Website Development",
     description:
-      "Fast, responsive, and conversion-focused websites built for modern businesses.",
+      "Fast, responsive, and conversion-focused websites built to deliver a strong user experience and support business growth.",
     href: "/services/web-development",
   },
   {
     number: "02",
     title: "SEO",
     description:
-      "Strategic SEO that improves search visibility, organic traffic, and long-term growth.",
+      "Strategic SEO services that improve search visibility, attract relevant organic traffic, and build long-term online growth.",
     href: "/services/seo",
   },
   {
     number: "03",
     title: "Meta Ads",
     description:
-      "Targeted Facebook and Instagram campaigns designed to generate leads and conversions.",
+      "Targeted Facebook and Instagram advertising campaigns designed to reach the right audience, generate leads, and drive conversions.",
     href: "/services/meta-ads",
   },
   {
     number: "04",
     title: "Google Ads",
     description:
-      "Performance-driven Google Ads campaigns that put your business in front of high-intent customers.",
+      "Performance-driven Google Ads campaigns that connect your business with high-intent customers and measurable opportunities.",
     href: "/services/google-ads",
   },
 ];
@@ -49,21 +49,21 @@ export default function Services() {
         {/* Header */}
         <div className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300 sm:text-sm">
-            What We Do
+            Our Digital Growth Services
           </p>
 
           <h2 className="mt-4 text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-white sm:text-5xl">
-            Everything you need to
+            Website Development, SEO
             <span className="block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent sm:inline">
               {" "}
-              grow online.
+              & Digital Marketing.
             </span>
           </h2>
 
           <p className="mt-6 max-w-xl text-base leading-7 text-white/50 sm:text-lg sm:leading-8">
-            From high-performance websites to SEO and paid advertising,
-            SKSyntax helps businesses build, reach, and grow their digital
-            presence.
+            SKSyntax provides website development, SEO, Meta Ads, and Google
+            Ads services to help businesses build a stronger online presence,
+            reach the right audience, and grow.
           </p>
         </div>
 
@@ -149,6 +149,7 @@ export default function Services() {
                   </span>
 
                   <span
+                    aria-hidden="true"
                     className="
                       flex h-10 w-10 items-center justify-center
                       rounded-full
@@ -211,7 +212,10 @@ export default function Services() {
                 >
                   <span>Explore service</span>
 
-                  <span className="transition-transform duration-500 group-hover:translate-x-2">
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform duration-500 group-hover:translate-x-2"
+                  >
                     →
                   </span>
                 </div>

@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 
 export default function CTA() {
@@ -29,21 +28,22 @@ export default function CTA() {
 
             {/* Eyebrow */}
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/90 transition-colors duration-500 hover:text-cyan-300 sm:text-sm">
-              Lets Work Together
+              Let&apos;s Work Together
             </p>
 
             {/* Heading */}
             <h2 className="mx-auto mt-5 max-w-3xl text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
-              Ready to build something
+              Ready to grow your
               <span className="bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
-                {" "}better?
+                {" "}business online?
               </span>
             </h2>
 
             {/* Description */}
             <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/45 sm:text-lg sm:leading-8">
               Tell us about your business, your goals, and what you want to
-              build. Lets create a digital presence that works for you.
+              build. SKSyntax can help with website development, SEO, Meta Ads,
+              and Google Ads to build a stronger digital presence.
             </p>
 
             {/* CTA */}
@@ -75,4 +75,3 @@ export default function CTA() {
     </section>
   );
 }
-

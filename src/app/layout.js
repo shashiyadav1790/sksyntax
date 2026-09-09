@@ -15,11 +15,29 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "SKSyntax",
+  url: "https://www.sksyntax.com",
+  description:
+    "SKSyntax provides professional website development, SEO, Meta Ads, and Google Ads solutions to help businesses grow online.",
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "SKSyntax",
+  url: "https://www.sksyntax.com",
+  description:
+    "Professional website development, SEO, Meta Ads, and Google Ads solutions for businesses that want to grow online.",
+};
+
 export const metadata = {
-  metadataBase: new URL("https://sksyntax.com"),
+  metadataBase: new URL("https://www.sksyntax.com"),
 
   title: {
-    default: "SKSyntax — We Build. We Optimize. We Grow.",
+    default: "SKSyntax — Web Development, SEO & Digital Marketing",
     template: "%s | SKSyntax",
   },
 
@@ -27,13 +45,13 @@ export const metadata = {
     "SKSyntax provides professional website development, SEO, Meta Ads, and Google Ads solutions to help businesses grow online.",
 
   keywords: [
+    "SKSyntax",
     "website development",
     "web development",
     "SEO services",
     "Meta Ads",
     "Google Ads",
     "digital marketing",
-    "SKSyntax",
   ],
 
   authors: [{ name: "SKSyntax" }],
@@ -52,16 +70,16 @@ export const metadata = {
   openGraph: {
     type: "website",
     siteName: "SKSyntax",
-    title: "SKSyntax — We Build. We Optimize. We Grow.",
+    title: "SKSyntax — Web Development, SEO & Digital Marketing",
     description:
       "Professional website development, SEO, Meta Ads, and Google Ads solutions for businesses that want to grow online.",
-    url: "https://sksyntax.com",
+    url: "https://www.sksyntax.com",
     locale: "en_IN",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "SKSyntax — We Build. We Optimize. We Grow.",
+    title: "SKSyntax — Web Development, SEO & Digital Marketing",
     description:
       "Professional website development, SEO, Meta Ads, and Google Ads solutions for businesses that want to grow online.",
   },
@@ -73,7 +91,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
       >
-        
         <Navbar />
 
         {children}
@@ -81,19 +98,14 @@ export default function RootLayout({ children }) {
         <Footer />
 
         <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "SKSyntax",
-      url: "https://sksyntax.com",
-      description:
-        "SKSyntax provides professional website development, SEO, Meta Ads, and Google Ads solutions to help businesses grow online.",
-    }),
-  }}
-/>
-        
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              organizationSchema,
+              websiteSchema,
+            ]),
+          }}
+        />
       </body>
     </html>
   );

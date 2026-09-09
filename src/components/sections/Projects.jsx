@@ -1,30 +1,24 @@
-
 import Link from "next/link";
+import Image from "next/image";
 
 const projects = [
   {
     number: "01",
     category: "Web Development",
-    title: "Project Name",
+    title: "Shyamali Global School",
     description:
-      "A short description of the project, the problem it solved, and the experience we created.",
-    href: "/projects",
+      "A modern digital presence designed to showcase the school, its academic offerings, facilities, and key information through a clean and engaging user experience.",
+    href: "https://www.shyamaliglobalschool.in/",
+    image: "/projects/shyamali.webp",
   },
   {
     number: "02",
     category: "Web Development",
-    title: "Project Name",
+    title: "Flyronex",
     description:
-      "A short description of the project, highlighting its key features and business value.",
-    href: "/projects",
-  },
-  {
-    number: "03",
-    category: "SEO",
-    title: "Project Name",
-    description:
-      "A short description of the project and the growth or visibility challenge it addressed.",
-    href: "/projects",
+      "A professional business website designed to present the brand and services with a modern interface, clear communication, and a responsive experience across devices.",
+    href: "https://www.flyronex.com/",
+    image: "/projects/flyronex.webp",
   },
 ];
 
@@ -43,12 +37,9 @@ export default function Projects() {
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
         {/* Header */}
         <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
-
           <div className="max-w-2xl">
-
             {/* Eyebrow */}
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/90 transition-colors duration-500 hover:text-cyan-300 sm:text-sm">
               Selected Work
@@ -56,16 +47,17 @@ export default function Projects() {
 
             {/* Heading */}
             <h2 className="mt-4 text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-white sm:text-5xl">
-              Work that speaks
-              <span className="bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
-                {" "}for itself.
+              Website Development
+              <span className="block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
+                Built for Growth.
               </span>
             </h2>
 
             {/* Description */}
             <p className="mt-6 max-w-xl text-base leading-7 text-white/45 sm:text-lg sm:leading-8">
-              Explore some of the digital experiences and solutions created
-              by SKSyntax.
+              Explore selected website development projects created by
+              SKSyntax with a focus on performance, responsive design,
+              user experience, and business growth.
             </p>
           </div>
 
@@ -83,12 +75,13 @@ export default function Projects() {
         </div>
 
         {/* Projects */}
-        <div className="mt-12 grid gap-5 sm:mt-16 lg:grid-cols-3">
-
+        <div className="mt-12 grid gap-5 sm:mt-16 lg:grid-cols-2">
           {projects.map((project) => (
-            <Link
+            <a
               key={project.number}
               href={project.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/20 hover:bg-white/[0.04] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_25px_70px_rgba(0,0,0,0.35)]"
             >
               {/* Card Glow */}
@@ -97,42 +90,58 @@ export default function Projects() {
                 className="pointer-events-none absolute left-1/2 top-0 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/[0.06] blur-[70px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
               />
 
-              {/* Project Preview */}
-              <div className="relative flex aspect-[16/10] items-center justify-center overflow-hidden border-b border-white/[0.06] bg-white/[0.02]">
+          {/* Project Preview */}
+<div className="relative aspect-[16/9] overflow-hidden border-b border-white/[0.06] bg-black/40">
 
-                {/* Preview Gradient */}
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-br from-cyan-400/[0.035] via-transparent to-indigo-500/[0.05] opacity-70 transition-all duration-700 group-hover:scale-105 group-hover:opacity-100"
-                />
+  {/* Project Screenshot */}
+  <Image
+    src={project.image}
+    alt={`${project.title} website`}
+    fill
+    sizes="(max-width: 1024px) 100vw, 50vw"
+    className="object-contain object-top"
+  />
 
-                {/* Grid Detail */}
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-0 opacity-[0.035] transition-opacity duration-500 group-hover:opacity-[0.06]"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)",
-                    backgroundSize: "32px 32px",
-                  }}
-                />
+  {/* Preview Overlay */}
+  <div
+    aria-hidden="true"
+    className="absolute inset-0 bg-gradient-to-br from-cyan-400/[0.035] via-transparent to-indigo-500/[0.08] opacity-70 transition-opacity duration-700 group-hover:opacity-100"
+  />
 
-                <span className="relative z-10 text-xs font-medium uppercase tracking-[0.2em] text-white/20 transition-all duration-500 group-hover:text-cyan-300/50">
-                  Project Preview
-                </span>
+  {/* Dark Bottom Gradient */}
+  <div
+    aria-hidden="true"
+    className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#05070a]/70 to-transparent"
+  />
 
-                {/* Preview Accent */}
-                <span
-                  aria-hidden="true"
-                  className="absolute bottom-0 left-0 h-px w-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 transition-all duration-700 group-hover:w-full"
-                />
-              </div>
+  {/* Grid Detail */}
+  <div
+    aria-hidden="true"
+    className="absolute inset-0 opacity-[0.025] transition-opacity duration-500 group-hover:opacity-[0.05]"
+    style={{
+      backgroundImage:
+        "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)",
+      backgroundSize: "32px 32px",
+    }}
+  />
+
+  {/* Project Label */}
+  <div className="absolute left-5 top-5 z-10">
+    <span className="rounded-full border border-white/[0.08] bg-[#05070a]/60 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.18em] text-white/50 backdrop-blur-md transition-colors duration-300 group-hover:text-cyan-300/80">
+      SKSyntax Client Project
+    </span>
+  </div>
+
+  {/* Preview Accent */}
+  <span
+    aria-hidden="true"
+    className="absolute bottom-0 left-0 z-10 h-px w-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 transition-all duration-700 group-hover:w-full"
+  />
+</div>
 
               {/* Project Info */}
               <div className="relative p-6 sm:p-8">
-
                 <div className="flex items-center justify-between">
-
                   <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-cyan-400/75 transition-colors duration-300 group-hover:text-cyan-300">
                     {project.category}
                   </span>
@@ -151,10 +160,10 @@ export default function Projects() {
                 </p>
 
                 <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-white/60 transition-all duration-300 group-hover:text-cyan-300">
-                  <span>View project</span>
+                  <span>Visit Website</span>
 
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
-                    →
+                    ↗
                   </span>
                 </span>
               </div>
@@ -164,12 +173,10 @@ export default function Projects() {
                 aria-hidden="true"
                 className="absolute bottom-0 left-6 h-px w-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-transparent transition-all duration-500 group-hover:w-24 sm:left-8"
               />
-            </Link>
+            </a>
           ))}
-
         </div>
       </div>
     </section>
   );
 }
-

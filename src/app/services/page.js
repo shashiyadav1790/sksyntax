@@ -35,7 +35,7 @@ export const metadata = {
     title: "Website Development, SEO & Paid Advertising Services | SKSyntax",
     description:
       "Explore SKSyntax services including website development, SEO, Meta Ads, and Google Ads.",
-    url: "https://sksyntax.com/services",
+   url: "https://www.sksyntax.com/services",
     siteName: "SKSyntax",
     type: "website",
   },
@@ -350,7 +350,7 @@ export default function ServicesPage() {
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-7 text-white/45 sm:mt-6 sm:text-lg">
-              Tell us what youre building and lets find the right digital
+              Tell us what you're building and let's find the right digital
               solution for your business.
             </p>
 

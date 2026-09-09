@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -7,32 +6,32 @@ const faqs = [
   {
     question: "What services does SKSyntax provide?",
     answer:
-      "SKSyntax provides website development, SEO, Meta Ads, and Google Ads solutions for businesses looking to build and grow their online presence.",
+      "SKSyntax provides website development, SEO services, Meta Ads, and Google Ads solutions to help businesses build a stronger online presence, reach the right audience, and grow online.",
   },
   {
-    question: "Can you build a completely custom website?",
+    question: "Does SKSyntax build custom websites?",
     answer:
-      "Yes. We build custom websites based on your business goals, audience, content, functionality, and brand requirements.",
+      "Yes. SKSyntax builds custom websites based on your business goals, target audience, content, functionality, and brand requirements. Each website is designed to provide a professional user experience and support business growth.",
   },
   {
     question: "Are SKSyntax websites mobile responsive?",
     answer:
-      "Yes. Websites are designed and developed to provide a consistent experience across mobile phones, tablets, laptops, and desktop devices.",
+      "Yes. SKSyntax websites are designed and developed to work smoothly across mobile phones, tablets, laptops, and desktop devices, providing a consistent and responsive user experience.",
   },
   {
-    question: "Do you provide SEO with website development?",
+    question: "Does SKSyntax provide SEO services?",
     answer:
-      "Yes. Websites can be developed with a strong technical SEO foundation, including proper structure, metadata, performance considerations, and search-friendly content architecture.",
+      "Yes. SKSyntax provides SEO services focused on improving search visibility, technical SEO, website structure, metadata, search-friendly content, and long-term organic growth.",
   },
   {
-    question: "Do you manage both Meta Ads and Google Ads?",
+    question: "Does SKSyntax manage Meta Ads and Google Ads?",
     answer:
-      "Yes. SKSyntax can help businesses with both Meta advertising across Facebook and Instagram and Google advertising campaigns.",
+      "Yes. SKSyntax manages targeted Meta Ads across Facebook and Instagram as well as Google Ads campaigns to help businesses reach relevant audiences, generate leads, and connect with high-intent customers.",
   },
   {
-    question: "How do I get started with SKSyntax?",
+    question: "How can I get started with SKSyntax?",
     answer:
-      "You can contact SKSyntax through the enquiry form and share your business requirements. We can then discuss your goals, requirements, and the right approach for your project.",
+      "You can get started by contacting SKSyntax through the enquiry form. Share your business requirements, goals, and project details, and we can discuss the right website development, SEO, or digital advertising approach for your business.",
   },
 ];
 
@@ -68,7 +67,7 @@ export default function FAQ() {
 
           {/* Eyebrow */}
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/90 transition-colors duration-500 hover:text-cyan-300 sm:text-sm">
-            FAQ
+            Frequently Asked Questions
           </p>
 
           {/* Heading */}
@@ -81,8 +80,8 @@ export default function FAQ() {
 
           {/* Description */}
           <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/45 sm:text-lg sm:leading-8">
-            Everything you need to know before starting your project with
-            SKSyntax.
+            Find answers about website development, SEO, Meta Ads, Google Ads,
+            and working with SKSyntax.
           </p>
         </div>
 
@@ -156,4 +155,3 @@ export default function FAQ() {
     </section>
   );
 }
-

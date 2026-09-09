@@ -94,7 +94,9 @@ export const metadata = {
     title: "Meta Ads Services | Facebook & Instagram Advertising | SKSyntax",
     description:
       "Reach relevant audiences on Facebook and Instagram with strategy-focused Meta Ads campaigns.",
-    url: "https://sksyntax.com/services/meta-ads",
+    url: "https://www.sksyntax.com/services/meta-ads",
+    siteName: "SKSyntax",
+    type: "website",
   },
 };
 
@@ -382,7 +384,7 @@ export default function MetaAdsPage() {
             </h2>
 
             <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/40 sm:text-lg">
-              Lets discuss your audience, offer, goals, and advertising
+              Let's discuss your audience, offer, goals, and advertising
               opportunities.
             </p>
 
