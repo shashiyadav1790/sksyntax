@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://sksyntax.com/sitemap.xml",
+    sitemap: "https://www.sksyntax.com/sitemap.xml",
   };
 }
