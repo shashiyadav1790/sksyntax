@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://sksyntax.com";
+  const baseUrl = "https://www.sksyntax.com";
 
   const routes = [
     "",
