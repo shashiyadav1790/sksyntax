@@ -29,7 +29,7 @@ export const metadata = {
   description:
     "Explore SKSyntax services including website development, SEO, Meta Ads, and Google Ads to build visibility, reach customers, and grow your business online.",
   alternates: {
-    canonical: "/services",
+    canonical: "https://www.sksyntax.com/services",
   },
   openGraph: {
     title: "Website Development, SEO & Paid Advertising Services | SKSyntax",

@@ -28,9 +28,9 @@ export const metadata = {
   title: "Projects & Portfolio | SKSyntax",
   description:
     "Explore website development, SEO, and digital marketing projects from SKSyntax.",
-  alternates: {
-    canonical: "/projects",
-  },
+alternates: {
+  canonical: "https://www.sksyntax.com/projects",
+},
   openGraph: {
     title: "Projects & Portfolio | SKSyntax",
     description:

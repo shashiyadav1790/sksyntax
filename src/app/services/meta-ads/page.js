@@ -88,7 +88,7 @@ export const metadata = {
   description:
     "SKSyntax provides Meta Ads services focused on campaign strategy, audience targeting, creative direction, conversion tracking, and ongoing optimization.",
   alternates: {
-    canonical: "/services/meta-ads",
+    canonical: "https://www.sksyntax.com/services/meta-ads",
   },
   openGraph: {
     title: "Meta Ads Services | Facebook & Instagram Advertising | SKSyntax",

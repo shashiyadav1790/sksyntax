@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Get in touch with SKSyntax for website development, SEO, Meta Ads, and Google Ads. Tell us about your project and digital growth goals.",
   alternates: {
-    canonical: "/contact",
+    canonical: "https://www.sksyntax.com/contact",
   },
   openGraph: {
     title: "Contact SKSyntax | Start Your Digital Project",

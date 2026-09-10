@@ -96,7 +96,7 @@ export const metadata = {
 description:
   "SKSyntax provides fast, responsive, SEO-ready website development services for businesses, agencies, portfolios, landing pages, and custom digital experiences.",
   alternates: {
-    canonical: "/services/web-development",
+    canonical: "https://www.sksyntax.com/services/web-development",
   },
   openGraph: {
     title: "Website Development Services | SKSyntax",

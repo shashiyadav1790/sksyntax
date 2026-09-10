@@ -119,7 +119,7 @@ export const metadata = {
     "SKSyntax provides paid advertising services across Meta Ads and Google Ads, focused on campaign strategy, audience targeting, conversion tracking, and optimization.",
 
   alternates: {
-    canonical: "/services/paid-advertising",
+    canonical: "https://www.sksyntax.com/services/paid-advertising",
   },
 
   openGraph: {

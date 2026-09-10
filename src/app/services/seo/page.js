@@ -89,7 +89,7 @@ export const metadata = {
     "SKSyntax provides SEO services focused on technical SEO, on-page optimization, content strategy, website performance, and sustainable organic growth.",
 
   alternates: {
-    canonical: "/services/seo",
+    canonical: "https://www.sksyntax.com/services/seo",
   },
 
   openGraph: {

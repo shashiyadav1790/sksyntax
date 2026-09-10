@@ -87,7 +87,7 @@ export const metadata = {
   description:
     "SKSyntax provides Google Ads services focused on search campaigns, keyword strategy, ad copy, conversion tracking, and campaign optimization.",
   alternates: {
-    canonical: "/services/google-ads",
+    canonical: "https://www.sksyntax.com/services/google-ads",
   },
   openGraph: {
     title: "Google Ads Services | Search Advertising | SKSyntax",
