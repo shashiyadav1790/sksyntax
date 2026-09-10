@@ -229,7 +229,7 @@ export default function Hero() {
         <div className="mx-auto w-full max-w-5xl text-center ">
 
           {/* Eyebrow */}
-          <div className="mx-auto mb-6 mt-10 inline-flex max-w-full items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.035] px-3.5 py-2.5 backdrop-blur-xl sm:mb-8 sm:px-5 sm:py-3">
+          <div className="mx-auto mb-6 mt-8 inline-flex max-w-full items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.035] px-3.5 py-2.5 backdrop-blur-xl sm:mb-8 sm:px-5 sm:py-3">
             <span
               aria-hidden="true"
               className="h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400 shadow-[0_0_12px_rgba(34,211,238,0.8)]"
@@ -241,7 +241,7 @@ export default function Hero() {
           </div>
 
           {/* Main Heading */}
-       <h1 className="mt-15 mx-auto w-full text-[clamp(27px,8.2vw,42px)] font-bold leading-[1.05] tracking-[-0.045em] sm:max-w-3xl sm:text-6xl sm:leading-[1.02] lg:max-w-5xl lg:text-7xl">
+       <h1 className="mt-12 mx-auto w-full text-[clamp(27px,8.2vw,42px)] font-bold leading-[1.05] tracking-[-0.045em] sm:max-w-3xl sm:text-6xl sm:leading-[1.02] lg:max-w-5xl lg:text-7xl">
   <span className="block">
     Website Development
   </span>
