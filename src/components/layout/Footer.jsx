@@ -313,6 +313,49 @@ export default function Footer() {
                 </svg>
               </Link>
 
+
+              {/* LinkedIn */}
+
+<Link
+  href="https://www.linkedin.com/in/shashi-yadav88/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="SKSyntax on LinkedIn"
+  className="
+    group
+    flex
+    h-10
+    w-10
+    items-center
+    justify-center
+    rounded-full
+    border
+    border-white/[0.08]
+    bg-white/[0.03]
+    text-white/50
+    transition-all
+    duration-300
+    hover:border-cyan-400/30
+    hover:bg-cyan-400/[0.08]
+    hover:text-cyan-300
+  "
+>
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    aria-hidden="true"
+    className="
+      h-[17px]
+      w-[17px]
+      transition-transform
+      duration-300
+      group-hover:scale-110
+    "
+  >
+    <path d="M6.5 8.5A1.5 1.5 0 1 0 6.5 5.5a1.5 1.5 0 0 0 0 3ZM5 9.75h3V19H5V9.75ZM10 9.75h2.88v1.26h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V19h-3v-4.38c0-1.04-.02-2.38-1.45-2.38-1.45 0-1.67 1.13-1.67 2.3V19h-3V9.75Z" />
+  </svg>
+</Link>
+
               {/* Facebook */}
 
               <Link
