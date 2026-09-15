@@ -11,9 +11,9 @@ export default function Home() {
     <main>
       <Hero />
       <Services/>
+      <Projects/>
       <WhyChooseUs/>
       <Process/>
-      <Projects/>
       <Trust/>
       <FAQ/>
       <CTA/>

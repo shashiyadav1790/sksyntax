@@ -241,13 +241,37 @@ export default function Hero() {
           </div>
 
           {/* Main Heading */}
-       <h1 className="mt-12 mx-auto w-full text-[clamp(27px,8.2vw,42px)] font-bold leading-[1.05] tracking-[-0.045em] sm:max-w-3xl sm:text-6xl sm:leading-[1.02] lg:max-w-5xl lg:text-7xl">
+<h1 className="mt-12 mx-auto w-full font-bold leading-[1.02] tracking-[-0.05em] sm:max-w-4xl lg:max-w-5xl">
+  {/* Brand */}
   <span className="block">
+    <span
+      className="
+        inline-block
+        bg-gradient-to-r
+        from-white
+        via-[#9eeeff]
+        to-[#4aa8ff]
+        bg-clip-text
+        text-[clamp(34px,8vw,56px)]
+        font-extrabold
+        uppercase
+        tracking-[0.08em]
+        text-transparent
+        drop-shadow-[0_0_22px_rgba(53,231,255,0.18)]
+      "
+    >
+      SKSyntax
+    </span>
+  </span>
+
+  {/* Main Service */}
+  <span className="mt-4 block text-[clamp(32px,8vw,52px)] font-bold text-white sm:mt-5 sm:text-6xl lg:text-7xl">
     Website Development
   </span>
 
-  <span className="mt-3 block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent sm:mt-4">
-  SEO & Digital Growth
+  {/* Growth */}
+  <span className="mt-2 block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-[clamp(32px,8vw,52px)] font-bold text-transparent sm:mt-3 sm:text-6xl lg:text-7xl">
+    SEO & Digital Growth
   </span>
 </h1>
 
