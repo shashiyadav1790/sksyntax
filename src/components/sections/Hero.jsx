@@ -243,7 +243,7 @@ export default function Hero() {
           {/* Main Heading */}
 <h1 className="mt-12 mx-auto w-full font-bold leading-[1.02] tracking-[-0.05em] sm:max-w-4xl lg:max-w-5xl">
   {/* Brand */}
-  <span className="block">
+  <span className="block whitespace-nowrap">
     <span
       className="
         inline-block
@@ -252,25 +252,24 @@ export default function Hero() {
         via-[#9eeeff]
         to-[#4aa8ff]
         bg-clip-text
-        text-[clamp(34px,8vw,56px)]
+        text-[clamp(30px,8vw,56px)]
         font-extrabold
-        uppercase
-        tracking-[0.08em]
+        tracking-[0.06em]
         text-transparent
         drop-shadow-[0_0_22px_rgba(53,231,255,0.18)]
       "
     >
-      SKSyntax
+      SKSYNTAX
     </span>
   </span>
 
   {/* Main Service */}
-  <span className="mt-4 block text-[clamp(32px,8vw,52px)] font-bold text-white sm:mt-5 sm:text-6xl lg:text-7xl">
+  <span className="mt-3 block whitespace-nowrap text-[clamp(25px,7.2vw,52px)] font-bold text-white sm:mt-4 sm:text-6xl lg:text-7xl">
     Website Development
   </span>
 
   {/* Growth */}
-  <span className="mt-2 block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-[clamp(32px,8vw,52px)] font-bold text-transparent sm:mt-3 sm:text-6xl lg:text-7xl">
+  <span className="mt-2 block whitespace-nowrap bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-[clamp(25px,7.2vw,52px)] font-bold text-transparent sm:mt-3 sm:text-6xl lg:text-7xl">
     SEO & Digital Growth
   </span>
 </h1>
