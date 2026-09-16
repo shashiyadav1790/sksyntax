@@ -78,7 +78,8 @@ export default function AboutPage() {
 
             {/* Description */}
             <p className="mt-7 max-w-2xl text-base leading-7 text-white/45 sm:text-lg sm:leading-8">
-              SKSyntax helps businesses build a stronger online presence
+              SKSyntax, also known as SK Syntax,
+              helps businesses build a stronger online presence
               through modern websites, search engine optimization, and paid
               advertising.
             </p>

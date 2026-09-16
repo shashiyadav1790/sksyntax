@@ -19,13 +19,14 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "SKSyntax",
+  alternateName: "SK Syntax",
   url: "https://www.sksyntax.com",
   description:
     "SKSyntax provides professional website development, SEO, Meta Ads, and Google Ads solutions to help businesses grow online.",
-      sameAs: [
+  sameAs: [
     "https://www.instagram.com/sksyntax/",
     "https://www.facebook.com/sksyntax/",
-  "https://www.linkedin.com/in/shashi-yadav88/",
+    "https://www.linkedin.com/in/shashi-yadav88/",
   ],
 };
 
