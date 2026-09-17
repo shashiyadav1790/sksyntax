@@ -21,6 +21,7 @@ const organizationSchema = {
   name: "SKSyntax",
   alternateName: "SK Syntax",
   url: "https://www.sksyntax.com",
+  logo: "https://www.sksyntax.com/logo.png",
   description:
     "SKSyntax provides professional website development, SEO, Meta Ads, and Google Ads solutions to help businesses grow online.",
   sameAs: [
@@ -63,10 +64,10 @@ export const metadata = {
   authors: [{ name: "SKSyntax" }],
   creator: "SKSyntax",
   publisher: "SKSyntax",
-
-  alternates: {
-    canonical: "./",
-  },
+  
+alternates: {
+  canonical: "https://www.sksyntax.com/",
+},
 
   robots: {
     index: true,

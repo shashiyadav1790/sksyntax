@@ -259,7 +259,7 @@ export default function Hero() {
         drop-shadow-[0_0_22px_rgba(53,231,255,0.18)]
       "
     >
-      SKSYNTAX
+      SKSyntax
     </span>
   </span>
 

@@ -6,6 +6,7 @@ import Projects from "@/components/sections/Projects";
 import Trust from "@/components/sections/Trust";
 import FAQ from "@/components/sections/FAQ";
 import CTA from "@/components/sections/CTA";
+import BlogPreview from "@/components/sections/Blogpreview";
 export default function Home() {
   return (
     <main>
@@ -15,6 +16,7 @@ export default function Home() {
       <WhyChooseUs/>
       <Process/>
       <Trust/>
+      <BlogPreview/>
       <FAQ/>
       <CTA/>
     </main>

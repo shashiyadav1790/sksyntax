@@ -318,6 +318,234 @@ export default function ServicesPage() {
         </div>
       </section>
 
+            {/* =========================================================
+          INSIGHTS
+      ========================================================= */}
+      <section
+        aria-labelledby="services-insights-heading"
+        className="relative overflow-hidden border-t border-white/[0.06] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24"
+      >
+        {/* Background Glow */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[360px] w-[360px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/[0.025] blur-[130px] sm:h-[500px] sm:w-[500px]"
+        />
+
+        <div className="mx-auto max-w-7xl">
+          {/* Header */}
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-400/90 sm:text-sm">
+                From the SKSyntax Blog
+              </p>
+
+              <h2
+                id="services-insights-heading"
+                className="mt-4 text-[36px] font-bold leading-[1.08] tracking-[-0.04em] sm:text-5xl"
+              >
+                Practical insights to help you
+                <span className="block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
+                  grow online.
+                </span>
+              </h2>
+
+              <p className="mt-5 max-w-2xl text-[15px] leading-7 text-white/45 sm:text-lg sm:leading-8">
+                Explore practical guides covering websites, SEO, Meta Ads,
+                and Google Ads to better understand the digital strategies
+                behind online growth.
+              </p>
+            </div>
+
+            <Link
+              href="/blog"
+              className="group inline-flex w-fit shrink-0 items-center gap-2 rounded-full border border-white/[0.09] bg-white/[0.025] px-5 py-3 text-sm font-semibold text-white/75 backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan-400/25 hover:bg-white/[0.05] hover:text-white"
+            >
+              <span>View all articles</span>
+
+              <span
+                aria-hidden="true"
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </Link>
+          </div>
+
+          {/* Article Cards */}
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {/* Web Development */}
+            <Link
+              href="/blog/how-to-build-a-professional-business-website"
+              className="group relative overflow-hidden rounded-3xl border border-white/[0.07] bg-white/[0.025] p-6 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.04] sm:p-7"
+            >
+              <div
+                aria-hidden="true"
+                className="absolute -right-16 -top-16 h-36 w-36 rounded-full bg-cyan-400/[0.055] blur-[65px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              />
+
+              <div className="relative">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-semibold tracking-[0.18em] text-white/30">
+                    01
+                  </span>
+
+                  <span className="rounded-full border border-cyan-400/10 bg-cyan-400/[0.045] px-3 py-1.5 text-[11px] font-medium text-cyan-300/90">
+                    Web Development
+                  </span>
+                </div>
+
+                <div className="mt-6 h-px bg-white/[0.06]" />
+
+                <h3 className="mt-6 text-xl font-semibold leading-8 tracking-[-0.025em] text-white transition-colors duration-300 group-hover:text-cyan-100">
+                  How to Build a Professional Website for Your Business
+                </h3>
+
+                <p className="mt-4 text-sm leading-7 text-white/40">
+                  Learn what makes a professional business website effective,
+                  from structure and design to performance, SEO, and user
+                  experience.
+                </p>
+
+                <div className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-white/55 transition-colors duration-300 group-hover:text-cyan-300">
+                  Read article
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
+                </div>
+              </div>
+
+              <div
+                aria-hidden="true"
+                className="absolute bottom-0 left-6 h-px w-12 bg-gradient-to-r from-cyan-400 via-blue-500 to-transparent transition-all duration-500 group-hover:w-[calc(100%-3rem)]"
+              />
+            </Link>
+
+            {/* SEO */}
+            <Link
+              href="/blog/how-seo-helps-businesses-get-found-on-google"
+              className="group relative overflow-hidden rounded-3xl border border-white/[0.07] bg-white/[0.025] p-6 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.04] sm:p-7"
+            >
+              <div
+                aria-hidden="true"
+                className="absolute -right-16 -top-16 h-36 w-36 rounded-full bg-blue-500/[0.06] blur-[65px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              />
+
+              <div className="relative">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-semibold tracking-[0.18em] text-white/30">
+                    02
+                  </span>
+
+                  <span className="rounded-full border border-blue-400/10 bg-blue-400/[0.045] px-3 py-1.5 text-[11px] font-medium text-blue-300/90">
+                    SEO
+                  </span>
+                </div>
+
+                <div className="mt-6 h-px bg-white/[0.06]" />
+
+                <h3 className="mt-6 text-xl font-semibold leading-8 tracking-[-0.025em] text-white transition-colors duration-300 group-hover:text-cyan-100">
+                  How SEO Helps Businesses Get Found on Google
+                </h3>
+
+                <p className="mt-4 text-sm leading-7 text-white/40">
+                  Understand SEO, search visibility, useful content, technical
+                  optimization, and the foundations of long-term organic
+                  growth.
+                </p>
+
+                <div className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-white/55 transition-colors duration-300 group-hover:text-cyan-300">
+                  Read article
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
+                </div>
+              </div>
+
+              <div
+                aria-hidden="true"
+                className="absolute bottom-0 left-6 h-px w-12 bg-gradient-to-r from-cyan-400 via-blue-500 to-transparent transition-all duration-500 group-hover:w-[calc(100%-3rem)]"
+              />
+            </Link>
+
+            {/* Paid Advertising */}
+            <Link
+              href="/blog/how-meta-ads-help-businesses-generate-leads"
+              className="group relative overflow-hidden rounded-3xl border border-white/[0.07] bg-white/[0.025] p-6 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.04] sm:p-7"
+            >
+              <div
+                aria-hidden="true"
+                className="absolute -right-16 -top-16 h-36 w-36 rounded-full bg-violet-500/[0.055] blur-[65px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              />
+
+              <div className="relative">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-semibold tracking-[0.18em] text-white/30">
+                    03
+                  </span>
+
+                  <span className="rounded-full border border-violet-400/10 bg-violet-400/[0.045] px-3 py-1.5 text-[11px] font-medium text-violet-300/90">
+                    Paid Advertising
+                  </span>
+                </div>
+
+                <div className="mt-6 h-px bg-white/[0.06]" />
+
+                <h3 className="mt-6 text-xl font-semibold leading-8 tracking-[-0.025em] text-white transition-colors duration-300 group-hover:text-cyan-100">
+                  How Meta Ads Help Businesses Generate Leads and Customers
+                </h3>
+
+                <p className="mt-4 text-sm leading-7 text-white/40">
+                  Learn how Meta Ads can help businesses reach relevant
+                  audiences, generate enquiries, and build a more focused
+                  advertising strategy.
+                </p>
+
+                <div className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-white/55 transition-colors duration-300 group-hover:text-cyan-300">
+                  Read article
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
+                </div>
+              </div>
+
+              <div
+                aria-hidden="true"
+                className="absolute bottom-0 left-6 h-px w-12 bg-gradient-to-r from-cyan-400 via-blue-500 to-transparent transition-all duration-500 group-hover:w-[calc(100%-3rem)]"
+              />
+            </Link>
+          </div>
+
+          {/* Google Ads secondary link */}
+          <div className="mt-6 flex justify-center">
+            <Link
+              href="/blog/how-google-ads-help-businesses-reach-high-intent-customers"
+              className="group inline-flex items-center gap-2 text-sm font-medium text-white/40 transition-colors duration-300 hover:text-cyan-300"
+            >
+              <span>
+                Also read: How Google Ads Help Businesses Reach High-Intent
+                Customers
+              </span>
+
+              <span
+                aria-hidden="true"
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* =========================================================
           CTA
       ========================================================= */}

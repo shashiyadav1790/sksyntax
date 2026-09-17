@@ -56,7 +56,7 @@ export default function Services() {
             Website Development, SEO
             <span className="block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent sm:inline">
               {" "}
-              & Digital Marketing.
+              & Paid Advertising.
             </span>
           </h2>
 

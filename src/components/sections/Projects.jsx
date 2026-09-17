@@ -96,7 +96,7 @@ export default function Projects() {
   {/* Project Screenshot */}
   <Image
     src={project.image}
-    alt={`${project.title} website`}
+    alt={`${project.title} website developed by SKSyntax`}
     fill
     sizes="(max-width: 1024px) 100vw, 50vw"
     className="object-contain object-top"

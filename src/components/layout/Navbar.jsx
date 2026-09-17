@@ -8,6 +8,7 @@ const navItems = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "Projects", href: "/projects" },
+  { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -31,7 +32,7 @@ export default function Navbar() {
             {/* SK Logo Mark */}
             <Image
               src="/logo.png"
-              alt="SKSyntax"
+              alt="SKSyntax logo"
               width={680}
               height={564}
               priority
