@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #050505;
+  --background: #05070a;
   --foreground: #ffffff;
   --muted: #a1a1aa;
   --surface: #0d0d0d;
   --border: #27272a;
-  --accent: #7c3aed;
+  --accent: #35e7ff;
 }
 
 * {
@@ -47,7 +47,9 @@ a {
    SKSyntax — Premium Neural Hero
 ===================================================== */
 
-/* ---------- Aurora ---------- */
+/* =====================================================
+   Aurora
+===================================================== */
 
 @keyframes auroraPulse {
   0%,
@@ -62,7 +64,9 @@ a {
   }
 }
 
-/* ---------- Energy Orbs ---------- */
+/* =====================================================
+   Energy Orbs
+===================================================== */
 
 @keyframes energyLeft {
   0%,
@@ -94,7 +98,9 @@ a {
   }
 }
 
-/* ---------- Neural Waves ---------- */
+/* =====================================================
+   Neural Waves
+===================================================== */
 
 .neural-wave {
   transform-origin: center;
@@ -147,7 +153,9 @@ a {
   }
 }
 
-/* ---------- Energy Beam ---------- */
+/* =====================================================
+   Energy Beam
+===================================================== */
 
 @keyframes energyLine {
   0%,
@@ -162,7 +170,9 @@ a {
   }
 }
 
-/* ---------- Core ---------- */
+/* =====================================================
+   Core Pulse
+===================================================== */
 
 @keyframes corePulse {
   0%,
@@ -178,98 +188,268 @@ a {
 }
 
 /* =====================================================
-   Floating Particles
+   HERO — Floating Particles
 ===================================================== */
 
 .hero-particle {
   position: absolute;
-  width: 3px;
-  height: 3px;
+  width: 2px;
+  height: 2px;
   border-radius: 9999px;
-  background: rgba(56, 189, 248, 0.9);
+  background: rgba(103, 232, 249, 0.65);
   box-shadow:
-    0 0 6px rgba(56, 189, 248, 0.8),
-    0 0 18px rgba(56, 189, 248, 0.35);
+    0 0 10px rgba(34, 211, 238, 0.35),
+    0 0 20px rgba(59, 130, 246, 0.12);
 
-  animation: particleMove 7s ease-in-out infinite;
+  animation: particleFloat 7s ease-in-out infinite;
 }
 
+/* ---------- Particle Positions ---------- */
+
 .hp-1 {
-  left: 9%;
-  top: 28%;
+  left: 8%;
+  top: 18%;
   animation-delay: -1s;
 }
 
 .hp-2 {
-  left: 18%;
-  top: 58%;
+  left: 15%;
+  top: 34%;
   animation-delay: -4s;
 }
 
 .hp-3 {
-  left: 31%;
-  top: 22%;
+  left: 22%;
+  top: 12%;
   animation-delay: -2s;
 }
 
 .hp-4 {
-  left: 47%;
-  top: 15%;
+  left: 28%;
+  top: 48%;
   animation-delay: -6s;
 }
 
 .hp-5 {
-  right: 10%;
-  top: 32%;
-  background: rgba(139, 92, 246, 0.9);
-  box-shadow:
-    0 0 6px rgba(139, 92, 246, 0.9),
-    0 0 18px rgba(139, 92, 246, 0.4);
+  left: 35%;
+  top: 22%;
   animation-delay: -3s;
 }
 
 .hp-6 {
-  right: 20%;
-  top: 55%;
+  left: 42%;
+  top: 14%;
   animation-delay: -5s;
 }
 
 .hp-7 {
-  right: 33%;
-  top: 20%;
-  background: rgba(139, 92, 246, 0.9);
-  animation-delay: -7s;
+  left: 48%;
+  top: 30%;
+  animation-delay: -1.5s;
 }
 
 .hp-8 {
-  right: 46%;
-  top: 65%;
+  left: 55%;
+  top: 17%;
+  animation-delay: -4.5s;
+}
+
+.hp-9 {
+  left: 62%;
+  top: 42%;
+  animation-delay: -2.5s;
+}
+
+.hp-10 {
+  left: 69%;
+  top: 24%;
+  animation-delay: -6.5s;
+}
+
+.hp-11 {
+  left: 76%;
+  top: 15%;
+  animation-delay: -3.5s;
+}
+
+.hp-12 {
+  left: 83%;
+  top: 35%;
+  animation-delay: -5.5s;
+}
+
+.hp-13 {
+  left: 91%;
+  top: 20%;
   animation-delay: -2s;
 }
 
-@keyframes particleMove {
+.hp-14 {
+  left: 12%;
+  top: 62%;
+  animation-delay: -4s;
+}
+
+.hp-15 {
+  left: 24%;
+  top: 72%;
+  animation-delay: -1s;
+}
+
+.hp-16 {
+  left: 32%;
+  top: 58%;
+  animation-delay: -5s;
+}
+
+.hp-17 {
+  left: 44%;
+  top: 68%;
+  animation-delay: -3s;
+}
+
+.hp-18 {
+  left: 57%;
+  top: 62%;
+  animation-delay: -6s;
+}
+
+.hp-19 {
+  left: 66%;
+  top: 75%;
+  animation-delay: -2s;
+}
+
+.hp-20 {
+  left: 74%;
+  top: 58%;
+  animation-delay: -4.5s;
+}
+
+.hp-21 {
+  left: 86%;
+  top: 68%;
+  animation-delay: -1.5s;
+}
+
+.hp-22 {
+  left: 94%;
+  top: 52%;
+  animation-delay: -5.5s;
+}
+
+.hp-23 {
+  left: 18%;
+  top: 44%;
+  animation-delay: -3.5s;
+}
+
+.hp-24 {
+  left: 81%;
+  top: 46%;
+  animation-delay: -6.5s;
+}
+
+/* ---------- Particle Animation ---------- */
+
+@keyframes particleFloat {
   0%,
   100% {
-    transform: translate3d(0, 0, 0) scale(0.6);
-    opacity: 0.2;
-  }
-
-  30% {
-    opacity: 0.8;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.25;
   }
 
   50% {
-    transform: translate3d(20px, -35px, 0) scale(1.2);
-    opacity: 1;
-  }
-
-  80% {
-    opacity: 0.45;
+    transform: translate3d(0, -14px, 0);
+    opacity: 0.85;
   }
 }
 
 /* =====================================================
-   Shooting Light Streaks
+   HERO — Orbit Dots
+===================================================== */
+
+.hero-orbit-dot {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 9999px;
+  background: rgba(103, 232, 249, 0.8);
+  box-shadow:
+    0 0 8px rgba(34, 211, 238, 0.6),
+    0 0 18px rgba(34, 211, 238, 0.2);
+
+  animation: orbitDotPulse 4s ease-in-out infinite;
+}
+
+/* ---------- Orbit Dot Positions ---------- */
+
+.hod-1 {
+  left: 25%;
+  top: 31%;
+}
+
+.hod-2 {
+  left: 72%;
+  top: 27%;
+  animation-delay: -1s;
+}
+
+.hod-3 {
+  left: 18%;
+  top: 52%;
+  animation-delay: -2s;
+}
+
+.hod-4 {
+  left: 82%;
+  top: 48%;
+  animation-delay: -3s;
+}
+
+.hod-5 {
+  left: 34%;
+  top: 68%;
+  animation-delay: -1.5s;
+}
+
+.hod-6 {
+  left: 67%;
+  top: 70%;
+  animation-delay: -2.5s;
+}
+
+/* ---------- Orbit Dot Pulse ---------- */
+
+@keyframes orbitDotPulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 0.95;
+    transform: scale(1.35);
+  }
+}
+
+/* =====================================================
+   HERO — Orbital Rotation
+===================================================== */
+
+@keyframes orbitSlow {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* =====================================================
+   HERO — Shooting Light Streaks
 ===================================================== */
 
 .hero-streak {
@@ -277,12 +457,14 @@ a {
   width: 80px;
   height: 1px;
   border-radius: 999px;
+
   background: linear-gradient(
     90deg,
     transparent,
     rgba(56, 189, 248, 0.8),
     transparent
   );
+
   opacity: 0;
   transform: rotate(-25deg);
   animation: streakMove 6s linear infinite;
@@ -336,6 +518,11 @@ a {
     height: 2px;
   }
 
+  .hero-orbit-dot {
+    width: 2px;
+    height: 2px;
+  }
+
   .hero-streak {
     width: 45px;
   }
@@ -346,13 +533,21 @@ a {
 }
 
 /* =====================================================
-   Accessibility
+   Accessibility — Reduced Motion
 ===================================================== */
 
 @media (prefers-reduced-motion: reduce) {
   .neural-wave,
   .hero-particle,
-  .hero-streak {
+  .hero-streak,
+  .hero-orbit-dot {
+    animation: none !important;
+  }
+
+  [class*="animate-[orbitSlow"],
+  [class*="animate-[energyLeft"],
+  [class*="animate-[energyRight"],
+  [class*="animate-[corePulse"] {
     animation: none !important;
   }
 }

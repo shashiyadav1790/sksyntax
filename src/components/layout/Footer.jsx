@@ -182,6 +182,43 @@ export default function Footer() {
               for businesses that want to grow online.
             </p>
 
+            {/* ==================== CONTACT & LOCATION ==================== */}
+
+<div className="mt-7 space-y-3 text-[13px] leading-6 text-white/40">
+
+  <div>
+    <span className="block text-[10px] font-semibold uppercase tracking-[0.18em] text-cyan-400/70">
+      Location
+    </span>
+
+    <p className="mt-1">
+      Sindoor, Hazaribagh, Jharkhand, India
+    </p>
+  </div>
+
+  <div>
+    <span className="block text-[10px] font-semibold uppercase tracking-[0.18em] text-cyan-400/70">
+      Contact
+    </span>
+
+    <a
+      href="tel:+918809306328"
+      className="
+        mt-1
+        inline-block
+        text-white/55
+        transition-colors
+        duration-300
+        hover:text-cyan-300
+      "
+      aria-label="Call SKSyntax at 8809306328"
+    >
+      +91 88093 06328
+    </a>
+  </div>
+
+</div>
+
             {/* CTA */}
 
             <Link
