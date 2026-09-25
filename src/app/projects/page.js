@@ -13,7 +13,17 @@ const projects = [
     gradient: "from-cyan-400/20 via-blue-500/10 to-violet-500/20",
   },
   {
-    number: "02",
+  number: "02",
+  category: "E-Commerce Concept",
+  title: "UrbanNest",
+  description:
+    "A premium e-commerce concept designed around product collections, category browsing, promotional sections, and a polished responsive shopping experience.",
+  image: "/projects/urbannest.webp",
+  gradient: "from-blue-400/20 via-indigo-500/10 to-violet-500/20",
+  concept: true,
+},
+  {
+    number: "03",
     category: "Web Development",
     title: "Flyronex",
     description:
@@ -22,6 +32,17 @@ const projects = [
     image: "/projects/flyronex.webp",
     gradient: "from-blue-400/20 via-cyan-500/10 to-indigo-500/20",
   },
+{
+  number: "04",
+  category: "E-Commerce Concept",
+  title: "NexaCart",
+  description:
+    "A modern e-commerce concept focused on product discovery, clean navigation, responsive shopping experiences, and conversion-friendly interface design.",
+  image: "/projects/nexacart.webp",
+  gradient: "from-cyan-400/20 via-blue-500/10 to-indigo-500/20",
+  concept: true,
+},
+
 ];
 
 export const metadata = {
@@ -155,9 +176,9 @@ export default function ProjectsPage() {
                   </span>
 
                   {/* Label */}
-                  <span className="absolute right-6 top-6 z-10 rounded-full border border-white/10 bg-black/30 px-3 py-1.5 text-[10px] font-medium uppercase tracking-wider text-white/55 backdrop-blur-md">
-                    Live Project
-                  </span>
+                 <span className="absolute right-6 top-6 z-10 rounded-full border border-white/10 bg-black/30 px-3 py-1.5 text-[10px] font-medium uppercase tracking-wider text-white/55 backdrop-blur-md">
+  {project.concept ? "In Development" : "Live Project"}
+</span>
                 </div>
 
                 {/* Content */}
