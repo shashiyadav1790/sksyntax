@@ -17,7 +17,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/[0.06] bg-[#05070a]/85 backdrop-blur-[22px]">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/[0.06] bg-[#0B0E12]/85 backdrop-blur-[22px]">
       <nav className="mx-auto flex h-[68px] w-full max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:px-8">
 
         {/* ==================== LOGO ==================== */}

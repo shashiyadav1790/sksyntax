@@ -75,64 +75,24 @@ export default function WhyChooseUs() {
             {benefits.map((benefit) => (
               <div
                 key={benefit.number}
-                className="
-                  group relative overflow-hidden rounded-2xl
-                  border border-cyan-400/[0.09]
-                  bg-gradient-to-br
-                  from-cyan-400/[0.045]
-                  via-white/[0.02]
-                  to-blue-500/[0.04]
-                  p-6
-                  shadow-[inset_0_1px_0_rgba(255,255,255,0.045),0_15px_50px_rgba(0,0,0,0.18)]
-                  backdrop-blur-xl
-                  transition-all duration-500
+               className="
+  group relative overflow-hidden rounded-2xl
+  border border-white/[0.08]
+  bg-white/[0.025]
+  p-6
+  shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_20px_60px_rgba(0,0,0,0.25)]
+  backdrop-blur-xl
+  transition-all duration-500
 
-                  hover:-translate-y-1
-                  hover:border-cyan-300/25
-                  hover:from-cyan-400/[0.07]
-                  hover:via-white/[0.035]
-                  hover:to-blue-500/[0.07]
-                  hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_25px_65px_rgba(0,0,0,0.3)]
+  hover:-translate-y-2
+  hover:border-cyan-400/20
+  hover:bg-white/[0.04]
+  hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_25px_70px_rgba(0,0,0,0.35)]
 
-                  sm:p-7
-                "
+  sm:p-7
+"
               >
-                {/* Permanent Cyan Glow */}
-                <span
-                  aria-hidden="true"
-                  className="
-                    pointer-events-none absolute
-                    left-[-60px] top-[-60px]
-                    h-36 w-36 rounded-full
-                    bg-cyan-400/[0.055]
-                    blur-[65px]
-                  "
-                />
-
-                {/* Permanent Blue Glow */}
-                <span
-                  aria-hidden="true"
-                  className="
-                    pointer-events-none absolute
-                    bottom-[-70px] right-[-70px]
-                    h-40 w-40 rounded-full
-                    bg-blue-500/[0.055]
-                    blur-[70px]
-                  "
-                />
-
-                {/* Top Highlight */}
-                <span
-                  aria-hidden="true"
-                  className="
-                    pointer-events-none absolute
-                    inset-x-6 top-0 h-px
-                    bg-gradient-to-r
-                    from-transparent
-                    via-cyan-300/35
-                    to-transparent
-                  "
-                />
+         
 
                 <div className="relative z-10">
                   {/* Top Row */}

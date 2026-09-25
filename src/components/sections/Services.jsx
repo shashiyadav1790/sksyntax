@@ -73,64 +73,24 @@ export default function Services() {
             <Link
               key={service.number}
               href={service.href}
-              className="
-                group relative overflow-hidden rounded-2xl
-                border border-cyan-400/[0.10]
-                bg-gradient-to-br
-                from-cyan-400/[0.055]
-                via-white/[0.025]
-                to-blue-500/[0.045]
-                p-6
-                shadow-[inset_0_1px_0_rgba(255,255,255,0.05),0_15px_50px_rgba(0,0,0,0.20)]
-                backdrop-blur-xl
-                transition-all duration-500
+        className="
+  group relative overflow-hidden rounded-2xl
+  border border-white/[0.08]
+  bg-white/[0.025]
+  p-6
+  shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_20px_60px_rgba(0,0,0,0.25)]
+  backdrop-blur-xl
+  transition-all duration-500
 
-                hover:-translate-y-1
-                hover:border-cyan-300/25
-                hover:from-cyan-400/[0.08]
-                hover:via-white/[0.04]
-                hover:to-blue-500/[0.08]
-                hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_25px_70px_rgba(0,0,0,0.35)]
+  hover:-translate-y-2
+  hover:border-cyan-400/20
+  hover:bg-white/[0.04]
+  hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_25px_70px_rgba(0,0,0,0.35)]
 
-                sm:p-8
-              "
+  sm:p-8
+"
             >
-              {/* Permanent soft glow */}
-              <span
-                aria-hidden="true"
-                className="
-                  pointer-events-none absolute
-                  left-[-70px] top-[-70px]
-                  h-44 w-44 rounded-full
-                  bg-cyan-400/[0.055]
-                  blur-[65px]
-                "
-              />
-
-              {/* Bottom blue glow */}
-              <span
-                aria-hidden="true"
-                className="
-                  pointer-events-none absolute
-                  bottom-[-90px] right-[-70px]
-                  h-48 w-48 rounded-full
-                  bg-blue-500/[0.06]
-                  blur-[75px]
-                "
-              />
-
-              {/* Top shine */}
-              <span
-                aria-hidden="true"
-                className="
-                  pointer-events-none absolute
-                  inset-x-8 top-0 h-px
-                  bg-gradient-to-r
-                  from-transparent
-                  via-cyan-300/40
-                  to-transparent
-                "
-              />
+           
 
               {/* Content */}
               <div className="relative z-10">

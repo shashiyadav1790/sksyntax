@@ -157,44 +157,28 @@ export default function Trust() {
               {trustPoints.map((point) => (
                 <article
                   key={point.number}
-                  className="
-                    group
-                    relative
-                    overflow-hidden
-                    rounded-2xl
-                    border
-                    border-white/[0.08]
-                    bg-white/[0.035]
-                    p-5
-                    shadow-[inset_0_1px_0_rgba(255,255,255,0.035)]
-                    transition-all
-                    duration-500
-                    hover:-translate-y-1
-                    hover:border-cyan-400/25
-                    hover:bg-white/[0.05]
-                    hover:shadow-[0_18px_45px_rgba(0,0,0,0.28)]
-                    active:scale-[0.99]
-                    sm:p-6
-                  "
+                className="
+  group
+  relative
+  overflow-hidden
+  rounded-2xl
+  border
+  border-white/[0.08]
+  bg-white/[0.025]
+  p-5
+  shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_20px_60px_rgba(0,0,0,0.25)]
+  backdrop-blur-xl
+  transition-all
+  duration-500
+  hover:-translate-y-2
+  hover:border-cyan-400/20
+  hover:bg-white/[0.04]
+  hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_25px_70px_rgba(0,0,0,0.35)]
+  active:scale-[0.99]
+  sm:p-6
+"
                 >
-                  {/* Always Visible Card Glow */}
-                  <div
-                    aria-hidden="true"
-                    className="
-                      pointer-events-none
-                      absolute
-                      left-[-35px]
-                      top-[-35px]
-                      h-28
-                      w-28
-                      rounded-full
-                      bg-cyan-400/[0.045]
-                      blur-[55px]
-                      transition-all
-                      duration-500
-                      group-hover:bg-cyan-400/[0.09]
-                    "
-                  />
+              
 
                   {/* Number + Indicator */}
                   <div className="relative flex items-center justify-between">
@@ -295,24 +279,7 @@ export default function Trust() {
                     "
                   />
 
-                  {/* Corner Accent */}
-                  <span
-                    aria-hidden="true"
-                    className="
-                      pointer-events-none
-                      absolute
-                      bottom-[-55px]
-                      right-[-55px]
-                      h-28
-                      w-28
-                      rounded-full
-                      bg-blue-500/[0.035]
-                      blur-[55px]
-                      transition-all
-                      duration-500
-                      group-hover:bg-blue-500/[0.08]
-                    "
-                  />
+            
                 </article>
               ))}
             </div>

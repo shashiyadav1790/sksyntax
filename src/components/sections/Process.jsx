@@ -96,67 +96,24 @@ export default function Process() {
             {processSteps.map((step, index) => (
               <div
                 key={step.number}
-                className="
-                  group
-                  relative
-                  overflow-hidden
-                  rounded-2xl
-                  border
-                  border-white/[0.08]
-                  bg-gradient-to-br
-                  from-white/[0.045]
-                  via-white/[0.018]
-                  to-white/[0.01]
-                  p-6
-                  shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_18px_55px_rgba(0,0,0,0.22)]
-                  backdrop-blur-xl
-                  transition-all
-                  duration-500
-                  hover:-translate-y-1
-                  hover:border-cyan-400/20
-                  hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.07),0_22px_65px_rgba(0,0,0,0.30)]
-                  sm:p-7
-                  lg:p-8
-                "
+           className="
+  group relative overflow-hidden rounded-2xl
+  border border-white/[0.08]
+  bg-white/[0.025]
+  p-6
+  shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_20px_60px_rgba(0,0,0,0.25)]
+  backdrop-blur-xl
+  transition-all duration-500
+
+  hover:-translate-y-2
+  hover:border-cyan-400/20
+  hover:bg-white/[0.04]
+  hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_25px_70px_rgba(0,0,0,0.35)]
+
+  sm:p-7
+"
               >
 
-                {/* ==================== CARD GLOW ==================== */}
-
-                <div
-                  aria-hidden="true"
-                  className="
-                    pointer-events-none
-                    absolute
-                    -right-16
-                    -top-16
-                    h-40
-                    w-40
-                    rounded-full
-                    bg-cyan-400/[0.055]
-                    blur-[70px]
-                    transition-all
-                    duration-700
-                    group-hover:bg-cyan-400/[0.10]
-                  "
-                />
-
-                <div
-                  aria-hidden="true"
-                  className="
-                    pointer-events-none
-                    absolute
-                    -bottom-20
-                    -left-20
-                    h-36
-                    w-36
-                    rounded-full
-                    bg-blue-500/[0.035]
-                    blur-[65px]
-                    transition-all
-                    duration-700
-                    group-hover:bg-blue-500/[0.08]
-                  "
-                />
 
                 {/* ==================== NUMBER ==================== */}
 
