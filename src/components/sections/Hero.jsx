@@ -413,7 +413,6 @@ export default function Hero() {
     sm:py-3
   "
 >
-  {/* Dot */}
   <span
     aria-hidden="true"
     className="
@@ -427,27 +426,40 @@ export default function Hero() {
     "
   />
 
-  {/* Moving Services */}
-  <div className="relative max-w-[240px] overflow-hidden sm:max-w-[360px]">
+  <div className="relative max-w-[230px] overflow-hidden sm:max-w-[360px] md:max-w-[430px]">
     <div className="hero-eyebrow-track">
-      <span>Web Development</span>
-      <span>·</span>
-      <span>SEO</span>
-      <span>·</span>
-      <span>Meta Ads</span>
-      <span>·</span>
-      <span>Google Ads</span>
-      <span>·</span>
+      <span
+        className="
+          whitespace-nowrap
+          text-[9px]
+          font-semibold
+          uppercase
+          tracking-[0.14em]
+          text-white/55
+          sm:text-xs
+          sm:tracking-[0.2em]
+          md:text-sm
+        "
+      >
+        Web Development · SEO · Meta Ads · Google Ads ·
+      </span>
 
-      {/* Duplicate for seamless loop */}
-      <span>Web Development</span>
-      <span>·</span>
-      <span>SEO</span>
-      <span>·</span>
-      <span>Meta Ads</span>
-      <span>·</span>
-      <span>Google Ads</span>
-      <span>·</span>
+      <span
+        aria-hidden="true"
+        className="
+          whitespace-nowrap
+          text-[9px]
+          font-semibold
+          uppercase
+          tracking-[0.14em]
+          text-white/55
+          sm:text-xs
+          sm:tracking-[0.2em]
+          md:text-sm
+        "
+      >
+        Web Development · SEO · Meta Ads · Google Ads ·
+      </span>
     </div>
   </div>
 </div>

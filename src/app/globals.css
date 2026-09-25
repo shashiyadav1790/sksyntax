@@ -553,17 +553,10 @@ a {
 }
 
 .hero-eyebrow-track {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
+  display: flex;
   width: max-content;
-  white-space: nowrap;
   animation: heroEyebrowMarquee 18s linear infinite;
   will-change: transform;
-}
-
-.hero-eyebrow-track span {
-  flex-shrink: 0;
 }
 
 @keyframes heroEyebrowMarquee {
