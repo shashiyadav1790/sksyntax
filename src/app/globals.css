@@ -551,3 +551,27 @@ a {
     animation: none !important;
   }
 }
+
+.hero-eyebrow-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: max-content;
+  white-space: nowrap;
+  animation: heroEyebrowMarquee 18s linear infinite;
+  will-change: transform;
+}
+
+.hero-eyebrow-track span {
+  flex-shrink: 0;
+}
+
+@keyframes heroEyebrowMarquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

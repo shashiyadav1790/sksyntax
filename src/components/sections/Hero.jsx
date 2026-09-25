@@ -394,55 +394,63 @@ export default function Hero() {
           {/* =====================================================
               EYEBROW
           ===================================================== */}
+<div
+  className="
+    mx-auto
+    inline-flex
+    max-w-full
+    items-center
+    gap-2.5
+    rounded-full
+    border
+    border-white/[0.10]
+    bg-white/[0.035]
+    px-4
+    py-2.5
+    shadow-[inset_0_1px_0_rgba(255,255,255,0.07),0_12px_40px_rgba(0,0,0,0.22)]
+    backdrop-blur-2xl
+    sm:px-5
+    sm:py-3
+  "
+>
+  {/* Dot */}
+  <span
+    aria-hidden="true"
+    className="
+      relative
+      h-1.5
+      w-1.5
+      shrink-0
+      rounded-full
+      bg-cyan-300
+      shadow-[0_0_14px_4px_rgba(34,211,238,0.25)]
+    "
+  />
 
-          <div
-            className="
-              mx-auto
-              inline-flex
-              max-w-full
-              items-center
-              gap-2.5
-              rounded-full
-              border
-              border-white/[0.10]
-              bg-white/[0.035]
-              px-4
-              py-2.5
-              shadow-[inset_0_1px_0_rgba(255,255,255,0.07),0_12px_40px_rgba(0,0,0,0.22)]
-              backdrop-blur-2xl
-              sm:px-5
-              sm:py-3
-            "
-          >
-            <span
-              aria-hidden="true"
-              className="
-                relative
-                h-1.5
-                w-1.5
-                shrink-0
-                rounded-full
-                bg-cyan-300
-                shadow-[0_0_14px_4px_rgba(34,211,238,0.25)]
-              "
-            />
+  {/* Moving Services */}
+  <div className="relative max-w-[240px] overflow-hidden sm:max-w-[360px]">
+    <div className="hero-eyebrow-track">
+      <span>Web Development</span>
+      <span>·</span>
+      <span>SEO</span>
+      <span>·</span>
+      <span>Meta Ads</span>
+      <span>·</span>
+      <span>Google Ads</span>
+      <span>·</span>
 
-            <span
-              className="
-                whitespace-nowrap
-                text-[9px]
-                font-semibold
-                uppercase
-                tracking-[0.14em]
-                text-white/55
-                sm:text-xs
-                sm:tracking-[0.2em]
-                md:text-sm
-              "
-            >
-              Web Development · SEO · Paid Advertising
-            </span>
-          </div>
+      {/* Duplicate for seamless loop */}
+      <span>Web Development</span>
+      <span>·</span>
+      <span>SEO</span>
+      <span>·</span>
+      <span>Meta Ads</span>
+      <span>·</span>
+      <span>Google Ads</span>
+      <span>·</span>
+    </div>
+  </div>
+</div>
 
           {/* =====================================================
               HEADING
