@@ -70,13 +70,15 @@ export default function ProjectsPage() {
         {/* Background glow */}
         <div
           aria-hidden="true"
-          className="absolute left-1/2 top-0 -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-violet-600/[0.12] blur-[150px]"
+          className="absolute left-1/2 top-0 -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full  bg-cyan-400/[0.055] blur-[150px]"
         />
 
         <div
           aria-hidden="true"
-          className="absolute right-[5%] top-1/3 -z-10 h-[260px] w-[260px] rounded-full bg-cyan-400/[0.05] blur-[120px]"
+          className="absolute right-[5%] top-1/3 -z-10 h-[260px] w-[260px] rounded-full bg-blue-600/[0.045] blur-[120px]"
         />
+
+      
 
         <div className="mx-auto max-w-7xl">
           <div className="max-w-4xl">
