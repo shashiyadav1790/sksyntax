@@ -26,9 +26,9 @@ export default function Hero() {
       {/* =========================================================
           MOBILE
       ========================================================== */}
-      <div className="mx-auto mt-4 w-full max-w-7xl px-4 pb-24 pt-24 sm:px-6 sm:pb-28 sm:pt-28 lg:hidden">
+      <div className="mx-auto mt-11 w-full max-w-7xl px-4 pb-24 pt-12 sm:px-6 sm:pb-28 sm:pt-14 lg:hidden">
         {/* SERVICES MARQUEE */}
-        <div className="mb-8 overflow-hidden">
+        <div className="mb-6 overflow-hidden">
           <div className="inline-flex h-8 max-w-full items-center overflow-hidden rounded-full border border-white/[0.07] bg-white/[0.02] px-2.5 backdrop-blur-xl">
             <div className="hero-eyebrow-track whitespace-nowrap text-[7px] font-medium tracking-[0.18em] text-white/40">
               <span>
@@ -47,7 +47,7 @@ export default function Hero() {
         {/* CONTENT */}
         <div className="mx-auto max-w-[620px] text-center">
           {/* BRAND LABEL */}
-          <div className="mb-7 text-[15px] font-medium uppercase tracking-[0.18em] text-white/40">
+          <div className="mb-6 text-[15px] font-medium uppercase tracking-[0.18em] text-white/40">
             SKSyntax
           </div>
 
@@ -57,13 +57,13 @@ export default function Hero() {
               Website Development
             </span>
 
-            <span className="mt-3 block bg-gradient-to-r from-[#65d9ee] to-[#7bb7ff] bg-clip-text text-transparent">
+            <span className="mt-4 block bg-gradient-to-r from-[#65d9ee] to-[#7bb7ff] bg-clip-text text-transparent">
               SEO &amp; Digital Growth
             </span>
           </h1>
 
           {/* DESCRIPTION */}
-          <p className="mx-auto mt-4 max-w-[340px] text-center text-[11px] leading-[1.65] text-[#AEB8C2]">
+          <p className="mx-auto mt-4 max-w-[340px] text-center text-[10px] leading-[1.65] text-[#AEB8C2]">
             SKSyntax builds high-performance websites, improves SEO visibility,
             and runs targeted Meta Ads and Google Ads campaigns to help
             businesses grow online.
@@ -285,7 +285,7 @@ export default function Hero() {
       {/* =========================================================
           DESKTOP
       ========================================================== */}
-      <div className="mx-auto hidden min-h-[730px] w-full max-w-[1450px] items-center px-6 py-24 lg:grid lg:grid-cols-[0.88fr_1.12fr] lg:gap-10 xl:gap-12 2xl:px-10">
+      <div className="mx-auto hidden min-h-[730px] w-full max-w-[1450px] items-center px-6 py-12 lg:grid lg:grid-cols-[0.88fr_1.12fr] lg:gap-10 xl:gap-12 2xl:px-10">
         {/* LEFT */}
         <div className="relative z-20 min-w-0">
           {/* SERVICES MARQUEE */}

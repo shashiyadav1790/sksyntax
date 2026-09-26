@@ -42,7 +42,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 border-b border-white/[0.06] bg-[#0B0E12]/85 backdrop-blur-[22px] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+      className={`fixed inset-x-0 top-0 z-50  bg-[#0B0E12]/85 backdrop-blur-[22px] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
         hidden ? "-translate-y-full" : "translate-y-0"
       }`}
     >
@@ -65,7 +65,7 @@ export default function Navbar() {
       className="h-[62px] w-auto shrink-0 object-contain transition-transform duration-300 group-hover:scale-[1.03] sm:h-[66px] md:h-[68px]"
     />
 
-    <div className="-ml-1 flex min-w-0 items-center translate-y-[2px] sm:-ml-2 sm:translate-y-[3px]">
+    <div className="-ml-2 flex min-w-0 items-center translate-y-[4px] sm:-ml-2 sm:translate-y-[5px]">
       <div className="whitespace-nowrap text-[18px] font-bold leading-none tracking-[-0.02em] sm:text-[24px] sm:tracking-[-0.025em] md:text-[25px]">
         <span className="text-[#F0F4F7]">SK</span>
         <span className="bg-gradient-to-r from-[#65d9ee] via-[#68cce8] to-[#7bb7ff] bg-clip-text text-transparent">
