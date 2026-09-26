@@ -21,7 +21,7 @@ const organizationSchema = {
   name: "SKSyntax",
   alternateName: "SK Syntax",
   url: "https://www.sksyntax.com",
-  logo: "https://www.sksyntax.com/logo.png",
+  logo: "https://www.sksyntax.com/sklogo.png",
   description:
     "SKSyntax provides professional website development, SEO, Meta Ads, and Google Ads solutions to help businesses grow online.",
   sameAs: [

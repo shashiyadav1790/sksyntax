@@ -160,7 +160,7 @@ export const blogs = [
   description:
     "A practical guide to understanding SEO, improving your website's search visibility, and attracting relevant visitors without relying on shortcuts.",
   category: "SEO",
-  date: "2026-09-17",
+  date: "2026-09-01",
   author: "SKSyntax",
 
   sections: [
@@ -338,7 +338,7 @@ export const blogs = [
   description:
     "A practical guide to using Meta Ads on Facebook and Instagram to reach relevant audiences, generate enquiries, and build a more effective paid advertising strategy.",
   category: "Meta Ads",
-  date: "2026-09-17",
+  date: "2026-08-29",
   author: "SKSyntax",
 
   sections: [
@@ -495,7 +495,7 @@ export const blogs = [
   description:
     "A practical guide to using Google Ads to reach people actively searching for your products or services and turn relevant searches into business enquiries.",
   category: "Google Ads",
-  date: "2026-09-17",
+  date: "2026-09-22",
   author: "SKSyntax",
 
   sections: [

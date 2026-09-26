@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 
 const platforms = [
@@ -134,22 +133,22 @@ export const metadata = {
 
 export default function PaidAdvertisingPage() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#05070a] pt-20 text-white">
+    <main className="min-h-screen overflow-hidden bg-[#0B0E12] pt-20 text-[#F0F4F7]">
       {/* Ambient Background */}
       <div
         aria-hidden="true"
         className="pointer-events-none fixed inset-0 -z-20 overflow-hidden"
       >
-        <div className="absolute left-[8%] top-[5%] h-[500px] w-[500px] rounded-full bg-blue-600/[0.08] blur-[140px]" />
-        <div className="absolute right-[5%] top-[28%] h-[450px] w-[450px] rounded-full bg-cyan-400/[0.045] blur-[140px]" />
-        <div className="absolute bottom-[5%] left-[35%] h-[500px] w-[500px] rounded-full bg-indigo-600/[0.06] blur-[150px]" />
+        <div className="absolute left-[8%] top-[5%] h-[500px] w-[500px] rounded-full bg-blue-500/[0.035] blur-[140px]" />
+        <div className="absolute right-[5%] top-[28%] h-[450px] w-[450px] rounded-full bg-cyan-400/[0.025] blur-[140px]" />
+        <div className="absolute bottom-[5%] left-[35%] h-[500px] w-[500px] rounded-full bg-blue-500/[0.025] blur-[150px]" />
       </div>
 
       {/* Hero */}
       <section className="relative overflow-hidden px-6 py-24 sm:py-32 lg:px-8">
         <div
           aria-hidden="true"
-          className="absolute left-1/2 top-10 -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-gradient-to-r from-cyan-400/[0.07] via-blue-500/[0.08] to-indigo-500/[0.07] blur-[120px]"
+          className="absolute left-1/2 top-10 -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-gradient-to-r from-cyan-400/[0.035] via-blue-500/[0.045] to-cyan-400/[0.025] blur-[120px]"
         />
 
         <div className="mx-auto max-w-7xl">
@@ -161,58 +160,37 @@ export default function PaidAdvertisingPage() {
 
             <h1 className="mt-7 text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
               Reach the right people
-              <span className="block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#65d9ee] to-[#7bb7ff] bg-clip-text text-transparent">
                 at the right moment.
               </span>
             </h1>
 
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-zinc-400 sm:text-xl">
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-[#AEB8C2] sm:text-xl">
               Build focused advertising campaigns across Meta and Google with
               a strategy based on your business goals, audience, offer, and
               available data.
             </p>
 
-             {/* CTA */}
-          <div className="mt-9 flex w-full flex-col items-center  gap-3 px-2 sm:mt-10 sm:flex-row sm:gap-4 sm:px-0">
+            {/* CTA */}
+            <div className="mt-9 flex w-full flex-col items-center gap-3 px-2 sm:mt-10 sm:flex-row sm:gap-4 sm:px-0">
+              <Link
+  href="/contact"
+  className="group relative flex w-full max-w-sm items-center justify-center gap-2 overflow-hidden rounded-full bg-[#F0F4F7] px-5 py-3 text-[13px] font-semibold text-[#0B0E12] shadow-[0_10px_35px_rgba(79,182,214,0.10)] transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_14px_40px_rgba(79,182,214,0.18)] sm:w-auto sm:max-w-none sm:px-[20px] sm:py-[11px]"
+>
+  <span className="relative z-10 !text-[#0B0E12]">Discuss Your Campaign</span>
 
-            {/* Primary CTA */}
-            <Link
-              href="/contact"
-              className="group relative flex w-full max-w-sm items-center justify-center gap-2 overflow-hidden rounded-full border border-white/10 bg-white/[0.06] px-5 py-3 text-[13px] font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_8px_30px_rgba(0,0,0,0.25)] transition-all duration-400 hover:-translate-y-[2px] hover:border-cyan-400/30 hover:bg-white/[0.10] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_12px_40px_rgba(22,130,255,0.18)] sm:w-auto sm:max-w-none sm:px-[20px] sm:py-[11px]"
-            >
-              {/* Moving Light */}
-              <span
-                aria-hidden="true"
-                className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/[0.14] to-transparent transition-transform duration-700 group-hover:translate-x-full"
-              />
+  <span className="relative z-10 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#0B0E12] text-[11px] !text-white transition-transform duration-300 group-hover:translate-x-1">
+    →
+  </span>
+</Link>
 
-              <span className="relative z-10">
-                Discuss Your Campaign
-              </span>
-
-              {/* Arrow */}
-              <span className="relative z-10 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 text-[11px] text-white transition-transform duration-300 group-hover:translate-x-1">
-                →
-              </span>
-            </Link>
-
-            {/* Secondary CTA */}
-            <Link
-              href="/services"
-              className="group relative flex w-full max-w-sm items-center justify-center overflow-hidden rounded-full border border-white/[0.10] bg-white/[0.025] px-7 py-3 text-[13px] font-semibold text-white/65 backdrop-blur-xl transition-all duration-400 hover:-translate-y-[2px] hover:border-cyan-400/25 hover:bg-white/[0.06] hover:text-white hover:shadow-[0_10px_35px_rgba(34,211,238,0.10)] sm:w-auto sm:max-w-none"
-            >
-              {/* Moving Light */}
-              <span
-                aria-hidden="true"
-                className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-cyan-300/[0.08] to-transparent transition-transform duration-700 group-hover:translate-x-full"
-              />
-
-              <span className="relative z-10">
-                Explore Services
-              </span>
-            </Link>
-          </div>
-
+              <Link
+                href="/services"
+                className="group relative flex w-full max-w-sm items-center justify-center overflow-hidden rounded-full border border-white/[0.08] bg-white/[0.025] px-7 py-3 text-[13px] font-semibold text-[#AEB8C2] backdrop-blur-xl transition-all duration-300 hover:-translate-y-[2px] hover:border-cyan-400/25 hover:bg-white/[0.045] hover:text-[#F0F4F7] sm:w-auto sm:max-w-none"
+              >
+                <span className="relative z-10">Explore Services</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -227,12 +205,12 @@ export default function PaidAdvertisingPage() {
 
             <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
               Two platforms.
-              <span className="block bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#65d9ee] to-[#7bb7ff] bg-clip-text text-transparent">
                 Different opportunities.
               </span>
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-zinc-400">
+            <p className="mt-6 text-lg leading-8 text-[#AEB8C2]">
               Meta and Google work differently. The right platform depends on
               how your customers discover, evaluate, and purchase your offer.
             </p>
@@ -243,7 +221,7 @@ export default function PaidAdvertisingPage() {
               <Link
                 key={platform.number}
                 href={platform.href}
-                className="group relative overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.025] p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.04] hover:shadow-[0_20px_80px_rgba(37,99,235,0.10)] sm:p-10"
+                className="group relative overflow-hidden rounded-3xl border border-white/[0.07] bg-white/[0.025] p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.04] hover:shadow-[0_20px_80px_rgba(79,182,214,0.07)] sm:p-10"
               >
                 <div
                   aria-hidden="true"
@@ -252,7 +230,7 @@ export default function PaidAdvertisingPage() {
 
                 <div
                   aria-hidden="true"
-                  className="absolute -right-24 -top-24 h-48 w-48 rounded-full bg-blue-500/[0.06] blur-[70px] transition-all duration-500 group-hover:bg-cyan-400/[0.10]"
+                  className="absolute -right-24 -top-24 h-48 w-48 rounded-full bg-cyan-400/[0.035] blur-[70px] transition-all duration-500 group-hover:bg-cyan-400/[0.07]"
                 />
 
                 <div className="relative">
@@ -261,7 +239,7 @@ export default function PaidAdvertisingPage() {
                       {platform.number}
                     </span>
 
-                    <span className="text-xl text-zinc-600 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-cyan-300">
+                    <span className="text-xl text-white/25 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-cyan-300">
                       ↗
                     </span>
                   </div>
@@ -270,7 +248,7 @@ export default function PaidAdvertisingPage() {
                     {platform.title}
                   </h3>
 
-                  <p className="mt-4 max-w-xl leading-7 text-zinc-400">
+                  <p className="mt-4 max-w-xl leading-7 text-[#AEB8C2]">
                     {platform.description}
                   </p>
 
@@ -278,21 +256,20 @@ export default function PaidAdvertisingPage() {
                     {platform.points.map((point) => (
                       <li
                         key={point}
-                        className="flex items-center gap-3 text-sm text-zinc-300"
+                        className="flex items-center gap-3 text-sm text-[#AEB8C2]"
                       >
                         <span
                           aria-hidden="true"
-                          className="flex h-5 w-5 items-center justify-center rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] text-xs text-cyan-300"
+                          className="flex h-5 w-5 items-center justify-center rounded-full border border-cyan-400/20 bg-cyan-400/[0.05] text-xs text-cyan-300"
                         >
                           ✓
                         </span>
-
                         {point}
                       </li>
                     ))}
                   </ul>
 
-                  <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-white transition-colors duration-300 group-hover:text-cyan-300">
+                  <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-[#F0F4F7] transition-colors duration-300 group-hover:text-cyan-300">
                     Explore {platform.title}
                     <span className="transition-transform duration-300 group-hover:translate-x-1">
                       →
@@ -315,13 +292,13 @@ export default function PaidAdvertisingPage() {
 
             <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
               Advertising with a
-              <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#65d9ee] to-[#7bb7ff] bg-clip-text text-transparent">
                 {" "}
                 purpose.
               </span>
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-zinc-400">
+            <p className="mt-6 text-lg leading-8 text-[#AEB8C2]">
               Paid advertising works best when campaign decisions are tied to
               clear business objectives, measurable actions, and continuous
               learning.
@@ -332,11 +309,11 @@ export default function PaidAdvertisingPage() {
             {benefits.map((benefit) => (
               <div
                 key={benefit.number}
-                className="group relative overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.02] p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/20 hover:bg-white/[0.035]"
+                className="group relative overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.02] p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.035]"
               >
                 <div
                   aria-hidden="true"
-                  className="absolute inset-x-7 bottom-0 h-px bg-gradient-to-r from-transparent via-blue-400/50 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  className="absolute inset-x-7 bottom-0 h-px bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                 />
 
                 <span className="text-sm font-medium text-cyan-300">
@@ -347,7 +324,7 @@ export default function PaidAdvertisingPage() {
                   {benefit.title}
                 </h3>
 
-                <p className="mt-3 leading-7 text-zinc-400">
+                <p className="mt-3 leading-7 text-[#AEB8C2]">
                   {benefit.description}
                 </p>
               </div>
@@ -366,7 +343,7 @@ export default function PaidAdvertisingPage() {
 
             <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
               From strategy to
-              <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#65d9ee] to-[#7bb7ff] bg-clip-text text-transparent">
                 {" "}
                 optimization.
               </span>
@@ -377,11 +354,11 @@ export default function PaidAdvertisingPage() {
             {process.map((step) => (
               <div
                 key={step.number}
-                className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.04] hover:shadow-[0_18px_60px_rgba(37,99,235,0.08)]"
+                className="group relative overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.025] p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.04] hover:shadow-[0_18px_60px_rgba(79,182,214,0.07)]"
               >
                 <div
                   aria-hidden="true"
-                  className="absolute right-0 top-0 h-24 w-24 rounded-full bg-cyan-400/[0.04] blur-[45px] transition-all duration-500 group-hover:bg-cyan-400/[0.08]"
+                  className="absolute right-0 top-0 h-24 w-24 rounded-full bg-cyan-400/[0.025] blur-[45px] transition-all duration-500 group-hover:bg-cyan-400/[0.06]"
                 />
 
                 <div className="relative">
@@ -393,7 +370,7 @@ export default function PaidAdvertisingPage() {
                     {step.title}
                   </h3>
 
-                  <p className="mt-3 leading-7 text-zinc-400">
+                  <p className="mt-3 leading-7 text-[#AEB8C2]">
                     {step.description}
                   </p>
                 </div>
@@ -415,13 +392,13 @@ export default function PaidAdvertisingPage() {
               Common questions.
             </h2>
 
-            <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-zinc-400">
+            <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#AEB8C2]">
               Clear answers about platforms, campaign strategy, measurement,
               and paid advertising management.
             </p>
           </div>
 
-          <div className="mt-14 overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.02] backdrop-blur-xl">
+          <div className="mt-14 overflow-hidden rounded-3xl border border-white/[0.07] bg-white/[0.02] backdrop-blur-xl">
             {faqs.map((faq, index) => (
               <details
                 key={faq.question}
@@ -436,13 +413,13 @@ export default function PaidAdvertisingPage() {
 
                   <span
                     aria-hidden="true"
-                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/10 text-xl font-light text-zinc-500 transition-all duration-300 group-open:rotate-45 group-open:border-cyan-400/30 group-open:text-cyan-300"
+                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/10 text-xl font-light text-white/35 transition-all duration-300 group-open:rotate-45 group-open:border-cyan-400/30 group-open:text-cyan-300"
                   >
                     +
                   </span>
                 </summary>
 
-                <p className="max-w-3xl px-6 pb-7 pr-12 leading-7 text-zinc-400 sm:px-8">
+                <p className="max-w-3xl px-6 pb-7 pr-12 leading-7 text-[#AEB8C2] sm:px-8">
                   {faq.answer}
                 </p>
               </details>
@@ -453,10 +430,10 @@ export default function PaidAdvertisingPage() {
 
       {/* CTA */}
       <section className="border-t border-white/[0.07] px-6 py-24 sm:py-32 lg:px-8">
-        <div className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.025] px-6 py-16 text-center backdrop-blur-xl sm:px-12">
+        <div className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-white/[0.07] bg-white/[0.025] px-6 py-16 text-center backdrop-blur-xl sm:px-12">
           <div
             aria-hidden="true"
-            className="absolute left-1/2 top-0 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/[0.10] blur-[90px]"
+            className="absolute left-1/2 top-0 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/[0.05] blur-[90px]"
           />
 
           <div className="relative">
@@ -466,43 +443,31 @@ export default function PaidAdvertisingPage() {
 
             <h2 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">
               Ready to scale your
-              <span className="block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#65d9ee] to-[#7bb7ff] bg-clip-text text-transparent">
                 advertising?
               </span>
             </h2>
 
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#AEB8C2]">
               Let's discuss your goals, audience, offer, and advertising
               opportunities.
             </p>
 
-       
             <div className="mt-10">
-              <Link
-                href="/contact"
-                className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full border border-white/10 bg-white/[0.06] px-7 py-3.5 text-sm font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_8px_30px_rgba(0,0,0,0.25)] transition-all duration-400 hover:-translate-y-[2px] hover:border-cyan-400/30 hover:bg-white/[0.10] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_12px_40px_rgba(22,130,255,0.18)]"
-              >
-                {/* Moving Light */}
-                <span
-                  aria-hidden="true"
-                  className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/[0.14] to-transparent transition-transform duration-700 group-hover:translate-x-full"
-                />
+           <Link
+  href="/contact"
+  className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-[#F0F4F7] px-7 py-3.5 text-sm font-semibold text-[#0B0E12] shadow-[0_10px_35px_rgba(79,182,214,0.10)] transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_14px_40px_rgba(79,182,214,0.18)]"
+>
+  <span className="relative z-10 !text-[#0B0E12]">Start a Conversation</span>
 
-                <span className="relative z-10">
-                  Start a Conversation
-                </span>
-
-                {/* Arrow */}
-                <span className="relative z-10 flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 text-[11px] text-white transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </Link>
-              </div>
-            
+  <span className="relative z-10 flex h-5 w-5 items-center justify-center rounded-full bg-[#0B0E12] text-[11px] !text-white transition-transform duration-300 group-hover:translate-x-1">
+    →
+  </span>
+</Link>
+            </div>
           </div>
         </div>
       </section>
     </main>
   );
 }
-

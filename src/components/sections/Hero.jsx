@@ -2,796 +2,567 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#05070a] text-white">
+    <section className="relative isolate overflow-hidden bg-[#0B0E12] text-white">
       {/* =========================================================
-          PREMIUM HERO ATMOSPHERE
-      ========================================================= */}
-
+          BACKGROUND
+      ========================================================== */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
       >
-        {/* Base */}
-        <div className="absolute inset-0 bg-[#03050a]" />
+        <div className="absolute inset-0 bg-[#0B0E12]" />
 
-        {/* Large center light */}
-        <div
-          className="
-            absolute
-            left-1/2
-            top-[38%]
-            h-[360px]
-            w-[360px]
-            -translate-x-1/2
-            -translate-y-1/2
-            rounded-full
-            bg-cyan-400/[0.055]
-            blur-[120px]
-            sm:h-[560px]
-            sm:w-[560px]
-            sm:blur-[150px]
-            lg:h-[720px]
-            lg:w-[720px]
-            lg:bg-blue-500/[0.055]
-          "
-        />
+        <div className="absolute left-1/2 top-[32%] h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-cyan-400/[0.03] blur-[150px] sm:h-[540px] sm:w-[540px] lg:h-[680px] lg:w-[680px]" />
 
-        {/* Left ambient light */}
-        <div
-          className="
-            absolute
-            -left-[18%]
-            top-[18%]
-            h-[340px]
-            w-[340px]
-            rounded-full
-            bg-cyan-400/[0.055]
-            blur-[130px]
-            animate-[energyLeft_12s_ease-in-out_infinite]
-            sm:h-[500px]
-            sm:w-[500px]
-          "
-        />
+        <div className="absolute -left-[220px] top-[18%] h-[430px] w-[430px] rounded-full bg-cyan-400/[0.02] blur-[150px]" />
 
-        {/* Right ambient light */}
-        <div
-          className="
-            absolute
-            -right-[18%]
-            top-[22%]
-            h-[360px]
-            w-[360px]
-            rounded-full
-            bg-indigo-500/[0.05]
-            blur-[140px]
-            animate-[energyRight_14s_ease-in-out_infinite]
-            sm:h-[520px]
-            sm:w-[520px]
-          "
-        />
+        <div className="absolute -right-[220px] top-[25%] h-[470px] w-[470px] rounded-full bg-blue-500/[0.02] blur-[160px]" />
 
-        {/* =====================================================
-            SOFT HORIZONTAL LIGHT
-        ===================================================== */}
+        <div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-[#0B0E12] to-transparent" />
 
-        <div
-          className="
-            absolute
-            left-1/2
-            top-[47%]
-            h-px
-            w-[75%]
-            -translate-x-1/2
-            bg-gradient-to-r
-            from-transparent
-            via-cyan-300/25
-            to-transparent
-            blur-[2px]
-            sm:w-[65%]
-          "
-        />
-
-        <div
-          className="
-            absolute
-            left-1/2
-            top-[47%]
-            h-[100px]
-            w-[55%]
-            -translate-x-1/2
-            rounded-full
-            bg-cyan-400/[0.025]
-            blur-[60px]
-          "
-        />
-
-        {/* =====================================================
-            SUBTLE GRID
-        ===================================================== */}
-
-        <div
-          className="
-            absolute
-            inset-0
-            opacity-[0.035]
-            [background-image:linear-gradient(rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.12)_1px,transparent_1px)]
-            [background-size:72px_72px]
-            [mask-image:radial-gradient(ellipse_at_center,black_15%,transparent_72%)]
-          "
-        />
-
-        {/* =====================================================
-            PREMIUM ORBITAL SYSTEM
-        ===================================================== */}
-
-        {/* Large soft orbit */}
-        <div
-          className="
-            absolute
-            left-1/2
-            top-[42%]
-            h-[470px]
-            w-[470px]
-            -translate-x-1/2
-            -translate-y-1/2
-            rounded-full
-            border
-            border-cyan-300/[0.035]
-            animate-[orbitSlow_28s_linear_infinite]
-            sm:h-[640px]
-            sm:w-[640px]
-            lg:h-[760px]
-            lg:w-[760px]
-          "
-        />
-
-        {/* Large dashed orbit */}
-        <div
-          className="
-            absolute
-            left-1/2
-            top-[42%]
-            h-[390px]
-            w-[390px]
-            -translate-x-1/2
-            -translate-y-1/2
-            rounded-full
-            border
-            border-dashed
-            border-cyan-300/[0.055]
-            animate-[orbitSlow_38s_linear_infinite_reverse]
-            sm:h-[530px]
-            sm:w-[530px]
-            lg:h-[630px]
-            lg:w-[630px]
-          "
-        />
-
-        {/* Inner orbit */}
-        <div
-          className="
-            absolute
-            left-1/2
-            top-[42%]
-            h-[260px]
-            w-[260px]
-            -translate-x-1/2
-            -translate-y-1/2
-            rounded-full
-            border
-            border-white/[0.035]
-            animate-[orbitSlow_20s_linear_infinite]
-            sm:h-[350px]
-            sm:w-[350px]
-            lg:h-[430px]
-            lg:w-[430px]
-          "
-        />
-
-        {/* Premium glowing arc */}
-        <div
-          className="
-            absolute
-            left-1/2
-            top-[42%]
-            h-[500px]
-            w-[500px]
-            -translate-x-1/2
-            -translate-y-1/2
-            rounded-full
-            border-t
-            border-r
-            border-cyan-300/[0.13]
-            border-b-transparent
-            border-l-transparent
-            blur-[0.2px]
-            animate-[orbitSlow_18s_linear_infinite]
-            sm:h-[680px]
-            sm:w-[680px]
-            lg:h-[800px]
-            lg:w-[800px]
-          "
-        />
-
-        {/* Secondary indigo arc */}
-        <div
-          className="
-            absolute
-            left-1/2
-            top-[42%]
-            h-[330px]
-            w-[330px]
-            -translate-x-1/2
-            -translate-y-1/2
-            rounded-full
-            border-b
-            border-l
-            border-indigo-400/[0.10]
-            border-t-transparent
-            border-r-transparent
-            animate-[orbitSlow_15s_linear_infinite_reverse]
-            sm:h-[450px]
-            sm:w-[450px]
-            lg:h-[540px]
-            lg:w-[540px]
-          "
-        />
-
-        {/* Center core */}
-        <div
-          className="
-            absolute
-            left-1/2
-            top-[42%]
-            h-2.5
-            w-0.5
-            -translate-x-1/2
-            -translate-y-1/2
-            rounded-full
-            bg-cyan-300/70
-            shadow-[0_0_14px_4px_rgba(34,211,238,0.16),0_0_40px_8px_rgba(59,130,246,0.08)]
-            animate-[corePulse_4s_ease-in-out_infinite]
-            sm:h-3
-            sm:w-3
-            mt-6
-          "
-        />
-
-        {/* Orbit dots */}
-        <span className="hero-orbit-dot hod-1" />
-        <span className="hero-orbit-dot hod-2" />
-        <span className="hero-orbit-dot hod-3" />
-        <span className="hero-orbit-dot hod-4" />
-        <span className="hero-orbit-dot hod-5" />
-        <span className="hero-orbit-dot hod-6" />
-
-        {/* =====================================================
-            VERY SUBTLE WAVE SYSTEM
-        ===================================================== */}
-
-        <svg
-          aria-hidden="true"
-          className="
-            absolute
-            bottom-[-4%]
-            left-[-15%]
-            h-[40%]
-            w-[130%]
-            opacity-35
-            sm:h-[48%]
-            sm:opacity-45
-          "
-          viewBox="0 0 1600 700"
-          fill="none"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M-200 520
-               C120 250 270 700 530 430
-               C760 190 870 180 1080 400
-               C1280 610 1430 510 1800 190"
-            stroke="rgba(34,211,238,0.35)"
-            strokeWidth="1.5"
-            className="neural-wave neural-wave-1"
-          />
-
-          <path
-            d="M-200 590
-               C120 330 300 740 570 500
-               C820 280 930 250 1130 460
-               C1330 650 1470 560 1800 280"
-            stroke="rgba(99,102,241,0.25)"
-            strokeWidth="1.5"
-            className="neural-wave neural-wave-purple"
-          />
-        </svg>
-
-        {/* =====================================================
-            SMALL LIGHT PARTICLES
-        ===================================================== */}
-
-        <span className="hero-particle hp-1" />
-        <span className="hero-particle hp-2" />
-        <span className="hero-particle hp-3" />
-        <span className="hero-particle hp-4" />
-        <span className="hero-particle hp-5" />
-        <span className="hero-particle hp-6" />
-        <span className="hero-particle hp-7" />
-        <span className="hero-particle hp-8" />
-        <span className="hero-particle hp-9" />
-        <span className="hero-particle hp-10" />
-        <span className="hero-particle hp-11" />
-        <span className="hero-particle hp-12" />
-        <span className="hero-particle hp-13" />
-        <span className="hero-particle hp-14" />
-        <span className="hero-particle hp-15" />
-        <span className="hero-particle hp-16" />
-        <span className="hero-particle hp-17" />
-        <span className="hero-particle hp-18" />
-        <span className="hero-particle hp-19" />
-        <span className="hero-particle hp-20" />
-        <span className="hero-particle hp-21" />
-        <span className="hero-particle hp-22" />
-        <span className="hero-particle hp-23" />
-        <span className="hero-particle hp-24" />
-
-        {/* =====================================================
-            BOTTOM FADE
-        ===================================================== */}
-
-        <div
-          className="
-            absolute
-            inset-x-0
-            bottom-0
-            h-[35%]
-            bg-gradient-to-t
-            from-[#03050a]
-            via-[#03050a]/75
-            to-transparent
-          "
-        />
-
-        {/* Top fade */}
-        <div
-          className="
-            absolute
-            inset-x-0
-            top-0
-            h-36
-            bg-gradient-to-b
-            from-[#03050a]/80
-            to-transparent
-          "
-        />
+        <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#0B0E12] to-transparent" />
       </div>
 
       {/* =========================================================
-          HERO CONTENT
-      ========================================================= */}
-
-      <div
-        className="
-          mx-auto
-          flex
-          min-h-[calc(100svh-80px)]
-          w-full
-          max-w-7xl
-          items-center
-          px-5
-          pb-16
-          pt-28
-          sm:px-6
-          sm:pb-20
-          sm:pt-32
-          lg:px-8
-          lg:pb-24
-          lg:pt-36
-        "
-      >
-        <div className="mx-auto w-full max-w-5xl text-center mt-4">
-
-          {/* =====================================================
-              EYEBROW
-          ===================================================== */}
-<div
-  className="
-    mx-auto
-    inline-flex
-    max-w-full
-    items-center
-    gap-2.5
-    rounded-full
-    border
-    border-white/[0.10]
-    bg-white/[0.035]
-    px-4
-    py-2.5
-    shadow-[inset_0_1px_0_rgba(255,255,255,0.07),0_12px_40px_rgba(0,0,0,0.22)]
-    backdrop-blur-2xl
-    sm:px-5
-    sm:py-3
-  "
->
-  <span
-    aria-hidden="true"
-    className="
-      relative
-      h-1.5
-      w-1.5
-      shrink-0
-      rounded-full
-      bg-cyan-300
-      shadow-[0_0_14px_4px_rgba(34,211,238,0.25)]
-    "
-  />
-
-  <div className="relative max-w-[230px] overflow-hidden sm:max-w-[360px] md:max-w-[430px]">
-    <div className="hero-eyebrow-track">
-      <span
-        className="
-          whitespace-nowrap
-          text-[9px]
-          font-semibold
-          uppercase
-          tracking-[0.14em]
-          text-white/55
-          sm:text-xs
-          sm:tracking-[0.2em]
-          md:text-sm
-        "
-      >
-        Web Development · SEO · Meta Ads · Google Ads ·
-      </span>
-
-      <span
-        aria-hidden="true"
-        className="
-          whitespace-nowrap
-          text-[9px]
-          font-semibold
-          uppercase
-          tracking-[0.14em]
-          text-white/55
-          sm:text-xs
-          sm:tracking-[0.2em]
-          md:text-sm
-        "
-      >
-        Web Development · SEO · Meta Ads · Google Ads ·
-      </span>
-    </div>
-  </div>
-</div>
-
-          {/* =====================================================
-              HEADING
-          ===================================================== */}
-
-          <h1
-            className="
-              mx-auto
-              mt-8
-            
-            
-              w-full
-              font-bold
-              leading-[1.02]
-              tracking-[-0.055em]
-              sm:mt-10
-              sm:max-w-4xl
-              lg:max-w-5xl
-            "
-          >
-            {/* Brand */}
-
-            <span className="block">
-              <span
-                className="
-                  inline-block
-                  bg-gradient-to-r
-                  from-white
-                  via-[#b8f3ff]
-                  to-[#63b7ff]
-                  bg-clip-text
-                  text-[clamp(32px,9vw,60px)]
-                  font-extrabold
-                  tracking-[0.035em]
-                  text-transparent
-                  drop-shadow-[0_0_30px_rgba(53,231,255,0.16)]
-                  mb-1
-                "
-              >
-                SKSyntax
+          MOBILE
+      ========================================================== */}
+      <div className="mx-auto mt-4 w-full max-w-7xl px-4 pb-24 pt-24 sm:px-6 sm:pb-28 sm:pt-28 lg:hidden">
+        {/* SERVICES MARQUEE */}
+        <div className="mb-8 overflow-hidden">
+          <div className="inline-flex h-8 max-w-full items-center overflow-hidden rounded-full border border-white/[0.07] bg-white/[0.02] px-2.5 backdrop-blur-xl">
+            <div className="hero-eyebrow-track whitespace-nowrap text-[7px] font-medium tracking-[0.18em] text-white/40">
+              <span>
+                WEBSITE DEVELOPMENT&nbsp; • &nbsp;SEO&nbsp; • &nbsp;META ADS&nbsp; •
+                &nbsp;GOOGLE ADS&nbsp; • &nbsp;
               </span>
-            </span>
 
-            {/* Website Development */}
+              <span aria-hidden="true">
+                WEBSITE DEVELOPMENT&nbsp; • &nbsp;SEO&nbsp; • &nbsp;META ADS&nbsp; •
+                &nbsp;GOOGLE ADS&nbsp; • &nbsp;
+              </span>
+            </div>
+          </div>
+        </div>
 
-            <span
-              className="
-                mt-4
-                block
-                text-[clamp(27px,7.4vw,52px)]
-                font-bold
-                text-white
-                sm:mt-5
-                sm:text-6xl
-                lg:text-7xl
-              "
-            >
+        {/* CONTENT */}
+        <div className="mx-auto max-w-[620px] text-center">
+          {/* BRAND LABEL */}
+          <div className="mb-7 text-[15px] font-medium uppercase tracking-[0.18em] text-white/40">
+            SKSyntax
+          </div>
+
+          {/* H1 */}
+          <h1 className="mx-auto w-full text-center font-[var(--font-space-grotesk)] text-[clamp(2rem,9vw,3.8rem)] font-semibold leading-[0.94] tracking-[-0.055em]">
+            <span className="block text-[#F0F4F7]">
               Website Development
             </span>
 
-            {/* SEO & Digital Growth */}
-
-            <span
-              className="
-                mt-2
-                
-                block
-                bg-gradient-to-r
-                from-[#35e7ff]
-                via-[#438cff]
-                to-[#7c5cff]
-                bg-clip-text
-                text-[clamp(27px,7.4vw,52px)]
-                font-bold
-                text-transparent
-                sm:mt-3
-                sm:text-6xl
-                lg:text-7xl
-              "
-            >
-              SEO & Digital Growth
+            <span className="mt-3 block bg-gradient-to-r from-[#65d9ee] to-[#7bb7ff] bg-clip-text text-transparent">
+              SEO &amp; Digital Growth
             </span>
           </h1>
 
-          {/* =====================================================
-              DESCRIPTION
-          ===================================================== */}
-
-          <p
-            className="
-              mx-auto
-              mt-10
-              max-w-[340px]
-              text-center
-              text-[12px]
-              font-medium
-              leading-[1.85]
-              tracking-[0.01em]
-              text-white/50
-              sm:mt-8
-              sm:max-w-2xl
-              sm:text-[16px]
-              sm:leading-[1.8]
-              lg:mt-9
-              lg:max-w-3xl
-              lg:text-[18px]
-              lg:leading-[1.75]
-            "
-          >
-            SKSyntax builds{" "}
-            <span className="font-semibold text-white/85">
-              high-performance websites
-            </span>
-            , improves{" "}
-            <span className="font-semibold text-cyan-300/80">
-              SEO visibility
-            </span>
-            , and runs targeted{" "}
-            <span className="font-semibold text-blue-300/80">
-              Meta Ads and Google Ads
-            </span>{" "}
-            campaigns to help businesses{" "}
-            <span className="font-semibold text-white/85">
-              grow online.
-            </span>
+          {/* DESCRIPTION */}
+          <p className="mx-auto mt-4 max-w-[340px] text-center text-[11px] leading-[1.65] text-[#AEB8C2]">
+            SKSyntax builds high-performance websites, improves SEO visibility,
+            and runs targeted Meta Ads and Google Ads campaigns to help
+            businesses grow online.
           </p>
 
-          {/* =====================================================
-              CTA
-          ===================================================== */}
-
-          <div
-            className="
-              mx-auto
-              mt-9
-              flex
-              w-full
-              max-w-[350px]
-              flex-col
-              gap-3
-              sm:mt-10
-              sm:max-w-none
-              sm:flex-row
-              sm:items-center
-              sm:justify-center
-              sm:gap-4
-            "
-          >
-            {/* Primary */}
-
+          {/* CTA */}
+          <div className="mx-auto mb-2 mt-5 flex w-full max-w-[340px] flex-col gap-2">
             <Link
               href="/contact"
-              className="
-                group
-                relative
-                flex
-                min-h-[54px]
-                w-full
-                items-center
-                justify-center
-                gap-2.5
-                overflow-hidden
-                rounded-full
-                border
-                border-cyan-300/20
-                bg-gradient-to-r
-                from-cyan-400/[0.12]
-                via-blue-500/[0.10]
-                to-indigo-500/[0.10]
-                px-7
-                text-sm
-                font-semibold
-                text-white
-                shadow-[inset_0_1px_0_rgba(255,255,255,0.10),0_10px_40px_rgba(0,120,255,0.10)]
-                backdrop-blur-xl
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:border-cyan-300/35
-                hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.14),0_18px_50px_rgba(0,140,255,0.18)]
-                sm:w-auto
-              "
+              className="flex h-11 w-full items-center justify-center rounded-full bg-[#F0F4F7] px-6 text-[12px] font-bold tracking-[-0.01em] !text-[#0B0E12] shadow-[0_12px_35px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white"
             >
-              {/* Shine */}
+              <span className="!text-[#0B0E12]">Get Started</span>
 
-              <span
-                aria-hidden="true"
-                className="
-                  absolute
-                  inset-y-0
-                  left-[-60%]
-                  w-[45%]
-                  skew-x-[-20deg]
-                  bg-gradient-to-r
-                  from-transparent
-                  via-white/[0.18]
-                  to-transparent
-                  transition-all
-                  duration-700
-                  group-hover:left-[120%]
-                "
-              />
-
-              <span className="relative z-10">
-                Get Started
-              </span>
-
-              <span
-                className="
-                  relative
-                  z-10
-                  flex
-                  h-6
-                  w-6
-                  shrink-0
-                  items-center
-                  justify-center
-                  rounded-full
-                  bg-gradient-to-br
-                  from-cyan-300
-                  to-blue-500
-                  text-[11px]
-                  text-white
-                  shadow-[0_0_18px_rgba(34,211,238,0.18)]
-                  transition-transform
-                  duration-300
-                  group-hover:translate-x-1
-                "
-              >
+              <span className="ml-2 text-[14px] font-bold !text-[#0B0E12] transition-transform duration-300">
                 →
               </span>
             </Link>
 
-            {/* Secondary */}
-
             <Link
               href="/services"
-              className="
-                group
-                relative
-                flex
-                min-h-[54px]
-                w-full
-                items-center
-                justify-center
-                overflow-hidden
-                rounded-full
-                border
-                border-white/[0.11]
-                bg-white/[0.025]
-                px-7
-                text-sm
-                font-semibold
-                text-white/70
-                shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]
-                backdrop-blur-2xl
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:border-white/[0.18]
-                hover:bg-white/[0.055]
-                hover:text-white
-                sm:w-auto
-              "
+              className="mt-2 flex h-9 w-full items-center justify-center rounded-full border border-white/[0.07] bg-white/[0.015] text-[11px] font-medium text-white/65 backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/20 hover:bg-white/[0.03] hover:text-white"
             >
-              <span
-                aria-hidden="true"
-                className="
-                  absolute
-                  inset-y-0
-                  left-[-60%]
-                  w-[45%]
-                  skew-x-[-20deg]
-                  bg-gradient-to-r
-                  from-transparent
-                  via-cyan-300/[0.08]
-                  to-transparent
-                  transition-all
-                  duration-700
-                  group-hover:left-[120%]
-                "
-              />
-
-              <span className="relative z-10">
-                Explore Services
-              </span>
+              Explore Services
+              <span className="ml-1.5 text-cyan-300">↗</span>
             </Link>
           </div>
 
-          {/* =====================================================
-              TRUST POINTS
-          ===================================================== */}
-
-          <div
-            className="
-              mx-auto
-              mt-9
-              flex
-              max-w-[360px]
-              flex-wrap
-              items-center
-              justify-center
-              gap-x-5
-              gap-y-3
-              border-t
-              border-white/[0.06]
-              pt-6
-              text-[10px]
-              font-medium
-              text-white/30
-              sm:mt-11
-              sm:max-w-2xl
-              sm:gap-x-8
-              sm:pt-7
-              sm:text-xs
-              md:text-sm
-            "
-          >
-            <span className="whitespace-nowrap transition-colors duration-300 hover:text-cyan-300">
-              ✓ Fast Websites
+          {/* TRUST */}
+          <div className="mx-auto mt-5 flex max-w-[340px] flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-[8px] text-white/35">
+            <span>
+              <span className="mr-1 text-cyan-300">✓</span>
+              Fast Websites
             </span>
 
-            <span className="whitespace-nowrap transition-colors duration-300 hover:text-cyan-300">
-              ✓ SEO Ready
+            <span>
+              <span className="mr-1 text-cyan-300">✓</span>
+              SEO Ready
             </span>
 
-            <span className="whitespace-nowrap transition-colors duration-300 hover:text-white/60">
-              ✓ Performance Focused
+            <span>
+              <span className="mr-1 text-cyan-300">✓</span>
+              Performance Focused
             </span>
+          </div>
+        </div>
+
+        {/* =======================================================
+            MOBILE DASHBOARD
+        ======================================================== */}
+        <div className="relative mt-10 w-full sm:mt-12">
+          {/* FLOATING BADGE */}
+          <div className="absolute -right-1 -top-3 z-20 rounded-lg border border-cyan-300/15 bg-[#151d24]/95 px-2.5 py-1.5 shadow-[0_15px_40px_rgba(0,0,0,0.4)] backdrop-blur-xl">
+            <div className="text-[6px] uppercase tracking-[0.15em] text-white/30">
+              Visibility
+            </div>
+
+            <div className="mt-0.5 text-[9px] font-semibold text-cyan-300">
+              SEO Ready
+            </div>
+          </div>
+
+          {/* DASHBOARD */}
+          <div className="relative overflow-hidden rounded-[20px] border border-white/[0.09] bg-[#151B22]/95 shadow-[0_25px_75px_rgba(0,0,0,0.42)] backdrop-blur-xl">
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-300/40 to-transparent" />
+
+            {/* Header */}
+            <div className="flex items-center justify-between border-b border-white/[0.07] px-4 py-3">
+              <div>
+                <div className="text-[7px] uppercase tracking-[0.18em] text-white/30">
+                  SKSyntax
+                </div>
+
+                <div className="mt-1 text-[11px] font-semibold text-white">
+                  Digital Growth
+                </div>
+              </div>
+
+              <div className="flex items-center gap-1.5 rounded-full border border-emerald-300/10 bg-emerald-400/[0.06] px-2 py-1">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-300" />
+
+                <span className="text-[6px] font-medium uppercase tracking-[0.12em] text-emerald-300">
+                  Optimized
+                </span>
+              </div>
+            </div>
+
+            {/* Dashboard Body */}
+            <div className="p-4">
+              {/* Overview */}
+              <div className="flex items-center justify-between">
+                <div>
+                  <div className="text-[7px] uppercase tracking-[0.18em] text-white/30">
+                    Performance overview
+                  </div>
+
+                  <div className="mt-1 text-xs font-semibold text-white">
+                    Analyze
+                  </div>
+                </div>
+
+                <div className="text-[7px] uppercase tracking-[0.14em] text-cyan-300/80">
+                  ↗ Growth
+                </div>
+              </div>
+
+              <p className="mt-2.5 max-w-[430px] text-[8px] leading-4 text-white/40">
+                A connected digital system built for visibility, performance
+                and customer growth.
+              </p>
+
+              {/* Metrics */}
+              <div className="mt-3.5 grid grid-cols-3 gap-2">
+                {[
+                  {
+                    title: "Website",
+                    number: "01",
+                    value: "Fast",
+                    sub: "Responsive",
+                    width: "82%",
+                  },
+                  {
+                    title: "SEO",
+                    number: "02",
+                    value: "Visible",
+                    sub: "Search Ready",
+                    width: "74%",
+                  },
+                  {
+                    title: "Ads",
+                    number: "03",
+                    value: "Targeted",
+                    sub: "Meta + Google",
+                    width: "88%",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.title}
+                    className="min-w-0 rounded-xl border border-white/[0.07] bg-[#10161c] p-2.5"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="text-[6px] uppercase tracking-[0.16em] text-white/30">
+                        {item.title}
+                      </span>
+
+                      <span className="text-[7px] text-cyan-300/60">
+                        {item.number}
+                      </span>
+                    </div>
+
+                    <div className="mt-2.5 truncate text-[11px] font-semibold text-white">
+                      {item.value}
+                    </div>
+
+                    <div className="mt-1 text-[6px] text-white/30">
+                      {item.sub}
+                    </div>
+
+                    <div className="mt-2.5 h-px w-full bg-white/[0.06]">
+                      <div
+                        className="h-px bg-cyan-300/70"
+                        style={{ width: item.width }}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Service Signals */}
+              <div className="mt-3 rounded-xl border border-white/[0.07] bg-[#10161c] p-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-[7px] uppercase tracking-[0.18em] text-white/30">
+                    Service Signals
+                  </span>
+
+                  <span className="text-[7px] text-emerald-300">
+                    4 Active
+                  </span>
+                </div>
+
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  {["Web", "SEO", "Meta Ads", "Google Ads"].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-white/[0.07] bg-white/[0.025] px-2 py-1 text-[6px] text-white/50"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Progress */}
+              <div className="mt-3 rounded-xl border border-white/[0.07] bg-[#10161c] p-3">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="text-[7px] uppercase tracking-[0.18em] text-white/30">
+                      Digital System
+                    </div>
+
+                    <div className="mt-1 text-[8px] text-white/60">
+                      Website + SEO + Paid Ads
+                    </div>
+                  </div>
+
+                  <div className="text-[10px] font-semibold text-cyan-300">
+                    78%
+                  </div>
+                </div>
+
+                <div className="mt-2.5 h-1 overflow-hidden rounded-full bg-white/[0.06]">
+                  <div className="h-full w-[78%] rounded-full bg-gradient-to-r from-cyan-300 to-blue-400" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* =========================================================
+          DESKTOP
+      ========================================================== */}
+      <div className="mx-auto hidden min-h-[730px] w-full max-w-[1450px] items-center px-6 py-24 lg:grid lg:grid-cols-[0.88fr_1.12fr] lg:gap-10 xl:gap-12 2xl:px-10">
+        {/* LEFT */}
+        <div className="relative z-20 min-w-0">
+          {/* SERVICES MARQUEE */}
+          <div className="mb-5 flex justify-center overflow-hidden">
+            <div className="inline-flex h-8 max-w-full items-center overflow-hidden rounded-full border border-white/[0.07] bg-white/[0.02] px-3 backdrop-blur-xl">
+              <div className="hero-eyebrow-track whitespace-nowrap text-[7px] font-medium tracking-[0.2em] text-white/40">
+                <span>
+                  WEBSITE DEVELOPMENT&nbsp; • &nbsp;SEO&nbsp; • &nbsp;META ADS&nbsp; •
+                  &nbsp;GOOGLE ADS&nbsp; • &nbsp;
+                </span>
+
+                <span aria-hidden="true">
+                  WEBSITE DEVELOPMENT&nbsp; • &nbsp;SEO&nbsp; • &nbsp;META ADS&nbsp; •
+                  &nbsp;GOOGLE ADS&nbsp; • &nbsp;
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* BRAND LABEL */}
+          <div className="mb-2 text-[10px] font-medium uppercase tracking-[0.18em] text-white/40">
+            SKSyntax
+          </div>
+
+          {/* H1 */}
+          <h1 className="font-[var(--font-space-grotesk)] text-[clamp(3rem,4vw,4.8rem)] font-semibold leading-[0.93] tracking-[-0.055em]">
+            <span className="block text-[#F0F4F7]">
+              Website Development
+            </span>
+
+            <span className="mt-3 block bg-gradient-to-r from-[#65d9ee] to-[#7bb7ff] bg-clip-text text-transparent">
+              SEO &amp; Digital Growth
+            </span>
+          </h1>
+
+          {/* DESCRIPTION */}
+          <p className="mt-5 max-w-[500px] text-xs leading-5.5 text-[#AEB8C2] xl:text-[13px] xl:leading-6">
+            SKSyntax builds high-performance websites, improves SEO
+            visibility, and runs targeted Meta Ads and Google Ads campaigns
+            to help businesses grow online.
+          </p>
+
+          {/* CTA */}
+          <div className="mt-6 flex items-center gap-4">
+            <Link
+              href="/contact"
+              className="group relative inline-flex h-11 items-center justify-center overflow-hidden rounded-full bg-[#F0F4F7] px-6 text-xs font-semibold !text-[#0B0E12] shadow-[0_15px_50px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-0.5"
+            >
+              <span className="relative z-10 !text-[#0B0E12]">
+                Get Started
+                <span className="ml-2 !text-[#0B0E12] transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
+              </span>
+
+              <span className="pointer-events-none absolute inset-y-0 -left-full w-1/2 skew-x-[-20deg] bg-white/50 blur-md transition-all duration-700 group-hover:left-[130%]" />
+            </Link>
+
+            <Link
+              href="/services"
+              className="text-xs font-medium text-white/55 underline decoration-white/15 underline-offset-7 transition-colors duration-300 hover:text-white hover:decoration-cyan-300/50"
+            >
+              Explore Services
+              <span className="ml-1 text-cyan-300">↗</span>
+            </Link>
+          </div>
+
+          {/* TRUST */}
+          <div className="mt-5 flex flex-wrap gap-x-3.5 gap-y-1.5 text-[9px] text-white/35">
+            <span>
+              <span className="mr-1 text-cyan-300">✓</span>
+              Fast Websites
+            </span>
+
+            <span>
+              <span className="mr-1 text-cyan-300">✓</span>
+              SEO Ready
+            </span>
+
+            <span>
+              <span className="mr-1 text-cyan-300">✓</span>
+              Performance Focused
+            </span>
+          </div>
+        </div>
+
+        {/* =======================================================
+            DESKTOP DASHBOARD
+        ======================================================== */}
+        <div className="relative z-10 mt-12 min-w-0 w-full">
+          {/* Badge 1 */}
+          <div className="absolute left-0 top-0 z-30 rounded-lg border border-emerald-300/15 bg-[#151d24]/95 px-3 py-2 shadow-[0_15px_40px_rgba(0,0,0,0.4)] backdrop-blur-xl xl:left-[-15px]">
+            <div className="text-[7px] uppercase tracking-[0.16em] text-white/35">
+              Visibility
+            </div>
+
+            <div className="mt-0.5 text-[11px] font-semibold text-emerald-300">
+              SEO Ready
+            </div>
+          </div>
+
+          {/* Badge 2 */}
+          <div className="absolute right-1 top-[32%] z-30 rounded-lg border border-cyan-300/15 bg-[#151d24]/95 px-3 py-2 shadow-[0_15px_40px_rgba(0,0,0,0.4)] backdrop-blur-xl xl:right-[-15px]">
+            <div className="text-[7px] uppercase tracking-[0.16em] text-white/35">
+              Campaigns
+            </div>
+
+            <div className="mt-0.5 text-[11px] font-semibold text-cyan-300">
+              Targeted
+            </div>
+          </div>
+
+          {/* Badge 3 */}
+          <div className="absolute bottom-[-14px] left-0 z-30 rounded-lg border border-white/[0.08] bg-[#151d24]/95 px-3 py-2 shadow-[0_15px_40px_rgba(0,0,0,0.4)] backdrop-blur-xl xl:left-[-15px]">
+            <div className="text-[7px] uppercase tracking-[0.16em] text-white/35">
+              Performance
+            </div>
+
+            <div className="mt-0.5 text-[11px] font-semibold text-white">
+              Fast + Responsive
+            </div>
+          </div>
+
+          {/* DASHBOARD */}
+          <div className="relative w-full min-w-0 overflow-hidden rounded-[24px] border border-white/[0.09] bg-[#151B22]/95 shadow-[0_35px_100px_rgba(0,0,0,0.48)] backdrop-blur-xl">
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-300/55 to-transparent" />
+
+            <div className="absolute right-0 top-0 h-full w-px bg-gradient-to-b from-cyan-300/35 via-blue-400/10 to-transparent" />
+
+            {/* Header */}
+            <div className="flex items-center justify-between border-b border-white/[0.07] px-5 py-4">
+              <div>
+                <div className="text-[8px] uppercase tracking-[0.2em] text-white/30">
+                  SKSyntax
+                </div>
+
+                <div className="mt-1 text-sm font-semibold text-white">
+                  Digital Growth
+                </div>
+              </div>
+
+              <div className="flex items-center gap-1.5 rounded-full border border-emerald-300/10 bg-emerald-400/[0.06] px-3 py-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-300" />
+
+                <span className="text-[7px] font-medium uppercase tracking-[0.13em] text-emerald-300">
+                  Optimized
+                </span>
+              </div>
+            </div>
+
+            {/* Dashboard Body */}
+            <div className="p-5 xl:p-6">
+              <div className="flex items-end justify-between">
+                <div>
+                  <div className="text-[8px] uppercase tracking-[0.18em] text-white/30">
+                    Performance overview
+                  </div>
+
+                  <div className="mt-1.5 text-base font-semibold text-white">
+                    Analyze
+                  </div>
+                </div>
+
+                <div className="text-[8px] font-medium uppercase tracking-[0.16em] text-cyan-300/80">
+                  ↗ Growth
+                </div>
+              </div>
+
+              <p className="mt-3 max-w-[450px] text-[10px] leading-5 text-white/40">
+                A connected digital system built for visibility, performance
+                and customer growth.
+              </p>
+
+              {/* Metrics */}
+              <div className="mt-5 grid grid-cols-3 gap-2.5">
+                {[
+                  {
+                    title: "Website",
+                    number: "01",
+                    value: "Fast",
+                    sub: "Responsive",
+                    width: "82%",
+                  },
+                  {
+                    title: "SEO",
+                    number: "02",
+                    value: "Visible",
+                    sub: "Search Ready",
+                    width: "74%",
+                  },
+                  {
+                    title: "Ads",
+                    number: "03",
+                    value: "Targeted",
+                    sub: "Meta + Google",
+                    width: "88%",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.title}
+                    className="min-w-0 rounded-xl border border-white/[0.07] bg-[#10161c] p-3"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="text-[7px] uppercase tracking-[0.16em] text-white/30">
+                        {item.title}
+                      </span>
+
+                      <span className="text-[8px] text-cyan-300/60">
+                        {item.number}
+                      </span>
+                    </div>
+
+                    <div className="mt-4 truncate text-sm font-semibold text-white">
+                      {item.value}
+                    </div>
+
+                    <div className="mt-1 text-[7px] text-white/30">
+                      {item.sub}
+                    </div>
+
+                    <div className="mt-3 h-px bg-white/[0.06]">
+                      <div
+                        className="h-px bg-cyan-300/70"
+                        style={{ width: item.width }}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Service Signals */}
+              <div className="mt-3 rounded-xl border border-white/[0.07] bg-[#10161c] p-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-[7px] uppercase tracking-[0.18em] text-white/30">
+                    Service Signals
+                  </span>
+
+                  <span className="text-[7px] text-emerald-300">
+                    4 Active
+                  </span>
+                </div>
+
+                <div className="mt-2.5 flex flex-wrap gap-1.5">
+                  {["Web", "SEO", "Meta Ads", "Google Ads"].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-white/[0.07] bg-white/[0.025] px-2.5 py-1 text-[7px] text-white/50"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Progress */}
+              <div className="mt-3 rounded-xl border border-white/[0.07] bg-[#10161c] p-3">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="text-[7px] uppercase tracking-[0.18em] text-white/30">
+                      Digital System
+                    </div>
+
+                    <div className="mt-1 text-[9px] text-white/60">
+                      Website + SEO + Paid Ads
+                    </div>
+                  </div>
+
+                  <div className="text-xs font-semibold text-cyan-300">
+                    78%
+                  </div>
+                </div>
+
+                <div className="mt-2.5 h-1 overflow-hidden rounded-full bg-white/[0.06]">
+                  <div className="h-full w-[78%] rounded-full bg-gradient-to-r from-cyan-300 to-blue-400" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

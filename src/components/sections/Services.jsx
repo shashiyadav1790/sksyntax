@@ -33,171 +33,121 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="relative overflow-hidden border-t border-white/[0.06] bg-[#05070a] py-16 sm:py-20 lg:py-24">
-      {/* Background Glow */}
+    <section className="relative isolate overflow-hidden border-t border-white/[0.06] bg-[#0B0E12] py-16 text-white sm:py-20 lg:py-24">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-[-100px] top-[15%] h-[320px] w-[320px] rounded-full bg-cyan-400/[0.045] blur-[130px]"
+        className="pointer-events-none absolute left-[-140px] top-[8%] h-[380px] w-[380px] rounded-full bg-cyan-400/[0.035] blur-[150px]"
       />
-
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-[-120px] right-[-100px] h-[360px] w-[360px] rounded-full bg-blue-600/[0.055] blur-[140px]"
+        className="pointer-events-none absolute right-[-160px] top-[35%] h-[420px] w-[420px] rounded-full bg-blue-500/[0.025] blur-[160px]"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300 sm:text-sm">
             Our Digital Growth Services
           </p>
 
-          <h2 className="mt-4 text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-white sm:text-5xl">
+          <h2 className="mt-4 text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-[#F0F4F7] sm:text-5xl">
             Website Development, SEO
-            <span className="block bg-gradient-to-r from-[#35e7ff] via-[#438cff] to-[#7c5cff] bg-clip-text text-transparent sm:inline">
+            <span className="block bg-gradient-to-r from-[#65d9ee] via-[#438cff] to-[#7bb7ff] bg-clip-text text-transparent sm:inline">
               {" "}
               & Paid Advertising.
             </span>
           </h2>
 
-          <p className="mt-6 max-w-xl text-base leading-7 text-white/50 sm:text-lg sm:leading-8">
+          <p className="mt-6 max-w-xl text-base leading-7 text-[#AEB8C2] sm:text-lg sm:leading-8">
             SKSyntax provides website development, SEO, Meta Ads, and Google
             Ads services to help businesses build a stronger online presence,
             reach the right audience, and grow.
           </p>
         </div>
 
-        {/* Services */}
-        <div className="mt-12 grid gap-4 sm:mt-16 md:grid-cols-2">
+        <div className="mt-12 grid gap-5 sm:mt-16 md:grid-cols-2">
           {services.map((service) => (
             <Link
               key={service.number}
               href={service.href}
-        className="
-  group relative overflow-hidden rounded-2xl
-  border border-white/[0.08]
-  bg-white/[0.025]
-  p-6
-  shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_20px_60px_rgba(0,0,0,0.25)]
-  backdrop-blur-xl
-  transition-all duration-500
-
-  hover:-translate-y-2
-  hover:border-cyan-400/20
-  hover:bg-white/[0.04]
-  hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_25px_70px_rgba(0,0,0,0.35)]
-
-  sm:p-8
-"
+              className="group relative overflow-hidden rounded-3xl border border-white/[0.07] bg-white/[0.025] p-3 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-300/[0.18] hover:bg-white/[0.035] sm:p-4"
             >
-           
+              <div className="relative overflow-hidden rounded-2xl ">
+                <div className="flex items-center justify-between border-b border-white/[0.06] px-5 py-4">
+                  <div className="flex items-center gap-2.5">
+                    <span className="h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_12px_rgba(103,232,249,0.65)]" />
+                    <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#AEB8C2]/60">
+                      Service
+                    </span>
+                  </div>
 
-              {/* Content */}
-              <div className="relative z-10">
-                {/* Top Row */}
-                <div className="flex items-center justify-between">
-                  <span
-                    className="
-                      text-xs font-semibold tracking-[0.2em]
-                      text-cyan-300/65
-                      transition-colors duration-300
-                      group-hover:text-cyan-300
-                      sm:text-sm
-                    "
-                  >
+                  <span className="font-mono text-xs text-[#AEB8C2]/40">
                     {service.number}
                   </span>
-
-                  <span
-                    aria-hidden="true"
-                    className="
-                      flex h-10 w-10 items-center justify-center
-                      rounded-full
-                      border border-cyan-300/[0.12]
-                      bg-cyan-300/[0.045]
-                      text-base text-cyan-200/60
-                      shadow-[0_0_25px_rgba(34,211,238,0.05)]
-                      transition-all duration-500
-                      group-hover:-translate-y-1
-                      group-hover:translate-x-1
-                      group-hover:border-cyan-300/30
-                      group-hover:bg-cyan-300/[0.10]
-                      group-hover:text-cyan-200
-                      group-hover:shadow-[0_0_30px_rgba(34,211,238,0.14)]
-                    "
-                  >
-                    ↗
-                  </span>
                 </div>
 
-                {/* Title */}
-                <h3
-                  className="
-                    mt-10
-                    text-2xl font-semibold
-                    tracking-[-0.025em]
-                    text-white
-                    transition-transform duration-500
-                    group-hover:translate-x-1
-                    sm:mt-12 sm:text-[26px]
-                  "
-                >
-                  {service.title}
-                </h3>
+                <div className="px-5 pb-5 pt-6 sm:px-6 sm:pb-6">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <p className="text-[10px] uppercase tracking-[0.18em] text-cyan-300/50">
+                        SKSyntax
+                      </p>
 
-                {/* Description */}
-                <p
-                  className="
-                    mt-4 max-w-md
-                    text-sm leading-7
-                    text-white/50
-                    transition-colors duration-500
-                    group-hover:text-white/65
-                    sm:text-base
-                  "
-                >
-                  {service.description}
-                </p>
+                      <h3 className="mt-2 text-2xl font-semibold tracking-[-0.03em] text-[#F0F4F7] transition-colors duration-300 group-hover:text-cyan-100 sm:text-[26px]">
+                        {service.title}
+                      </h3>
+                    </div>
 
-                {/* Explore */}
-                <div
-                  className="
-                    mt-8 inline-flex
-                    items-center gap-2
-                    text-sm font-medium
-                    text-cyan-200/65
-                    transition-colors duration-300
-                    group-hover:text-cyan-200
-                  "
-                >
-                  <span>Explore service</span>
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/[0.07] bg-white/[0.025] text-sm text-[#AEB8C2]/50 transition-all duration-500 group-hover:border-cyan-300/20 group-hover:bg-cyan-300/[0.06] group-hover:text-cyan-200">
+                      ↗
+                    </span>
+                  </div>
 
-                  <span
-                    aria-hidden="true"
-                    className="transition-transform duration-500 group-hover:translate-x-2"
-                  >
-                    →
-                  </span>
+                  <p className="mt-5 text-sm leading-7 text-[#AEB8C2]/80 transition-colors duration-300 group-hover:text-[#AEB8C2] sm:text-base">
+                    {service.description}
+                  </p>
+
+                  <div className="mt-6 grid grid-cols-3 gap-2">
+                    <div className="rounded-lg border border-white/[0.05] bg-[#10161c] px-3 py-2.5">
+                      <span className="block text-[9px] uppercase tracking-wider text-[#AEB8C2]/40">
+                        Reach
+                      </span>
+                      <span className="mt-1 block text-xs text-[#F0F4F7]/80">
+                        Targeted
+                      </span>
+                    </div>
+
+                    <div className="rounded-lg border border-white/[0.05] bg-[#10161c] px-3 py-2.5">
+                      <span className="block text-[9px] uppercase tracking-wider text-[#AEB8C2]/40">
+                        Focus
+                      </span>
+                      <span className="mt-1 block text-xs text-[#F0F4F7]/80">
+                        Growth
+                      </span>
+                    </div>
+
+                    <div className="rounded-lg border border-white/[0.05] bg-[#10161c] px-3 py-2.5">
+                      <span className="block text-[9px] uppercase tracking-wider text-[#AEB8C2]/40">
+                        Status
+                      </span>
+                      <span className="mt-1 block text-xs text-cyan-300/80">
+                        Active
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="mt-5 flex items-center justify-between border-t border-white/[0.06] pt-4">
+                    <span className="text-xs text-[#AEB8C2]/45">
+                      Digital growth solution
+                    </span>
+
+                    <span className="text-sm font-medium text-cyan-200/60 transition-all duration-300 group-hover:translate-x-1 group-hover:text-cyan-200">
+                      Explore service →
+                    </span>
+                  </div>
                 </div>
+
+                <span className="absolute bottom-0 left-5 h-[2px] w-16 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 opacity-70 transition-all duration-500 group-hover:w-32 group-hover:opacity-100" />
               </div>
-
-              {/* Bottom Accent */}
-              <span
-                aria-hidden="true"
-                className="
-                  absolute bottom-0 left-6
-                  h-[2px] w-24
-                  rounded-full
-                  bg-gradient-to-r
-                  from-cyan-400
-                  via-blue-500
-                  to-indigo-500
-                  shadow-[0_0_15px_rgba(34,211,238,0.35)]
-                  transition-all duration-500
-                  group-hover:w-36
-                  sm:left-8
-                "
-              />
             </Link>
           ))}
         </div>
