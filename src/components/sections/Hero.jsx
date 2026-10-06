@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 export default function Hero() {
@@ -116,11 +117,11 @@ export default function Hero() {
         <div className="relative mt-10 w-full sm:mt-12">
           {/* FLOATING BADGE */}
           <div className="absolute -right-1 -top-3 z-20 rounded-lg border border-cyan-300/15 bg-[#151d24]/95 px-2.5 py-1.5 shadow-[0_15px_40px_rgba(0,0,0,0.4)] backdrop-blur-xl">
-            <div className="text-[6px] uppercase tracking-[0.15em] text-white/30">
+            <div className="text-[7px] uppercase tracking-[0.15em] text-white/30">
               Visibility
             </div>
 
-            <div className="mt-0.5 text-[9px] font-semibold text-cyan-300">
+            <div className="mt-0.5 text-[10px] font-semibold text-cyan-300">
               SEO Ready
             </div>
           </div>
@@ -132,11 +133,11 @@ export default function Hero() {
             {/* Header */}
             <div className="flex items-center justify-between border-b border-white/[0.07] px-4 py-3">
               <div>
-                <div className="text-[7px] uppercase tracking-[0.18em] text-white/30">
+                <div className="text-[8px] uppercase tracking-[0.18em] text-white/30">
                   SKSyntax
                 </div>
 
-                <div className="mt-1 text-[11px] font-semibold text-white">
+                <div className="mt-1 text-[13px] font-semibold text-white">
                   Digital Growth
                 </div>
               </div>
@@ -144,7 +145,7 @@ export default function Hero() {
               <div className="flex items-center gap-1.5 rounded-full border border-emerald-300/10 bg-emerald-400/[0.06] px-2 py-1">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-300" />
 
-                <span className="text-[6px] font-medium uppercase tracking-[0.12em] text-emerald-300">
+                <span className="text-[7px] font-medium uppercase tracking-[0.12em] text-emerald-300">
                   Optimized
                 </span>
               </div>
@@ -155,21 +156,21 @@ export default function Hero() {
               {/* Overview */}
               <div className="flex items-center justify-between">
                 <div>
-                  <div className="text-[7px] uppercase tracking-[0.18em] text-white/30">
+                  <div className="text-[8px] uppercase tracking-[0.18em] text-white/30">
                     Performance overview
                   </div>
 
-                  <div className="mt-1 text-xs font-semibold text-white">
+                  <div className="mt-1 text-sm font-semibold text-white">
                     Analyze
                   </div>
                 </div>
 
-                <div className="text-[7px] uppercase tracking-[0.14em] text-cyan-300/80">
+                <div className="text-[8px] uppercase tracking-[0.14em] text-cyan-300/80">
                   ↗ Growth
                 </div>
               </div>
 
-              <p className="mt-2.5 max-w-[430px] text-[8px] leading-4 text-white/40">
+              <p className="mt-2.5 max-w-[430px] text-[9px] leading-4 text-white/40">
                 A connected digital system built for visibility, performance
                 and customer growth.
               </p>
@@ -204,20 +205,20 @@ export default function Hero() {
                     className="min-w-0 rounded-xl border border-white/[0.07] bg-[#10161c] p-2.5"
                   >
                     <div className="flex items-center justify-between">
-                      <span className="text-[6px] uppercase tracking-[0.16em] text-white/30">
+                      <span className="text-[7px] uppercase tracking-[0.16em] text-white/30">
                         {item.title}
                       </span>
 
-                      <span className="text-[7px] text-cyan-300/60">
+                      <span className="text-[8px] text-cyan-300/60">
                         {item.number}
                       </span>
                     </div>
 
-                    <div className="mt-2.5 truncate text-[11px] font-semibold text-white">
+                    <div className="mt-2.5 truncate text-[13px] font-semibold text-white">
                       {item.value}
                     </div>
 
-                    <div className="mt-1 text-[6px] text-white/30">
+                    <div className="mt-1 text-[7px] text-white/30">
                       {item.sub}
                     </div>
 
@@ -234,11 +235,11 @@ export default function Hero() {
               {/* Service Signals */}
               <div className="mt-3 rounded-xl border border-white/[0.07] bg-[#10161c] p-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-[7px] uppercase tracking-[0.18em] text-white/30">
+                  <span className="text-[8px] uppercase tracking-[0.18em] text-white/30">
                     Service Signals
                   </span>
 
-                  <span className="text-[7px] text-emerald-300">
+                  <span className="text-[8px] text-emerald-300">
                     4 Active
                   </span>
                 </div>
@@ -247,7 +248,7 @@ export default function Hero() {
                   {["Web", "SEO", "Meta Ads", "Google Ads"].map((item) => (
                     <span
                       key={item}
-                      className="rounded-full border border-white/[0.07] bg-white/[0.025] px-2 py-1 text-[6px] text-white/50"
+                      className="rounded-full border border-white/[0.07] bg-white/[0.025] px-2 py-1 text-[7px] text-white/50"
                     >
                       {item}
                     </span>
@@ -259,16 +260,16 @@ export default function Hero() {
               <div className="mt-3 rounded-xl border border-white/[0.07] bg-[#10161c] p-3">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="text-[7px] uppercase tracking-[0.18em] text-white/30">
+                    <div className="text-[8px] uppercase tracking-[0.18em] text-white/30">
                       Digital System
                     </div>
 
-                    <div className="mt-1 text-[8px] text-white/60">
+                    <div className="mt-1 text-[9px] text-white/60">
                       Website + SEO + Paid Ads
                     </div>
                   </div>
 
-                  <div className="text-[10px] font-semibold text-cyan-300">
+                  <div className="text-xs font-semibold text-cyan-300">
                     78%
                   </div>
                 </div>
@@ -569,3 +570,4 @@ export default function Hero() {
     </section>
   );
 }
+

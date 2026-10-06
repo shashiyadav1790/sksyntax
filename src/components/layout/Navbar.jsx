@@ -62,7 +62,7 @@ export default function Navbar() {
       width={680}
       height={564}
       priority
-      className="h-[62px] w-auto shrink-0 object-contain transition-transform duration-300 group-hover:scale-[1.03] sm:h-[66px] md:h-[68px]"
+      className="h-[54px] w-auto shrink-0 object-contain transition-transform duration-300 group-hover:scale-[1.03] sm:h-[66px] md:h-[68px]"
     />
 
     <div className="-ml-2 flex min-w-0 items-center translate-y-[4px] sm:-ml-2 sm:translate-y-[5px]">
